@@ -1,7 +1,6 @@
 # import os
 
-# path = os.getcwd()#获取当前路径
-# layerPath = os.path.join(path,"layers")
+
 # listDir=os.listdir(layerPath)#获取当前目录下的所有内容
 # print(listDir)
 
@@ -9,8 +8,9 @@ import os#适应python
 file_type = dict()  #创建一个空的字典，用来存储我们的结果
 #os.chdir(r'F:\\python_code ')   #更改当前工作目录,其实不用更改，一直是这个路径
 # current_work_dir = os.curdir： 指代当前目录，在windows系统下是'.'
-current_work_dir = os.getcwd()   #当前工作目录
-all_file = os.listdir(current_work_dir)  #用列表列举当前目录中的文件名
+path = os.getcwd()#获取当前路径
+layerPath = os.path.join(path,"layers")
+all_file = os.listdir(layerPath)  #用列表列举当前目录中的文件名
 #print(all_file )
 for each_file in all_file:   #依次提取这个列表中的每一个元素（路径）
     if os.path.isdir(each_file) == True:   #判断这个路径是否表示文件夹,如果这是文件夹，就==True,如果不是文件夹就跳到else
