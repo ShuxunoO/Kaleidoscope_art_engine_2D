@@ -1,3 +1,17 @@
+# a = {
+#     "isBoy" : True,
+#     "number" : 1
+# }
+
+# if a.get("isGirl"):
+#     print("Yes!")
+# else:
+#     print("Girl")
+
+# print(type(a["number"])  )
+
+
 list1 = [1, 2, 3]
-list2 = [item+1 for item in list1 if item ==2]
-print(list2)
+list2 = [2, 4, 5]
+
+print(list(set(list1) - set(list2)))
