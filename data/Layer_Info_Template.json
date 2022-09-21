@@ -1,0 +1,64 @@
+[
+    {
+        "trait_type": "Background",
+        "layers": [
+            {
+                "Dune.png": {
+                    "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune.png",
+                    "weight": 1,
+                    "counter": 10
+                },
+                "Grassland.png": {
+                    "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Grassland.png",
+                    "weight": 1,
+                    "counter": 10,
+                    "conflict_traits": []
+                }
+            }
+        ]
+    },
+    {
+        "trait_type": "Base",
+        "groupBy":"Holder",
+        "layers": [
+            {
+                "Blue$Blue_Gear.png": {
+                    "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Blue$Blue_Gear.png",
+                    "weight": 1,
+                    "counter": 10,
+                    "conflict_traits": []
+                },
+                "Blue$Blue_Rhythm.png": {
+                    "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Blue$Blue_Rhythm.png",
+                    "weight": 1,
+                    "counter": 10
+                }
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+    {
+        "trait_type": "Holder",
+        "layers": [
+            {
+                "Blue.png": {
+                    "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Blue.png",
+                    "weight": 1,
+                    "counter": 10
+                },
+                "Green.png": {
+                    "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Green.png",
+                    "weight": 1,
+                    "counter": 10
+                }
+            }
+        ]
+    }
+]
