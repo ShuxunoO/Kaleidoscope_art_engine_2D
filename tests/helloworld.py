@@ -15,3 +15,5 @@ list1 = [1, 2, 3]
 list2 = [2, 4, 5]
 
 print(list(set(list1) - set(list2)))
+
+

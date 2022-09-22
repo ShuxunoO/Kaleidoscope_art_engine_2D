@@ -10,3 +10,5 @@ def save_json(save_path,filename,data):
     file_path = os.path.join(save_path,filename + ".json")
     with open(file_path,'w') as file:
         json.dump(data, file, indent=4)
+
+
