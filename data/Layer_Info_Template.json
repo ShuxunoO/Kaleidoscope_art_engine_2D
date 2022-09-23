@@ -20,21 +20,38 @@
     {
         "trait_type": "Base",
         "groupBy":"Holder",
-        "layers": [
-            {
-                "Blue$Blue_Gear.png": {
-                    "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Blue$Blue_Gear.png",
-                    "weight": 1,
-                    "counter": 10,
-                    "conflict_traits": []
-                },
-                "Blue$Blue_Rhythm.png": {
-                    "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Blue$Blue_Rhythm.png",
-                    "weight": 1,
-                    "counter": 10
+        "layers":{
+            "Blue": [
+                {
+                    "Blue$Blue_Gear.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Blue$Blue_Gear.png",
+                        "weight": 1,
+                        "counter": 10,
+                        "conflict_traits": []
+                    },
+                    "Blue$Blue_Rhythm.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Blue$Blue_Rhythm.png",
+                        "weight": 1,
+                        "counter": 10
+                    }
                 }
-            }
-        ]
+            ],
+            "Orange": [
+                {
+                    "Blue$Blue_Gear.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Blue$Blue_Gear.png",
+                        "weight": 1,
+                        "counter": 10,
+                        "conflict_traits": []
+                    },
+                    "Blue$Blue_Rhythm.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Blue$Blue_Rhythm.png",
+                        "weight": 1,
+                        "counter": 10
+                    }
+                }
+            ]
+        }
     },
 
 
