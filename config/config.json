@@ -1,7 +1,7 @@
 {
-    "namePrefix": "Lip Conqueror Girl",
-    "description": "Remember to replace this description",
-    "baseUri": "ipfs://NewUriToReplace",
+    "namePrefix": " BanaCat",
+    "description": "Description",
+    "baseUri": "ipfs://xxx",
     "rarityDelimiter": "#",
     "colorSetDelimiter": "$",
     "limitDelimiter": "^",
@@ -68,7 +68,7 @@
     "processCount": 10,
     "layerConfigurations": [
         {
-            "growEditionSizeTo": 1000,
+            "totalNumber": 1000,
             "conflictElements": {
                 "cloth1": "necklace1,necklace2"
             },

@@ -1,7 +1,6 @@
 [
     {
-        "trait_type": "Background",
-        "layers": [
+        "Background": [
             {
                 "Dune.png": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune.png",
@@ -18,9 +17,7 @@
         ]
     },
     {
-        "trait_type": "Base",
-        "groupBy":"Holder",
-        "layers":{
+        "Base":{
             "Blue": [
                 {
                     "Blue$Blue_Gear.png": {
@@ -51,7 +48,8 @@
                     }
                 }
             ]
-        }
+        },
+        "groupBy":"Holder"
     },
 
 
