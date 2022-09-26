@@ -2,9 +2,11 @@ import os
 import sys
 sys.path.append('..')
 from utils.file_operations import save_json
-from CONST_ENV import BASE_PATH
+from CONST_ENV import BASE_PATH, LAYER_PATH, DATA_PATH
 
 print(BASE_PATH)
+print(LAYER_PATH)
+print(DATA_PATH)
 
 # base_path = os.getcwd()
 # print(base_path)
