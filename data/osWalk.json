@@ -1,0 +1,503 @@
+[
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers",
+        "content": {
+            "dirs": [
+                "Background",
+                "Base",
+                "Eggshell",
+                "Halo",
+                "Holder",
+                "Music_Effect",
+                "Pattern",
+                "Stroke"
+            ],
+            "files": []
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Background",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Dune.png",
+                "Grassland.png",
+                "Mountains.png",
+                "Wave.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Base",
+        "content": {
+            "dirs": [
+                "Blue",
+                "Green",
+                "Orange",
+                "Purple",
+                "White"
+            ],
+            "files": []
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Base\\Blue",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Blue_Gear.png",
+                "Blue_Rhythm.png",
+                "Blue_Scale.png",
+                "Blue_Shield.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Base\\Green",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Green_Gear.png",
+                "Green_Rhythm.png",
+                "Green_Scale.png",
+                "Green_Shield.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Base\\Orange",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Orange_Gear.png",
+                "Orange_Rhythm.png",
+                "Orange_Scale.png",
+                "Orange_Shield.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Base\\Purple",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Purple_Gear.png",
+                "Purple_Rhythm.png",
+                "Purple_Scale.png",
+                "Purple_Shield.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Base\\White",
+        "content": {
+            "dirs": [],
+            "files": [
+                "White_Gear.png",
+                "White_Rhythm.png",
+                "White_Scale.png",
+                "White_Shield.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Eggshell",
+        "content": {
+            "dirs": [
+                "Blue",
+                "Green",
+                "Orange",
+                "Purple",
+                "White"
+            ],
+            "files": []
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Eggshell\\Blue",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Blue_Green.png",
+                "Blue_Purple.png",
+                "Blue_Yellow.png",
+                "Dark_Blue.png",
+                "Ice_Blue.png",
+                "Lightblue_Purple.png",
+                "Light_Blue.png",
+                "Purple_Blue.png",
+                "White_Blue.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Eggshell\\Green",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Green.png",
+                "Green_Blue.png",
+                "Green_Orange.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Eggshell\\Orange",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Light_Orange.png",
+                "Orange_Blue.png",
+                "Orange_Pink.png",
+                "Orange_White.png",
+                "Orange_Yellow.png",
+                "Red_Orange.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Eggshell\\Purple",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Purple_Blue .png",
+                "Purple_Littlepink.png",
+                "Purple_Orange.png",
+                "Purple_Pink.png",
+                "Purple_Yellow.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Eggshell\\White",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Dark_White.png",
+                "White_Milky.png",
+                "Yellow_White.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Halo",
+        "content": {
+            "dirs": [
+                "Blue",
+                "Green",
+                "Orange",
+                "Purple",
+                "White"
+            ],
+            "files": []
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Halo\\Blue",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Blue_Sky.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Halo\\Green",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Green_Hope.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Halo\\Orange",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Orange_Vitality.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Halo\\Purple",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Purple_Electricity.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Halo\\White",
+        "content": {
+            "dirs": [],
+            "files": [
+                "White_Angel.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Holder",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Blue.png",
+                "Green.png",
+                "Orange.png",
+                "Purple.png",
+                "White.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Music_Effect",
+        "content": {
+            "dirs": [
+                "Blue",
+                "Green",
+                "Orange",
+                "Purple",
+                "White"
+            ],
+            "files": []
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Music_Effect\\Blue",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Blue_Firefly.png",
+                "Blue_Sonic.png",
+                "Blue_Star.png",
+                "Blue_Stream.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Music_Effect\\Green",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Green_Firefly.png",
+                "Green_Sonic.png",
+                "Green_Star.png",
+                "Green_Stream.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Music_Effect\\Orange",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Orange_Firefly.png",
+                "Orange_Sonic.png",
+                "Orange_Star.png",
+                "Orange_Stream.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Music_Effect\\Purple",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Purple_Firefly.png",
+                "Purple_Sonic.png",
+                "Purple_Star.png",
+                "Purple_Stream.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Music_Effect\\White",
+        "content": {
+            "dirs": [],
+            "files": [
+                "White_Firefly.png",
+                "White_Sonic.png",
+                "White_Star.png",
+                "White_Stream.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Pattern",
+        "content": {
+            "dirs": [
+                "Blue",
+                "Green",
+                "Orange",
+                "Purple",
+                "White"
+            ],
+            "files": []
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Pattern\\Blue",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Blue_Block.png",
+                "Blue_Chaos.png",
+                "Blue_Constellation.png",
+                "Blue_Deepmind.png",
+                "Blue_Honeycomb.png",
+                "Blue_Maze.png",
+                "Blue_Mirror.png",
+                "Blue_Neurons.png",
+                "Blue_Pixel.png",
+                "Blue_Recursion.png",
+                "Blue_Starburst.png",
+                "Blue_Vortex.png",
+                "Blue_Wave.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Pattern\\Green",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Greene$Green_Neurons.png",
+                "Green_Block.png",
+                "Green_Chaos.png",
+                "Green_Constellation.png",
+                "Green_Deepmind.png",
+                "Green_Honeycomb.png",
+                "Green_Maze.png",
+                "Green_Mirror.png",
+                "Green_Pixel.png",
+                "Green_Recursion.png",
+                "Green_Starburst.png",
+                "Green_Vortex.png",
+                "Green_Wave.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Pattern\\Orange",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Orange_Block.png",
+                "Orange_Chaos.png",
+                "Orange_Constellation.png",
+                "Orange_Honeycomb.png",
+                "Orange_Maze.png",
+                "Orange_Mirror.png",
+                "Orange_Neurons.png",
+                "Orange_Pixel.png",
+                "Orange_Recursion.png",
+                "Orange_Starburst.png",
+                "Orange_Vortex.png",
+                "Orange_Wave.png",
+                "Orange__Deepmind.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Pattern\\Purple",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Purple$Purple_Block.png",
+                "Purple$Purple_Chaos.png",
+                "Purple$Purple_Constellation.png",
+                "Purple$Purple_Deepmind.png",
+                "Purple$Purple_Honeycomb.png",
+                "Purple$Purple_Maze.png",
+                "Purple$Purple_Mirror.png",
+                "Purple$Purple_Neurons.png",
+                "Purple$Purple_Pixel.png",
+                "Purple$Purple_Recursion.png",
+                "Purple$Purple_Starburst.png",
+                "Purple$Purple_Vortex.png",
+                "Purple$Purple_Wave.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Pattern\\White",
+        "content": {
+            "dirs": [],
+            "files": [
+                "White_Block.png",
+                "White_Chaos.png",
+                "White_Constellation.png",
+                "White_Deepmind.png",
+                "White_Honeycomb.png",
+                "White_Maze.png",
+                "White_Mirror.png",
+                "White_Neurons.png",
+                "White_Pixel.png",
+                "White_Recursion.png",
+                "White_Starburst.png",
+                "White_Vortex.png",
+                "White_Wave.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Stroke",
+        "content": {
+            "dirs": [
+                "Blue",
+                "Green",
+                "Orange",
+                "Purple",
+                "White"
+            ],
+            "files": []
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Stroke\\Blue",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Blue.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Stroke\\Green",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Green.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Stroke\\Orange",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Orange.png",
+                "Red.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Stroke\\Purple",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Purple.png"
+            ]
+        }
+    },
+    {
+        "root": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\tests\\..\\layers\\Stroke\\White",
+        "content": {
+            "dirs": [],
+            "files": [
+                "Black.png"
+            ]
+        }
+    }
+]

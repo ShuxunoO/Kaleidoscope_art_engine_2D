@@ -2,35 +2,19 @@ import os
 import sys
 sys.path.append('..')
 from utils.file_operations import save_json
-from CONST_ENV import BASE_PATH, LAYER_PATH, DATA_PATH
+from CONST_ENV import ENV_PATH as PATH
 
-print(BASE_PATH)
-print(LAYER_PATH)
-print(DATA_PATH)
-
-# base_path = os.getcwd()
-# print(base_path)
-# layer_path = os.path.join(base_path, "layers")
-
-
-# a = []
-# for root, dirs, files in os.walk(layer_path):
-#     a.append({
-#         "root": root,
-#         "content":
-#         {
-#             "dirs": dirs,
-#             "files": files,
-#         }
-#     })
-# print(a)
-
-# # save_json()
+a = []
+for root, dirs, files in os.walk(os.path. PATH.LAYER_PATH):
+    print (root,dirs,files)
+    a.append({
+        "root": root,
+        "content":
+        {
+            "dirs": dirs,
+            "files": files,
+        }
+    })
 
 
-
-
-
-    # print('root:',root)
-    # print('dirs:',dirs)
-    # print('files:',files)
+save_json(PATH.DATA_PATH, "osWalk", a)

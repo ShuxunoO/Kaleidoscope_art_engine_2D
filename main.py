@@ -1,4 +1,0 @@
-from CONST_ENV import BASE_PATH, LAYER_PATH, DATA_PATH
-print(BASE_PATH)
-print(LAYER_PATH)
-print(DATA_PATH)
