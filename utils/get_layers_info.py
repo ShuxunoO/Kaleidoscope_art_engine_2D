@@ -1,11 +1,9 @@
-from CONST_ENV import ENV_PATH as PATH
-import json
 import os
-from pathlib import Path
 import sys
 sys.path.append("..")
-# load json file
-
+from pathlib import Path
+from CONST_ENV import ENV_PATH as PATH
+from file_operations import load_lsyers_config, save_json
 
 def get_layersinfo(base_path, file_name):
     """
@@ -91,7 +89,7 @@ def get_purename_and_weight(layer_name):
     return purename, weight
 
 
-def equilibrium_layerweight():
+def balance_layerweight():
     """
     Under normal circumstances,
     the sum of the weights of the layers in a layer folder should be equal to the total number of NFTs we set,
@@ -99,4 +97,29 @@ def equilibrium_layerweight():
     we need to redistribute the weights according to the proportion of the layers.
     Of course, this The function is up to the user to decide whether to use it or not.
     """
-    return
+
+    CONFIG = load_lsyers_config(PATH.CONFIG_PATH)
+    layer_config_path = load_lsyers_config(Path.joinpath(PATH.DATA_PATH, "layers_config_V4.json"))
+    # print(type(layer_config_path))
+
+
+    layer_configurations = CONFIG["layerConfigurations"]
+    for index in range(len(layer_configurations)):
+        layers = layer_configurations[index]["layersOrder"]
+        for layer in layers:
+            layer_name = layer["name"]
+            print(layer_name)
+            print(layer_config_path[index][layer_name], "\n\n")
+
+
+
+
+    # layer_configs = load_lsyers_config(layer_config_path)
+    # for config_item in layer_configs:
+    #     print(type(config_item).__name__ == "dict")
+    #     for key, value in config_item.items():
+    #         print("key: ", key)
+    #         print("value: ", value)
+
+
+
