@@ -1,10 +1,8 @@
-import os
-import json
 import sys
 sys.path.append("..")
 from CONST_ENV import ENV_PATH as PATH
-from get_layers_info import get_layersinfo
-from file_operations import load_lsyers_config, save_json
+from utils.get_layers_info import get_layersinfo
+from utils.file_operations import load_lsyers_config, save_json
 
 
 CONFIG = load_lsyers_config(PATH.CONFIG_PATH)
@@ -35,6 +33,6 @@ def setup_layers_config(layer_configurations):
 setup_layers_config(layer_configurations)
 
 
-layer_config_path = Path.joinpath(PATH.DATA_PATH, "layers_config_V4.json")
+# layer_config_path = Path.joinpath(PATH.DATA_PATH, "layers_config_V4.json")
 
-layer_config = load_lsyers_config(layer_config_path)
+# layer_config = load_lsyers_config(layer_config_path)

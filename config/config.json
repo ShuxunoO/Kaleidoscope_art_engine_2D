@@ -70,7 +70,8 @@
         {
             "totalNumber": 1000,
             "conflictElements": {
-                "cloth1": "necklace1,necklace2"
+                "Base$Blue_Gear" : "Eggshell$Purple_Pink, Pattern$Purple_Block, Music_Effect$Green_Firefly, Music_Effect$Purple_Star",
+                "Pattern$Green_Block" : "Music_Effect$Purple_Star"
             },
             "layersOrder": [
                 {

@@ -1,0 +1,24 @@
+{
+    "Background": {
+        "Dune#200": {
+            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Dune#200.png",
+            "weight": 15,
+            "conflictElements": "\u5355\u4e2a\u56fe\u5c42"
+        },
+        "Grassland#300": {
+            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Grassland#300.png",
+            "weight": 15,
+            "conflictElements": "\u5355\u4e2a\u56fe\u5c42"
+        },
+        "Mountains#100": {
+            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Mountains#100.png",
+            "weight": 15,
+            "conflictElements": "\u5355\u4e2a\u56fe\u5c42"
+        },
+        "Wave#350": {
+            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Wave#350.png",
+            "weight": 15,
+            "conflictElements": "\u5355\u4e2a\u56fe\u5c42"
+        }
+    }
+}
