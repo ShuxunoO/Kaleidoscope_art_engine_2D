@@ -1,4 +1,4 @@
 {
     "docwriter.language": "English",
-    "docwriter.style": "Doxygen"
+    "docwriter.style": "Auto-detect"
 }

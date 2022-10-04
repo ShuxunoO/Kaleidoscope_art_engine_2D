@@ -1,0 +1,2994 @@
+[
+    [
+        {
+            "Background": [
+                {
+                    "Dune#200.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Dune#200.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Grassland#300.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Grassland#300.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Mountains#100.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Mountains#100.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Wave#350.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Wave#350.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Holder": [
+                {
+                    "Blue.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Blue.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Green.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Green.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Orange.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Orange.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Purple.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Purple.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "White.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\White.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Eggshell": {
+                "Blue": [
+                    {
+                        "Blue_Green.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Green.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Yellow.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Yellow.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Dark_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Dark_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Ice_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Ice_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Lightblue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Lightblue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Light_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Light_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Purple_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Purple_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "White_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\White_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Pattern": {
+                "Blue": [
+                    {
+                        "Blue_Block.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Block.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Chaos.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Chaos.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Constellation.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Constellation.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Deepmind.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Deepmind.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Honeycomb.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Honeycomb.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Maze.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Maze.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Mirror.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Mirror.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Neurons.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Neurons.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Pixel.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Pixel.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Recursion.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Recursion.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Starburst.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Starburst.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Vortex.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Vortex.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Wave.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Wave.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Stroke": {
+                "Blue": [
+                    {
+                        "Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Stroke\\Blue\\Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Halo": {
+                "Blue": [
+                    {
+                        "Blue_Sky.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Halo\\Blue\\Blue_Sky.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Music_Effect": {
+                "Blue": [
+                    {
+                        "Blue_Firefly.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Firefly.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Sonic.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Sonic.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Star.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Star.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Stream.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Stream.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Base": {
+                "Blue": [
+                    {
+                        "Blue_Gear.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Gear.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Rhythm.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Rhythm.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Scale.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Scale.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Shield.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Shield.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    [
+        {
+            "Background": [
+                {
+                    "Dune#200.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Dune#200.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Grassland#300.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Grassland#300.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Mountains#100.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Mountains#100.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Wave#350.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Wave#350.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Holder": [
+                {
+                    "Blue.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Blue.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Green.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Green.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Orange.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Orange.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Purple.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Purple.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "White.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\White.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Eggshell": {
+                "Blue": [
+                    {
+                        "Blue_Green.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Green.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Yellow.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Yellow.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Dark_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Dark_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Ice_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Ice_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Lightblue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Lightblue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Light_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Light_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Purple_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Purple_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "White_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\White_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Pattern": {
+                "Blue": [
+                    {
+                        "Blue_Block.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Block.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Chaos.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Chaos.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Constellation.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Constellation.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Deepmind.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Deepmind.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Honeycomb.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Honeycomb.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Maze.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Maze.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Mirror.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Mirror.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Neurons.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Neurons.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Pixel.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Pixel.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Recursion.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Recursion.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Starburst.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Starburst.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Vortex.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Vortex.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Wave.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Wave.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Stroke": {
+                "Blue": [
+                    {
+                        "Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Stroke\\Blue\\Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Halo": {
+                "Blue": [
+                    {
+                        "Blue_Sky.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Halo\\Blue\\Blue_Sky.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Music_Effect": {
+                "Blue": [
+                    {
+                        "Blue_Firefly.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Firefly.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Sonic.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Sonic.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Star.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Star.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Stream.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Stream.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Base": {
+                "Blue": [
+                    {
+                        "Blue_Gear.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Gear.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Rhythm.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Rhythm.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Scale.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Scale.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Shield.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Shield.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    [
+        {
+            "Background": [
+                {
+                    "Dune#200.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Dune#200.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Grassland#300.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Grassland#300.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Mountains#100.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Mountains#100.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Wave#350.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Wave#350.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Holder": [
+                {
+                    "Blue.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Blue.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Green.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Green.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Orange.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Orange.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Purple.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Purple.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "White.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\White.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Eggshell": {
+                "Blue": [
+                    {
+                        "Blue_Green.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Green.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Yellow.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Yellow.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Dark_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Dark_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Ice_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Ice_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Lightblue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Lightblue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Light_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Light_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Purple_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Purple_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "White_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\White_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Pattern": {
+                "Blue": [
+                    {
+                        "Blue_Block.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Block.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Chaos.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Chaos.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Constellation.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Constellation.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Deepmind.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Deepmind.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Honeycomb.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Honeycomb.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Maze.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Maze.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Mirror.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Mirror.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Neurons.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Neurons.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Pixel.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Pixel.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Recursion.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Recursion.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Starburst.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Starburst.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Vortex.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Vortex.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Wave.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Wave.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Stroke": {
+                "Blue": [
+                    {
+                        "Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Stroke\\Blue\\Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Halo": {
+                "Blue": [
+                    {
+                        "Blue_Sky.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Halo\\Blue\\Blue_Sky.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Music_Effect": {
+                "Blue": [
+                    {
+                        "Blue_Firefly.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Firefly.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Sonic.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Sonic.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Star.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Star.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Stream.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Stream.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Base": {
+                "Blue": [
+                    {
+                        "Blue_Gear.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Gear.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Rhythm.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Rhythm.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Scale.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Scale.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Shield.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Shield.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    [
+        {
+            "Background": [
+                {
+                    "Dune#200.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Dune#200.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Grassland#300.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Grassland#300.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Mountains#100.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Mountains#100.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Wave#350.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Wave#350.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Holder": [
+                {
+                    "Blue.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Blue.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Green.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Green.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Orange.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Orange.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Purple.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Purple.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "White.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\White.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Eggshell": {
+                "Blue": [
+                    {
+                        "Blue_Green.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Green.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Yellow.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Yellow.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Dark_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Dark_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Ice_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Ice_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Lightblue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Lightblue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Light_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Light_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Purple_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Purple_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "White_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\White_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Pattern": {
+                "Blue": [
+                    {
+                        "Blue_Block.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Block.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Chaos.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Chaos.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Constellation.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Constellation.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Deepmind.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Deepmind.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Honeycomb.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Honeycomb.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Maze.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Maze.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Mirror.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Mirror.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Neurons.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Neurons.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Pixel.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Pixel.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Recursion.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Recursion.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Starburst.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Starburst.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Vortex.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Vortex.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Wave.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Wave.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Stroke": {
+                "Blue": [
+                    {
+                        "Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Stroke\\Blue\\Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Halo": {
+                "Blue": [
+                    {
+                        "Blue_Sky.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Halo\\Blue\\Blue_Sky.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Music_Effect": {
+                "Blue": [
+                    {
+                        "Blue_Firefly.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Firefly.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Sonic.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Sonic.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Star.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Star.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Stream.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Stream.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Base": {
+                "Blue": [
+                    {
+                        "Blue_Gear.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Gear.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Rhythm.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Rhythm.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Scale.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Scale.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Shield.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Shield.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    [
+        {
+            "Background": [
+                {
+                    "Dune#200.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Dune#200.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Grassland#300.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Grassland#300.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Mountains#100.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Mountains#100.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Wave#350.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Wave#350.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Holder": [
+                {
+                    "Blue.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Blue.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Green.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Green.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Orange.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Orange.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Purple.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Purple.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "White.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\White.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Eggshell": {
+                "Blue": [
+                    {
+                        "Blue_Green.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Green.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Yellow.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Yellow.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Dark_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Dark_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Ice_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Ice_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Lightblue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Lightblue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Light_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Light_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Purple_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Purple_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "White_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\White_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Pattern": {
+                "Blue": [
+                    {
+                        "Blue_Block.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Block.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Chaos.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Chaos.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Constellation.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Constellation.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Deepmind.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Deepmind.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Honeycomb.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Honeycomb.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Maze.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Maze.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Mirror.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Mirror.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Neurons.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Neurons.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Pixel.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Pixel.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Recursion.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Recursion.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Starburst.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Starburst.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Vortex.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Vortex.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Wave.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Wave.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Stroke": {
+                "Blue": [
+                    {
+                        "Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Stroke\\Blue\\Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Halo": {
+                "Blue": [
+                    {
+                        "Blue_Sky.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Halo\\Blue\\Blue_Sky.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Music_Effect": {
+                "Blue": [
+                    {
+                        "Blue_Firefly.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Firefly.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Sonic.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Sonic.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Star.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Star.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Stream.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Stream.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Base": {
+                "Blue": [
+                    {
+                        "Blue_Gear.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Gear.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Rhythm.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Rhythm.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Scale.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Scale.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Shield.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Shield.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    [
+        {
+            "Background": [
+                {
+                    "Dune#200.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Dune#200.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Grassland#300.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Grassland#300.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Mountains#100.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Mountains#100.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Wave#350.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Wave#350.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Holder": [
+                {
+                    "Blue.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Blue.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Green.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Green.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Orange.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Orange.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Purple.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Purple.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "White.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\White.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Eggshell": {
+                "Blue": [
+                    {
+                        "Blue_Green.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Green.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Yellow.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Yellow.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Dark_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Dark_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Ice_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Ice_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Lightblue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Lightblue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Light_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Light_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Purple_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Purple_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "White_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\White_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Pattern": {
+                "Blue": [
+                    {
+                        "Blue_Block.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Block.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Chaos.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Chaos.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Constellation.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Constellation.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Deepmind.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Deepmind.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Honeycomb.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Honeycomb.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Maze.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Maze.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Mirror.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Mirror.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Neurons.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Neurons.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Pixel.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Pixel.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Recursion.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Recursion.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Starburst.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Starburst.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Vortex.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Vortex.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Wave.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Wave.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Stroke": {
+                "Blue": [
+                    {
+                        "Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Stroke\\Blue\\Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Halo": {
+                "Blue": [
+                    {
+                        "Blue_Sky.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Halo\\Blue\\Blue_Sky.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Music_Effect": {
+                "Blue": [
+                    {
+                        "Blue_Firefly.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Firefly.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Sonic.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Sonic.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Star.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Star.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Stream.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Stream.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Base": {
+                "Blue": [
+                    {
+                        "Blue_Gear.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Gear.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Rhythm.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Rhythm.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Scale.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Scale.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Shield.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Shield.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    [
+        {
+            "Background": [
+                {
+                    "Dune#200.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Dune#200.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Grassland#300.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Grassland#300.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Mountains#100.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Mountains#100.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Wave#350.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Wave#350.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Holder": [
+                {
+                    "Blue.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Blue.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Green.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Green.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Orange.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Orange.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Purple.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Purple.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "White.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\White.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Eggshell": {
+                "Blue": [
+                    {
+                        "Blue_Green.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Green.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Yellow.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Yellow.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Dark_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Dark_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Ice_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Ice_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Lightblue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Lightblue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Light_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Light_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Purple_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Purple_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "White_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\White_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Pattern": {
+                "Blue": [
+                    {
+                        "Blue_Block.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Block.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Chaos.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Chaos.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Constellation.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Constellation.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Deepmind.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Deepmind.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Honeycomb.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Honeycomb.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Maze.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Maze.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Mirror.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Mirror.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Neurons.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Neurons.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Pixel.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Pixel.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Recursion.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Recursion.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Starburst.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Starburst.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Vortex.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Vortex.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Wave.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Wave.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Stroke": {
+                "Blue": [
+                    {
+                        "Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Stroke\\Blue\\Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Halo": {
+                "Blue": [
+                    {
+                        "Blue_Sky.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Halo\\Blue\\Blue_Sky.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Music_Effect": {
+                "Blue": [
+                    {
+                        "Blue_Firefly.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Firefly.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Sonic.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Sonic.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Star.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Star.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Stream.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Stream.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Base": {
+                "Blue": [
+                    {
+                        "Blue_Gear.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Gear.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Rhythm.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Rhythm.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Scale.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Scale.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Shield.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Shield.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    [
+        {
+            "Background": [
+                {
+                    "Dune#200.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Dune#200.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Grassland#300.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Grassland#300.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Mountains#100.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Mountains#100.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Wave#350.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Background\\Wave#350.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Holder": [
+                {
+                    "Blue.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Blue.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Green.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Green.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Orange.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Orange.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "Purple.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\Purple.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                },
+                {
+                    "White.png": {
+                        "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Holder\\White.png",
+                        "weight": 10,
+                        "counter": 2,
+                        "conflictElements": "xxx"
+                    }
+                }
+            ]
+        },
+        {
+            "Eggshell": {
+                "Blue": [
+                    {
+                        "Blue_Green.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Green.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Yellow.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Blue_Yellow.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Dark_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Dark_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Ice_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Ice_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Lightblue_Purple.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Lightblue_Purple.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Light_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Light_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Purple_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\Purple_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "White_Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Eggshell\\Blue\\White_Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Pattern": {
+                "Blue": [
+                    {
+                        "Blue_Block.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Block.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Chaos.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Chaos.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Constellation.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Constellation.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Deepmind.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Deepmind.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Honeycomb.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Honeycomb.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Maze.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Maze.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Mirror.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Mirror.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Neurons.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Neurons.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Pixel.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Pixel.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Recursion.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Recursion.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Starburst.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Starburst.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Vortex.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Vortex.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Wave.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Pattern\\Blue\\Blue_Wave.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Stroke": {
+                "Blue": [
+                    {
+                        "Blue.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Stroke\\Blue\\Blue.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Halo": {
+                "Blue": [
+                    {
+                        "Blue_Sky.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Halo\\Blue\\Blue_Sky.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Music_Effect": {
+                "Blue": [
+                    {
+                        "Blue_Firefly.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Firefly.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Sonic.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Sonic.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Star.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Star.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Stream.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Music_Effect\\Blue\\Blue_Stream.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Base": {
+                "Blue": [
+                    {
+                        "Blue_Gear.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Gear.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Rhythm.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Rhythm.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Scale.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Scale.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    },
+                    {
+                        "Blue_Shield.png": {
+                            "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\utils\\..\\layers\\Base\\Blue\\Blue_Shield.png",
+                            "weight": 10,
+                            "counter": 2,
+                            "conflictElements": "xxx"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+]

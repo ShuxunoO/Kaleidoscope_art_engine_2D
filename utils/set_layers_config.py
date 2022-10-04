@@ -1,15 +1,21 @@
 import os
 from file_operations import save_json
+import sys
+sys.path.append('..')
+from CONST_ENV import ENV_PATH as PATH
 
-
-base_path = os.getcwd()
-layer_path = os.path.join(base_path, "layers")
-data_path = os.path.join(base_path, "data")
-layerdir_list = os.listdir(layer_path)
-print(layerdir_list)
+layerdir_list = os.listdir(PATH.LAYER_PATH)
 
 
 def initialize_layerinfos(item, layer_path):
+    """
+    A function that takes in a directory and returns a dictionary.
+    
+    :param item: the name of the current directory
+    :param layer_path: the path of the folder where the layers are stored
+    :return: A dictionary with the following structure:
+    """
+
     temp_dict = {}
     current_dir = os.path.join(layer_path, item)
     print(current_dir)
@@ -37,9 +43,8 @@ def initialize_layerinfos(item, layer_path):
     return temp_dict
 
 
-
 # 以{图层文件夹：[图层列表]}的形式读取图层信息并且存储为json文件
-layer_list = [initialize_layerinfos(item, layer_path)
+layer_list = [initialize_layerinfos(item, PATH.LAYER_PATH)
               for item in layerdir_list]
 print(layer_list)
-save_json(data_path, "layers_config", layer_list)
+save_json(PATH.DATA_PATH, "layers_config2", layer_list)
