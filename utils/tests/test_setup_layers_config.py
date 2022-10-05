@@ -2,7 +2,7 @@ import sys
 sys.path.append("../..")
 from CONST_ENV import ENV_PATH as PATH
 sys.path.append("..")
-from get_layers_info import get_layersinfo
+from get_layers_info import get_layersinfo, get_dirlist_and_filelist
 from file_operations import load_lsyers_config, save_json
 
 CONFIG = load_lsyers_config(PATH.CONFIG_PATH)
@@ -20,6 +20,7 @@ def setup_layers_config(layer_configurations):
     list of dictionaries, each dictionary contains a name and a list of dictionaries, each dictionary
     contains a name and a list of
     """
+
     layers_info = []
     print(len(layer_configurations))
     for item in layer_configurations:
@@ -28,9 +29,9 @@ def setup_layers_config(layer_configurations):
         for layer in layers:
             layer_info_subdict.update(get_layersinfo(PATH.LAYER_PATH, layer["name"]))
         layers_info.append(layer_info_subdict)
-    save_json(PATH.DATA_PATH, "layers_config_V4", layers_info)
-    
+    # print(layers_info)
+    save_json(PATH.DATA_PATH, "layers_config_V6", layers_info)
 
 
-    
+
 setup_layers_config(layer_configurations)
