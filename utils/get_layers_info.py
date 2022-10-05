@@ -1,5 +1,6 @@
 import os
 import sys
+import re
 sys.path.append("..")
 from pathlib import Path
 from CONST_ENV import ENV_PATH as PATH
@@ -21,6 +22,7 @@ def get_dirlist_and_filelist(file_path):
     dir_list = [f.stem for f in file_path.iterdir() if f.is_dir()]
     # get the remaining files in file_path
     layer_list = list(set(file_list) - set(dir_list))
+
     return layer_list, dir_list
 
 
@@ -35,15 +37,19 @@ def get_layersinfo(base_path, layer_name):
     current_path = Path.joinpath(base_path, layer_name)
     layer_list, dir_list = get_dirlist_and_filelist(current_path)
     print(layer_list, dir_list)
-    layerinfo_dict = {}
+    layerinfo_dict = {}  # a dictionary to store the layers infomation in base path
+    layerinfo_dict.update({
+        "existSubdir": len(dir_list) > 0,
+        "layer_list": [re.split("[#.]", layer)[0] for layer in layer_list],  # remove the suffix and weight to get purename
+        "dir_list": dir_list})
     if len(layer_list):
-        layerinfo_dict.update(get_layerinfo_in_currentdir(current_path, layer_list))
+        get_layerinfo_in_currentdir(current_path, layer_list, layerinfo_dict)
     if len(dir_list):
-        layerinfo_dict.update(get_layerinfo_in_subdir(current_path, dir_list))
+        get_layerinfo_in_subdir(current_path, dir_list, layerinfo_dict)
     return {layer_name: layerinfo_dict}
 
 
-def get_layerinfo_in_subdir(base_path, dir_list):
+def get_layerinfo_in_subdir(base_path, dir_list, layerinfo_dict):
 
     """
     It takes a base path and a directory name, and returns a dictionary, which contains the
@@ -54,7 +60,6 @@ def get_layerinfo_in_subdir(base_path, dir_list):
     :param dir_name: the name of the subdirectory
     """
     layer_list, dir_list = get_dirlist_and_filelist(base_path)
-    layer_info_dict = {}  # a dict to store the layers infomation in base path
     for dir_item in dir_list:
         sub_path = Path(base_path.joinpath (dir_item)).resolve()
         sublayer_list = os.listdir(sub_path)
@@ -66,16 +71,11 @@ def get_layerinfo_in_subdir(base_path, dir_list):
                 "path": str(sub_path.joinpath(layer)),
                 "weight": weight
             }})
-        layer_info_dict.update({dir_item : sublayer_info_list})
-    return {
-        "existSubdir": len(dir_list) > 0,
-        "layer_list": layer_list,
-        "dir_list": dir_list,
-        "layers": layer_info_dict
-        }
+        layerinfo_dict.update({dir_item : sublayer_info_list})
 
 
-def get_layerinfo_in_currentdir(file_path, layer_name):
+
+def get_layerinfo_in_currentdir(file_path, layer_name, layerinfo_dict):
     """
     This function takes a base path and a file name, and returns a dictionary with the layer name as
     the key and a dictionary of layer information as the value
@@ -85,7 +85,6 @@ def get_layerinfo_in_currentdir(file_path, layer_name):
     :param file_name: The name of the layer
     :return: A dictionary with the layer name as the key and the layer infos as the value.
     """
-    layerinfo_dict = {}
     layer_list, dir_list = get_dirlist_and_filelist(file_path)
     for layer in layer_list:
         item_name = layer[:-4]  # remove the suffix
@@ -95,12 +94,6 @@ def get_layerinfo_in_currentdir(file_path, layer_name):
             "weight": weight
         }
         layerinfo_dict.update({name: layer_info})
-    return {
-        "existSubdir": len(dir_list) > 0,
-        "layer_list": layer_list,
-        "dir_list": dir_list,
-        "layers": layerinfo_dict}
-
 
 
 def get_purename_and_weight(layer_name):
@@ -122,7 +115,7 @@ def get_purename_and_weight(layer_name):
     return purename, weight
 
 
-def balance_layerweight():
+def balance_layerweight(layerconfig_json, layerinfo_json):
     """
     Under normal circumstances,
     the sum of the weights of the layers in a layer folder should be equal to the total number of NFTs we set,
@@ -138,17 +131,18 @@ def balance_layerweight():
 
     """
 
-    CONFIG = load_lsyers_config(PATH.CONFIG_PATH)
-    layer_config_path = load_lsyers_config(
-        Path.joinpath(PATH.DATA_PATH, "layers_config_V4.json"))
+    # print(layerconfig_json ,"\n\n")
+    # print(layerinfo_json , "\n\n")
+    sum = layerconfig_json["totalNumber"]
+    layers = layerconfig_json["layersOrder"]
 
-    layer_configurations = CONFIG["layerConfigurations"]
-    for index in range(len(layer_configurations)):
-        layers = layer_configurations[index]["layersOrder"]
-        for layer in layers:
-            layer_name = layer["name"]
-            print(layer_name)
-            print(layer_config_path[index][layer_name], "\n\n")
+    for layer in layers:
+        layer_name = layer["name"]
+        dir_list = layerinfo_json[layer_name]["dir_list"]
+        layer_list = layerinfo_json[layer_name]["layer_list"]
+        counter = 0  # Sum of cumulative weights
+        num_of_noweight_layers = 0  # Record the number of layers with no assigned weights
+
 
     # layer_configs = load_lsyers_config(layer_config_path)
     # for config_item in layer_configs:
