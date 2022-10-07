@@ -4,7 +4,7 @@ from pathlib import Path
 import sys
 sys.path.append("..")
 from CONST_ENV import ENV_PATH as PATH
-# load json file
+
 
 
 def save_json(save_path, filename, data):
@@ -20,6 +20,7 @@ def save_json(save_path, filename, data):
         json.dump(data, file, indent=4)
 
 
+# load json file
 def load_lsyers_config(config_path):
     """
     It loads a JSON file and returns the contents as a Python dictionary

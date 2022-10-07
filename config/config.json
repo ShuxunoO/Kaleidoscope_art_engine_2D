@@ -73,6 +73,10 @@
                 "Base$Blue_Gear" : "Eggshell$Purple_Pink, Pattern$Purple_Block, Music_Effect$Green_Firefly, Music_Effect$Purple_Star",
                 "Pattern$Green_Block" : "Music_Effect$Purple_Star"
             },
+            "specificCombination":{
+                "Blue_Rhythm":"Eggshell$Blue_Green"
+
+            },
             "layersOrder": [
                 {
                     "name": "Background"

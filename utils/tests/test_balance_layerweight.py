@@ -3,7 +3,7 @@ from pathlib import Path
 sys.path.append("../..")
 from CONST_ENV import ENV_PATH as PATH
 sys.path.append('..')
-from get_layers_info import balance_layerweight
+from set_layers_weight import balance_layerweight
 from file_operations import load_lsyers_config
 
 
