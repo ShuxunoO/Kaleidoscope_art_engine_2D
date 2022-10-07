@@ -3,57 +3,59 @@
         "Background": {
             "existSubdir": false,
             "layer_list": [
-                "Mountains",
                 "Grassland",
+                "Dune",
                 "Wave",
-                "Dune"
+                "Mountains"
             ],
             "dir_list": [],
-            "Mountains": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Mountains#100.png",
-                "weight": 100
-            },
+            "layer_total_number": 4,
             "Grassland": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Grassland#300.png",
                 "weight": 300
+            },
+            "Dune": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#200.png",
+                "weight": 200
             },
             "Wave": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Wave#350.png",
                 "weight": 350
             },
-            "Dune": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#200.png",
-                "weight": 200
+            "Mountains": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Mountains#100.png",
+                "weight": 100
             }
         },
         "Holder": {
             "existSubdir": false,
             "layer_list": [
                 "Blue",
+                "Orange",
                 "White",
-                "Green",
                 "Purple",
-                "Orange"
+                "Green"
             ],
             "dir_list": [],
+            "layer_total_number": 5,
             "Blue": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Blue.png",
+                "weight": -1
+            },
+            "Orange": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Orange.png",
                 "weight": -1
             },
             "White": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\White.png",
                 "weight": -1
             },
-            "Green": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Green.png",
-                "weight": -1
-            },
             "Purple": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Purple.png",
                 "weight": -1
             },
-            "Orange": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Orange.png",
+            "Green": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Green.png",
                 "weight": -1
             }
         },
@@ -67,6 +69,7 @@
                 "Purple",
                 "White"
             ],
+            "layer_total_number": 26,
             "Blue": [
                 {
                     "Blue_Green": {
@@ -244,6 +247,7 @@
                 "Purple",
                 "White"
             ],
+            "layer_total_number": 65,
             "Blue": [
                 {
                     "Blue_Block": {
@@ -655,6 +659,7 @@
                 "Purple",
                 "White"
             ],
+            "layer_total_number": 6,
             "Blue": [
                 {
                     "Blue": {
@@ -712,6 +717,7 @@
                 "Purple",
                 "White"
             ],
+            "layer_total_number": 5,
             "Blue": [
                 {
                     "Blue_Sky": {
@@ -765,6 +771,7 @@
                 "Purple",
                 "White"
             ],
+            "layer_total_number": 21,
             "None": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\None.png",
                 "weight": -1
@@ -910,6 +917,7 @@
                 "Purple",
                 "White"
             ],
+            "layer_total_number": 20,
             "Blue": [
                 {
                     "Blue_Gear": {

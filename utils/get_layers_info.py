@@ -40,7 +40,8 @@ def get_layersinfo(base_path, layer_name):
     layerinfo_dict.update({
         "existSubdir": len(dir_list) > 0,
         "layer_list": [re.split("[#.]", layer)[0] for layer in layer_list],  # remove the suffix and weight to get purename
-        "dir_list": dir_list})
+        "dir_list": dir_list,
+        "layer_total_number": get_fileNum(current_path)})
     if len(layer_list):
         get_layerinfo_in_currentdir(current_path, layer_list, layerinfo_dict)
     if len(dir_list):
@@ -75,7 +76,7 @@ def get_layerinfo_in_subdir(base_path, dir_list, layerinfo_dict):
 
 
 def get_layerinfo_in_currentdir(file_path, layer_name, layerinfo_dict):
-    
+
     """
     This function takes a base path and a file name, and returns a dictionary with the layer name as
     the key and a dictionary of layer information as the value
@@ -114,3 +115,13 @@ def get_purename_and_weight(layer_name):
         weight = int(name_weight_list[1])
     return purename, weight
 
+
+def get_fileNum(file_path):
+    """
+    It counts the number of files in a directory
+    :return: The number of files in the directory.
+    """
+    counter = 0
+    for root, dirs, files in os.walk(file_path):
+        counter = counter + len(files)
+    return counter

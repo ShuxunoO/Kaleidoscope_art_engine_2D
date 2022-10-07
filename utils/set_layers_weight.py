@@ -22,9 +22,7 @@ def balance_layerweight(layerconfig_json, layerinfo_json):
 
     """
 
-    # print(layerconfig_json ,"\n\n")
-    # print(layerinfo_json , "\n\n")
-    sum = layerconfig_json["totalNumber"]
+    NFT_totalNumber = layerconfig_json["totalNumber"]
     layers = layerconfig_json["layersOrder"]
 
     for layer in layers:
@@ -44,3 +42,24 @@ def balance_layerweight(layerconfig_json, layerinfo_json):
     #     for key, value in config_item.items():
     #         print("key: ", key)
     #         print("value: ", value)
+
+
+def count_all_weights(layer_info):
+    layer_list = layer_info["layer_list"]
+    dir_list = layer_info["dir_list"]
+
+    counter = 0  # Accumulate the number of layers that have been assigned weights
+    _sum = 0  # the sum of layers' weights that have been assigned weights
+    if len(layer_list) > 0:
+        for layer in layer_list:
+            if layer_info[layer]["weight"] != -1:
+                _sum = _sum + layer_info[layer]["weight"]
+                counter = counter + 1
+    if len(layer_info["dir_list"]) > 0:
+        for dir_item in  dir_list:
+            sublayer_list = layer_info[dir_item]
+            for layer_item in sublayer_list:
+                if layer_item["weight"] != -1:
+                    _sum = _sum + layer_item["weight"]
+                    counter = counter + 1
+    return _sum, counter
