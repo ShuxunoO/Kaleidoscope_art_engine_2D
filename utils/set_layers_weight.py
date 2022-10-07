@@ -32,9 +32,9 @@ def balance_layerweight(layerconfig_json, layerinfo_json):
         print(dir_list)
         layer_list = layerinfo_json[layer_name]["layer_list"]
         print(layer_list)
-        counter = 0  # Sum of cumulative weights
-        num_of_noweight_layers = 0  # Record the number of layers with no assigned weights
-
+        _sum, counter = count_all_weights(layerinfo_json[layer_name])
+        print(_sum, counter)
+        print( "_______________________________________________________\n\n")
 
     # layer_configs = load_lsyers_config(layer_config_path)
     # for config_item in layer_configs:
@@ -44,22 +44,103 @@ def balance_layerweight(layerconfig_json, layerinfo_json):
     #         print("value: ", value)
 
 
-def count_all_weights(layer_info):
-    layer_list = layer_info["layer_list"]
-    dir_list = layer_info["dir_list"]
+"""
 
+    Introduction:The operation of getting the total number of weights may seem strange (or even verbose)
+    but please refer to a sample layer information to understand
+
+            "Layer1": {
+            "existSubdir": true,
+            "layer_list": [
+                "layer_name1"
+            ],
+            "dir_list": [
+                "subdir1",
+                "subdir2",
+                "subdir3",
+                "subdir4",
+                "subdir5"
+            ],
+            "layer_total_number": xxx,
+            "layer_name1": {
+                "path": "xxx",
+                "weight": -1
+            },
+            "Blue": [
+                {
+                    "sublayer_name1": {
+                        "path": "xxx",
+                        "weight": 100
+                    }
+                },
+                {
+                    "sublayer_name2": {
+                        "path": "xxx",
+                        "weight": -1
+                    }
+                }
+                .
+                .
+                .
+                .
+                .
+                .
+                    ]
+
+    """
+
+def count_layer_list_weights(layer_info):
+    """
+    It iterates over the layer_list and accumulates the sum of the weights of the layers that have been
+    assigned weights
+    
+    :param layer_info: a dictionary that contains the information of all layers in the model
+    :return: The sum and the number of layers of the weights of the layers that have been assigned weights 
+    """
+    layer_list = layer_info["layer_list"]
     counter = 0  # Accumulate the number of layers that have been assigned weights
     _sum = 0  # the sum of layers' weights that have been assigned weights
     if len(layer_list) > 0:
-        for layer in layer_list:
+        for layer in layer_list:  # iterate over the layer_list
             if layer_info[layer]["weight"] != -1:
                 _sum = _sum + layer_info[layer]["weight"]
                 counter = counter + 1
+    return _sum, counter
+
+
+def count_dir_list_weights(layer_info):
+    """
+    The function iterates over the subdirectories of the layer_info dictionary, and accumulates the
+    weights of the layers that have been assigned weights.
+    
+    :param layer_info: a dictionary that contains the information of all layers in the model
+    :return: The sum of the weights of the layers in the subdirectories that have been assigned weights,
+    and the number of layers in the subdirectories that have been assigned weights.
+    """
+    dir_list = layer_info["dir_list"]
+    counter = 0  # Accumulate the number of layers in subdirctors that have been assigned weights
+    _sum = 0  # the sum of layers' weights in subdirctors that have been assigned weights
     if len(layer_info["dir_list"]) > 0:
-        for dir_item in  dir_list:
+        for dir_item in  dir_list:  # iterate over the layer_list
             sublayer_list = layer_info[dir_item]
             for layer_item in sublayer_list:
-                if layer_item["weight"] != -1:
-                    _sum = _sum + layer_item["weight"]
+                layer_info_temp = list(layer_item.values())
+                weight = layer_info_temp[0]["weight"]
+                if weight != -1:
+                    _sum = _sum + weight
                     counter = counter + 1
     return _sum, counter
+
+
+def count_all_weights(layer_info):
+    """
+    It takes a list of layer names and returns the number of weights in each layer and the total number
+    of weights in the model.
+    
+    :param layer_info: a list of dictionaries, each dictionary contains the information of a layer
+    :return: The counter of weights and the sum of the weights.
+    """
+
+    layer_counter, layer_sum = count_layer_list_weights(layer_info)
+    dir_counter, dir_sum = count_dir_list_weights(layer_info)
+    return layer_counter + dir_counter, layer_sum + dir_sum

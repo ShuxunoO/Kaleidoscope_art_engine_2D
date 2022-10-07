@@ -33,5 +33,4 @@ def setup_layers_config(layer_configurations):
     save_json(PATH.DATA_PATH, "layers_config_V6", layers_info)
 
 
-
 setup_layers_config(layer_configurations)
