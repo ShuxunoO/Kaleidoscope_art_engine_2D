@@ -75,7 +75,6 @@
             },
             "specificCombination":{
                 "Blue_Rhythm":"Eggshell$Blue_Green"
-
             },
             "layersOrder": [
                 {
@@ -83,55 +82,40 @@
                 },
                 {
                     "name": "Holder",
-                    "options": {
-                        "isGroupSet": true,
-                        "setName": "Holder_ColorSet"
-                    }
+                    "isGroupSet": true
                 },
                 {
                     "name": "Eggshell",
-                    "options": {
-                        "groupBy": "Holder_ColorSet",
-                        "hideInMetadata": false
-                    }
+                    "groupBy": "Holder",
+                    "hideInMetadata": false
                 },
                 {
                     "name": "Pattern",
-                    "options": {
-                        "groupBy": "Holder_ColorSet",
+                        "groupBy": "Holder",
                         "hideInMetadata": false
-                    }
                 },
                 {
                     "name": "Stroke",
-                    "options": {
-                        "groupBy": "Holder_ColorSet",
+                        "groupBy": "Holder",
                         "hideInMetadata": false
-                    }
                 },
                 {
                     "name": "Halo",
-                    "options": {
-                        "groupBy": "Holder_ColorSet",
+                        "groupBy": "Holder",
                         "bypassDNA": true,
                         "hideInMetadata": false
-                    }
                 },
                 {
                     "name": "Music_Effect",
-                    "options": {
-                        "groupBy": "Holder_ColorSet",
+                        "groupBy": "Holder",
                         "bypassDNA": true,
                         "hideInMetadata": false
-                    }
                 },
                 {
                     "name": "Base",
-                    "options": {
-                        "groupBy": "Holder_ColorSet",
+                        "groupBy": "Holder",
                         "bypassDNA": true,
                         "hideInMetadata": false
-                    }
                 }
             ]
         }

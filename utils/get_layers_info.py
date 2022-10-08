@@ -25,7 +25,7 @@ def get_dirlist_and_filelist(file_path):
     return layer_list, dir_list
 
 
-def get_layersinfo(base_path, layer_name):
+def get_layersinfo(base_path, layer_info):
     """
     It takes a file name and a base path, and returns a dictionary, which contains the
     file name as it's key and the layerinfo dictionary of it's value.
@@ -33,10 +33,11 @@ def get_layersinfo(base_path, layer_name):
     :param base_path: the path to the folder containing the file
     :param layer_name: the name of the file you want to get the layerinfo from
     """
-    current_path = Path.joinpath(base_path, layer_name)
+    current_path = Path.joinpath(base_path, layer_info["name"])
     layer_list, dir_list = get_dirlist_and_filelist(current_path)
     print(layer_list, dir_list)
     layerinfo_dict = {}  # a dictionary to store the layers infomation in base path
+    layerinfo_dict.update(layer_info)
     layerinfo_dict.update({
         "existSubdir": len(dir_list) > 0,
         "layer_list": [re.split("[#.]", layer)[0] for layer in layer_list],  # remove the suffix and weight to get purename
@@ -46,7 +47,7 @@ def get_layersinfo(base_path, layer_name):
         get_layerinfo_in_currentdir(current_path, layer_list, layerinfo_dict)
     if len(dir_list):
         get_layerinfo_in_subdir(current_path, dir_list, layerinfo_dict)
-    return {layer_name: layerinfo_dict}
+    return {layer_info["name"]: layerinfo_dict}
 
 
 def get_layerinfo_in_subdir(base_path, dir_list, layerinfo_dict):

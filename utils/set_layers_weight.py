@@ -8,17 +8,17 @@ def balance_layerweight(layerconfig_json, layerinfo_json):
     we need to redistribute the weights according to the proportion of the layers.
     Of course, this The function is up to the user to decide whether to use it or not.
 
-    The policy for adjusting the weights is quite sample: 
-    When the sum of the weights is more or less than the total number of NFTs, 
+    The policy for adjusting the weights is quite sample:
+    When the sum of the weights is more or less than the total number of NFTs,
     each layer's weight will be adjust to (total number * (weight / sum of the weights)).
-    When we do not specify weights for some layers, 
+    When we do not specify weights for some layers,
     the weights of these layers will be divided equally from the total number of NFTs minus the assigned weights
 
     详细规则：
     1. 作为Group信标图层的权重要等于以他为信标的图层们的权重之和
     2. 自由图层们的权重之和要相等（所谓自由图层是指 没有混合限制，完全随机的图层
 
-    图层均衡完成之后将会被遗弃放在一个list里面，函数返回权衡后的图层列表
+    图层均衡完成之后将会被一起放在一个list里面，函数返回权衡后的图层列表
 
     """
 
@@ -34,6 +34,10 @@ def balance_layerweight(layerconfig_json, layerinfo_json):
         print(layer_list)
         _sum, counter = count_all_weights(layerinfo_json[layer_name])
         print(_sum, counter)
+        if _sum == NFT_totalNumber and counter == layerinfo_json[layer_name]["layer_total_number"]:
+            print(str(layer_name ) + " PASS")
+        else:
+            print(str(layer_name ) + " ERROR")
         print( "_______________________________________________________\n\n")
 
     # layer_configs = load_lsyers_config(layer_config_path)
@@ -144,3 +148,6 @@ def count_all_weights(layer_info):
     layer_counter, layer_sum = count_layer_list_weights(layer_info)
     dir_counter, dir_sum = count_dir_list_weights(layer_info)
     return layer_counter + dir_counter, layer_sum + dir_sum
+
+def balance_layerweight_without_limit(layerinfo_json, _sum, counter):
+    print()

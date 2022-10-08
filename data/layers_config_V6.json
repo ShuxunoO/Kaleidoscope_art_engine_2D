@@ -1,65 +1,71 @@
 [
     {
         "Background": {
+            "name": "Background",
             "existSubdir": false,
             "layer_list": [
-                "Grassland",
                 "Mountains",
-                "Wave",
-                "Dune"
+                "Dune",
+                "Grassland",
+                "Wave"
             ],
             "dir_list": [],
             "layer_total_number": 4,
-            "Grassland": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Grassland#300.png",
-                "weight": 300
-            },
             "Mountains": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Mountains#100.png",
                 "weight": 100
             },
+            "Dune": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#250.png",
+                "weight": 250
+            },
+            "Grassland": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Grassland#300.png",
+                "weight": 300
+            },
             "Wave": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Wave#350.png",
                 "weight": 350
-            },
-            "Dune": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#200.png",
-                "weight": 200
             }
         },
         "Holder": {
+            "name": "Holder",
+            "isGroupSet": true,
             "existSubdir": false,
             "layer_list": [
+                "Green",
+                "White",
                 "Purple",
                 "Blue",
-                "White",
-                "Green",
                 "Orange"
             ],
             "dir_list": [],
             "layer_total_number": 5,
-            "Purple": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Purple.png",
-                "weight": -1
-            },
-            "Blue": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Blue.png",
-                "weight": -1
+            "Green": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Green#200.png",
+                "weight": 200
             },
             "White": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\White.png",
                 "weight": -1
             },
-            "Green": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Green.png",
+            "Purple": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Purple.png",
                 "weight": -1
             },
+            "Blue": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Blue#100.png",
+                "weight": 100
+            },
             "Orange": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Orange.png",
-                "weight": -1
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Orange#150.png",
+                "weight": 150
             }
         },
         "Eggshell": {
+            "name": "Eggshell",
+            "groupBy": "Holder",
+            "hideInMetadata": false,
             "existSubdir": true,
             "layer_list": [],
             "dir_list": [
@@ -238,6 +244,9 @@
             ]
         },
         "Pattern": {
+            "name": "Pattern",
+            "groupBy": "Holder",
+            "hideInMetadata": false,
             "existSubdir": true,
             "layer_list": [],
             "dir_list": [
@@ -650,6 +659,9 @@
             ]
         },
         "Stroke": {
+            "name": "Stroke",
+            "groupBy": "Holder",
+            "hideInMetadata": false,
             "existSubdir": true,
             "layer_list": [],
             "dir_list": [
@@ -708,6 +720,10 @@
             ]
         },
         "Halo": {
+            "name": "Halo",
+            "groupBy": "Holder",
+            "bypassDNA": true,
+            "hideInMetadata": false,
             "existSubdir": true,
             "layer_list": [],
             "dir_list": [
@@ -760,6 +776,10 @@
             ]
         },
         "Music_Effect": {
+            "name": "Music_Effect",
+            "groupBy": "Holder",
+            "bypassDNA": true,
+            "hideInMetadata": false,
             "existSubdir": true,
             "layer_list": [
                 "None"
@@ -908,6 +928,10 @@
             ]
         },
         "Base": {
+            "name": "Base",
+            "groupBy": "Holder",
+            "bypassDNA": true,
+            "hideInMetadata": false,
             "existSubdir": true,
             "layer_list": [],
             "dir_list": [

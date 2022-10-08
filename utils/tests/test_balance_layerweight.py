@@ -20,9 +20,3 @@ for index in range(len(layer_config)):
     layerconfig_json = layer_config[index]
     layerinfo_json = layer_info[index]
     balance_layerweight(layerconfig_json, layerinfo_json)
-
-
-
-
-
-
