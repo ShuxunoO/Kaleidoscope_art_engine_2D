@@ -32,13 +32,22 @@ def balance_layerweight(layerconfig_json, layerinfo_json):
         print(dir_list)
         layer_list = layerinfo_json[layer_name]["layer_list"]
         print(layer_list)
-        _sum, counter = count_all_weights(layerinfo_json[layer_name])
-        print(_sum, counter)
-        if _sum == NFT_totalNumber and counter == layerinfo_json[layer_name]["layer_total_number"]:
-            print(str(layer_name ) + " PASS")
+        # _sum, counter = count_all_weights(layerinfo_json[layer_name])
+        # print(_sum, counter)
+        if "groupBy" not in layerinfo_json[layer_name]:  # 表明该图层不受任何限制
+            _sum, counter = count_layer_list_weights(layerinfo_json[layer_name])
+            if _sum == NFT_totalNumber and counter == layerinfo_json[layer_name]["layer_total_number"]:
+                print(str(layer_name ) + " PASS")
+            else:
+                print(str(layer_name ) + " ERROR")
+                # TODO：根据 NFT_totalNumber，  _sum, counter的值对当前图层做均衡
+            print( "_______________________________________________________\n\n")
         else:
-            print(str(layer_name ) + " ERROR")
-        print( "_______________________________________________________\n\n")
+            #TODO：1.根据 dir_list 去限制他图层那里去拿总权重
+            # 2. 统计一下 sum  和 counter的数值是不是正好，如果不是就用总权重去给当前子文件夹做均衡
+            print()
+        # 每一层图层所有layer_list的权重之和必须相等
+
 
     # layer_configs = load_lsyers_config(layer_config_path)
     # for config_item in layer_configs:
@@ -148,6 +157,14 @@ def count_all_weights(layer_info):
     layer_counter, layer_sum = count_layer_list_weights(layer_info)
     dir_counter, dir_sum = count_dir_list_weights(layer_info)
     return layer_counter + dir_counter, layer_sum + dir_sum
+
+
+
+def balance_layerweight_in_dir(_SUM, COUNTER ):
+    """
+    
+    
+    """
 
 def balance_layerweight_without_limit(layerinfo_json, _sum, counter):
     print()
