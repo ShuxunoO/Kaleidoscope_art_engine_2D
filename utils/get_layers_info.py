@@ -110,7 +110,7 @@ def get_purename_and_weight(layer_name):
 
     name_weight_list = layer_name.split('#')
     purename = name_weight_list[0]
-    if len(name_weight_list) == 1:
+    if len(name_weight_list) == 1 or int(name_weight_list[1]) <= 0:
         weight = -1  # user doesn't assign a weight of this layer
     else:
         weight = int(name_weight_list[1])
