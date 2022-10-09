@@ -46,11 +46,11 @@ def get_layersinfo(base_path, layer_info):
     if len(layer_list):
         get_layerinfo_in_currentdir(current_path, layer_list, layerinfo_dict)
     if len(dir_list):
-        get_layerinfo_in_subdir(current_path, dir_list, layerinfo_dict)
+        get_layerinfo_in_subdir(current_path, layerinfo_dict)
     return {layer_info["name"]: layerinfo_dict}
 
 
-def get_layerinfo_in_subdir(base_path, dir_list, layerinfo_dict):
+def get_layerinfo_in_subdir(base_path, layerinfo_dict):
 
     """
     It takes a base path and a directory name, and returns a dictionary, which contains the
@@ -58,21 +58,22 @@ def get_layerinfo_in_subdir(base_path, dir_list, layerinfo_dict):
     When "existSubdir" is True, it means there existing subdirectory in current base path.
 
     :param base_path: the path of the directory where the subdirectories are located
-    :param dir_name: the name of the subdirectory
+    :param layerinfo_dict: a dictionary to store the information
     """
     layer_list, dir_list = get_dirlist_and_filelist(base_path)
     for dir_item in dir_list:
         sub_path = Path(base_path.joinpath (dir_item)).resolve()
         sublayer_list = os.listdir(sub_path)
-        sublayer_info_list = []
+        sublayer_info_dict = {}
+        sublayer_info_dict.update({"layer_list": [re.split("[#.]", layer)[0] for layer in os.listdir(sub_path)]})
         for layer in sublayer_list:
             layer_name = layer[:-4]  # remove the suffix
             name, weight = get_purename_and_weight(layer_name)
-            sublayer_info_list.append({name: {
+            sublayer_info_dict.update({name: {
                 "path": str(sub_path.joinpath(layer)),
                 "weight": weight
             }})
-        layerinfo_dict.update({dir_item : sublayer_info_list})
+        layerinfo_dict.update({dir_item : sublayer_info_dict})
 
 
 

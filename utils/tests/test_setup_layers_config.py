@@ -30,7 +30,7 @@ def setup_layers_config(layer_configurations):
             layer_info_subdict.update(get_layersinfo(PATH.LAYER_PATH, layer))
         layers_info.append(layer_info_subdict)
     # print(layers_info)
-    save_json(PATH.DATA_PATH, "layers_config_V6", layers_info)
+    save_json(PATH.DATA_PATH, "layers_config_V7", layers_info)
 
 
 setup_layers_config(layer_configurations)

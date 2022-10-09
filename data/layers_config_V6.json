@@ -4,28 +4,28 @@
             "name": "Background",
             "existSubdir": false,
             "layer_list": [
-                "Wave",
                 "Grassland",
-                "Mountains",
-                "Dune"
+                "Wave",
+                "Dune",
+                "Mountains"
             ],
             "dir_list": [],
             "layer_total_number": 4,
-            "Wave": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Wave#350.png",
-                "weight": 350
-            },
             "Grassland": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Grassland#300.png",
                 "weight": 300
             },
-            "Mountains": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Mountains#100.png",
-                "weight": 100
+            "Wave": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Wave#350.png",
+                "weight": 350
             },
             "Dune": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#250.png",
                 "weight": 250
+            },
+            "Mountains": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Mountains#100.png",
+                "weight": 100
             }
         },
         "Holder": {
@@ -34,10 +34,10 @@
             "existSubdir": false,
             "layer_list": [
                 "Green",
-                "Purple",
-                "White",
                 "Orange",
-                "Blue"
+                "Purple",
+                "Blue",
+                "White"
             ],
             "dir_list": [],
             "layer_total_number": 5,
@@ -45,21 +45,21 @@
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Green#200.png",
                 "weight": 200
             },
-            "Purple": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Purple.png",
-                "weight": -1
-            },
-            "White": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\White.png",
-                "weight": -1
-            },
             "Orange": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Orange#150.png",
                 "weight": 150
             },
+            "Purple": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Purple.png",
+                "weight": -1
+            },
             "Blue": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Blue#100.png",
                 "weight": 100
+            },
+            "White": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\White.png",
+                "weight": -1
             }
         },
         "Eggshell": {

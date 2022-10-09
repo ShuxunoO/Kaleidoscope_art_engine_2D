@@ -1,7 +1,6 @@
 
-def balance_layerweight(layerconfig_json, layerinfo_json):
 
-    """
+"""
     Under normal circumstances,
     the sum of the weights of the layers in a layer folder should be equal to the total number of NFTs we set,
     but when the total number is more than or less than the total number of NFTs,
@@ -20,78 +19,23 @@ def balance_layerweight(layerconfig_json, layerinfo_json):
 
     图层均衡完成之后将会被一起放在一个list里面，函数返回权衡后的图层列表
 
-    """
+"""
+def balance_layerweight(layerconfig_json, layerinfo_json):
+
     NFT_totalNumber = layerconfig_json["totalNumber"]
     layers = layerconfig_json["layersOrder"]
-
     for layer in layers:
         layer_name = layer["name"]
         layer_info = layerinfo_json[layer_name]
         print(layer_name)
-
-
         if layer_info["existSubdir"] == False:  # 表明该图层不受任何限制
             balance_layerweight_in_dir(NFT_totalNumber, layer_info)
         else:
-            balance_layerweight_with_subdirs(layerinfo_json, layer_info)
+            balance_layerweight_in_subdirs(layerinfo_json, layer_info)
             #TODO：1.根据 dir_list 去限制他图层那里去拿总权重
             # 2. 统计一下 sum  和 counter的数值是不是正好，如果不是就用总权重去给当前子文件夹做均衡
             print()
         # 每一层图层所有layer_list的权重之和必须相等
-
-
-    # layer_configs = load_lsyers_config(layer_config_path)
-    # for config_item in layer_configs:
-    #     print(type(config_item).__name__ == "dict")
-    #     for key, value in config_item.items():
-    #         print("key: ", key)
-    #         print("value: ", value)
-
-
-"""
-
-    Introduction:The operation of getting the total number of weights may seem strange (or even verbose)
-    but please refer to a sample layer information to understand
-
-            "Layer1": {
-            "existSubdir": true,
-            "layer_list": [
-                "layer_name1"
-            ],
-            "dir_list": [
-                "subdir1",
-                "subdir2",
-                "subdir3",
-                "subdir4",
-                "subdir5"
-            ],
-            "layer_total_number": xxx,
-            "layer_name1": {
-                "path": "xxx",
-                "weight": -1
-            },
-            "Blue": [
-                {
-                    "sublayer_name1": {
-                        "path": "xxx",
-                        "weight": 100
-                    }
-                },
-                {
-                    "sublayer_name2": {
-                        "path": "xxx",
-                        "weight": -1
-                    }
-                }
-                .
-                .
-                .
-                .
-                .
-                .
-                    ]
-
-    """
 
 def count_weights_in_layer_list(layer_info):
     """
@@ -107,8 +51,8 @@ def count_weights_in_layer_list(layer_info):
     if len(layer_list) > 0:
         for layer in layer_list:  # iterate over the layer_list
             if layer_info[layer]["weight"] != -1:
-                _sum = _sum + layer_info[layer]["weight"]
-                counter = counter + 1
+                _sum += layer_info[layer]["weight"]
+                counter += 1
     return _sum, counter
 
 
@@ -119,8 +63,8 @@ def count_weights_in_subdir(subdir_info):
         layer_info = list(layer.values())
         weight = layer_info[0]["weight"]
         if weight != -1:
-            _sum = _sum + weight
-            counter = counter + 1
+            _sum += weight
+            counter += 1
     return _sum, counter
 
 
@@ -144,15 +88,15 @@ def balance_layerweight_in_dir(_SUM, layer_info):
             if layer_info[layer]["weight"] == -1:
                 if remaining_counter > 1:
                     layer_info[layer]["weight"] = average_value
-                    remaining_sum = remaining_sum - average_value
-                    remaining_counter = remaining_counter -1
+                    remaining_sum -= average_value
+                    remaining_counter -= 1
                 else:
                     layer_info[layer]["weight"] = remaining_sum
     # print(layer_info)
     return layer_info
 
 
-def balance_layerweight_with_subdirs(layerinfo_json, layer_info):
+def balance_layerweight_in_subdirs(layerinfo_json, layer_info):
     dir_list = layer_info["dir_list"]
     for dir_item in dir_list:
         # 拿到分组层的名字
@@ -164,9 +108,7 @@ def balance_layerweight_with_subdirs(layerinfo_json, layer_info):
 
 
 def balance_layerweight_in_subdir(_SUM, subdir_info):
-    """
 
-    """
     # 计算当前子文件夹中图层的权重之和以及赋权图层的数量
     _sum, counter = count_weights_in_subdir(subdir_info)
     print(_sum, counter)
@@ -176,3 +118,11 @@ def balance_layerweight_in_subdir(_SUM, subdir_info):
     else:
         print("subdir" + " Sum of weights does not match, reallocating……")
         print("________________________________________________________________\n\n")
+        remaining_sum = _SUM - _sum
+        remaining_counter = len(subdir_info) - counter
+        average_value = remaining_sum // remaining_counter
+        for layer in subdir_info:
+            weight = list(layer.values())[0]["weight"]
+            if weight == -1:
+                weight = average_value
+

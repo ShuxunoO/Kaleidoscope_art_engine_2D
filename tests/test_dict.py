@@ -25,5 +25,4 @@ layer_list = [
                 }
 ]
 
-for item in layer_list:
-    print(list(item.values())[0]["weight"])
+print(list(layer_list[0]))
