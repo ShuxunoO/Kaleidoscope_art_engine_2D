@@ -76,6 +76,7 @@
             "specificCombination":{
                 "Blue_Rhythm":"Eggshell$Blue_Green"
             },
+            "do_Balance": true,
             "layersOrder": [
                 {
                     "name": "Background"
