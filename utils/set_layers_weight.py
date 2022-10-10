@@ -47,8 +47,6 @@ def balance_layerweight_in_dir(_SUM, layer_info):
     if _sum == _SUM and counter == len(layer_list):  # 所有权重都已经设计好了
         print(str(layer_info["name"]) + " layer: Sum of weights match, Pass")
         print("_" * 30 + "\n\n")
-
-
     else:
         print(str(layer_info["name"]) + " layer: Sum of weights does not match, reallocating……")
         print("_" * 30 + "\n\n")
