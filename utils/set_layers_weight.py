@@ -43,7 +43,7 @@ def balance_layerweight(layerconfig_json, layerinfo_json):
             #TODO：1.根据 dir_list 去限制他图层那里去拿总权重
             # 2. 统计一下 sum  和 counter的数值是不是正好，如果不是就用总权重去给当前子文件夹做均衡
             print()
-        # 每一层图层所有layer_list的权重之和必须相等
+        每一层图层所有layer_list的权重之和必须相等
 
 
 def balance_layerweight_in_dir(_SUM, layer_info):
@@ -60,12 +60,29 @@ def balance_layerweight_in_dir(_SUM, layer_info):
         print("_" * 30 + "\n\n")
         remaining_sum = _SUM - _sum
         remaining_counter = len(layer_list) - counter
-        if remaining_sum < remaining_counter:
-            print("不够分了，请重新调整权重")
+        try:
+            if remaining_sum < remaining_counter:
+                raise exceptions.Remaining_Sum_Less_Than_Remaining_Counter_ERROR(remaining_sum, layer_info["name"], remaining_counter)
+        except exceptions.Remaining_Sum_Less_Than_Remaining_Counter_ERROR as _ERROR1:
+            logging.error(traceback.format_exc())
+            print(_ERROR)
             sys.exit(1)
-        if remaining_counter == 0:
-            redistribute_weights_for_all_layers(_SUM, layer_info) # 这里要抛出个异常1
-        redistribute_weights_for_no_weight_layers(remaining_sum, remaining_counter, layer_info) # 这里要抛出个异常2
+
+        try:
+            if remaining_counter == 0 or remaining_counter == len(layer_list):
+                raise exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(layer_info["name"], _sum, _SUM)
+        except exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR as _ERROR2:
+            logging.error(traceback.format_exc())
+            print(_ERROR2)
+            redistribute_weights_for_all_layers(_SUM, layer_info)
+
+        try:
+            if _sum != _SUM:
+                raise exceptions.Exit_Layers_Without_Weights_ERROR(layer_info["name"], _SUM)
+        except  exceptions.Exit_Layers_Without_Weights_ERROR as _ERROR3:
+            logging.error(traceback.format_exc())
+            print(_ERROR3)
+            redistribute_weights_for_no_weight_layers(remaining_sum, remaining_counter, layer_info) # 这里要抛出个异常2
     return layer_info
 
 
@@ -86,14 +103,11 @@ def count_weights_in_layer_list(_SUM, layer_info):
             if weight != -1:
                 try:
                     if weight >= _SUM:
-                        raise exceptions.Current_Weight_Greater_Than_Given_Weight(layer_info["name"], layer, weight, _SUM)
-                        weight %= _SUM
-                        if weight == 0:
-                            weight = random.randint(1, _SUM // len(layerlist))
-                        layer_info[layer]["weight"] = weight
+                        raise exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(layer_info["name"], layer, weight, _SUM)
                     _sum += weight
                     counter += 1
-                except Current_Weight_Greater_Than_Given_Weight as _ERROR:
+                except exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR as _ERROR:
+                    layer_info[layer]["weight"] = -1
                     logging.error(traceback.format_exc())
                     print(_ERROR)
     return _sum, counter
@@ -109,7 +123,7 @@ def redistribute_weights_for_all_layers(_SUM, layer_info):
             remaining_counter -= 1
         else:
             layer_info[layer]["weight"] = remaining_sum
-    # print(layer_info)
+    print(layer_info)
 
 
 def redistribute_weights_for_no_weight_layers(remaining_sum, remaining_counter, layer_info):
@@ -123,12 +137,12 @@ def redistribute_weights_for_no_weight_layers(remaining_sum, remaining_counter, 
                 remaining_counter -= 1
             else:
                 layer_info[layer]["weight"] = remaining_sum
-    # print(layer_info)
+    print(layer_info)
 
 def balance_layerweight_in_subdirs(layerinfo_json, layer_info):
     dir_list = layer_info["dir_list"]
     for dir_item in dir_list:
-        # 拿到分组层的名字
+        # 拿到分组信标层的名字
         layer_beacon = layer_info["groupBy"]
         # 拿到拿到分组层的名字权重
         _SUM = layerinfo_json[layer_beacon][dir_item]["weight"]
@@ -164,6 +178,7 @@ def count_weights_in_subdir(subdir_info):
     layer_list = subdir_info["layer_list"]
     counter = 0  # Accumulate the number of layers in subdirctors that have been assigned weights
     _sum = 0  # the sum of layers' weights in subdirctors that have been assigned weights
+    
     for layer in layer_list:
         weight = subdir_info[layer]["weight"]
         if weight != -1:
