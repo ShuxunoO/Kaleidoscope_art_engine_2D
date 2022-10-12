@@ -1,5 +1,5 @@
 {
-    "namePrefix": " BanaCat",
+    "namePrefix": "BanaCat", 
     "description": "Description",
     "baseUri": "ipfs://xxx",
     "rarityDelimiter": "#",
@@ -11,17 +11,10 @@
         "height": 1024,
         "smoothing": false
     },
-    "background": {
-        "generate": false,
-        "brightness": "90%",
-        "static": false,
-        "default": "#000000"
-    },
     "dnaSettings": {
         "saveDnaHistory": false,
         "loadDnaHistory": false,
-        "loadDnaHistoryName": "",
-        "startId": 1
+        "loadDnaHistoryName": ""
     },
     "metadataSettings": {
         "saveDnaInMetadata": true,
@@ -77,6 +70,7 @@
                 "Blue_Rhythm":"Eggshell$Blue_Green"
             },
             "do_Balance": true,
+            "startId": 1,
             "layersOrder": [
                 {
                     "name": "Background"

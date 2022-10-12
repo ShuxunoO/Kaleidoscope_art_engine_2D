@@ -1,0 +1,10 @@
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 93, in count_weights_in_layer_list
+    raise Current_Weight_Greater_Than_Given_Weight(layer_info["name"], layer, weight, 1000)
+exceptions.Current_Weight_Greater_Than_Given_Weight: The weight of Dune layer in the Background is 1200 , which is greater than the given weight of 1000 set 1200 = 1200 % 1000
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 93, in count_weights_in_layer_list
+    raise Current_Weight_Greater_Than_Given_Weight(layer_info["name"], layer, weight, 1000)
+exceptions.Current_Weight_Greater_Than_Given_Weight: The weight of Dune layer in the Background is 1200 , which is greater than the given weight of 1000, going to set weight = 1200 % 1000
+

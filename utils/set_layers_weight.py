@@ -1,4 +1,12 @@
-from 
+import traceback
+import logging
+import sys
+import exceptions
+sys.path.append("..")
+from CONST_ENV import ENV_PATH as PATH
+
+
+logging.basicConfig(filename= "../../src/balance_weights.log")
 
 """
     Under normal circumstances,
@@ -41,7 +49,7 @@ def balance_layerweight(layerconfig_json, layerinfo_json):
 def balance_layerweight_in_dir(_SUM, layer_info):
     layer_list = layer_info["layer_list"]
     print(layer_list)
-    _sum, counter = count_weights_in_layer_list(layer_info)
+    _sum, counter = count_weights_in_layer_list(_SUM, layer_info)
     print("Sum of weights: ", _sum)
     print("Number of weighted layers: ", counter)
     if _sum == _SUM and counter == len(layer_list):  # 所有权重都已经设计好了
@@ -51,21 +59,17 @@ def balance_layerweight_in_dir(_SUM, layer_info):
         print(str(layer_info["name"]) + " layer: Sum of weights does not match, reallocating……")
         print("_" * 30 + "\n\n")
         remaining_sum = _SUM - _sum
-        remaining_counter = layer_info["layer_total_number"] - counter
-        average_value = remaining_sum // remaining_counter
-        for layer in layer_list:
-            if layer_info[layer]["weight"] == -1:
-                if remaining_counter > 1:
-                    layer_info[layer]["weight"] = average_value
-                    remaining_sum -= average_value
-                    remaining_counter -= 1
-                else:
-                    layer_info[layer]["weight"] = remaining_sum
-    # print(layer_info)
+        remaining_counter = len(layer_list) - counter
+        if remaining_sum < remaining_counter:
+            print("不够分了，请重新调整权重")
+            sys.exit(1)
+        if remaining_counter == 0:
+            redistribute_weights_for_all_layers(_SUM, layer_info) # 这里要抛出个异常1
+        redistribute_weights_for_no_weight_layers(remaining_sum, remaining_counter, layer_info) # 这里要抛出个异常2
     return layer_info
 
 
-def count_weights_in_layer_list(layer_info):
+def count_weights_in_layer_list(_SUM, layer_info):
     """
     It iterates over the layer_list and accumulates the sum of the weights of the layers that have been
     assigned weights
@@ -78,11 +82,48 @@ def count_weights_in_layer_list(layer_info):
     _sum = 0  # the sum of layers' weights that have been assigned weights
     if len(layer_list) > 0:
         for layer in layer_list:  # iterate over the layer_list
-            if layer_info[layer]["weight"] != -1:
-                _sum += layer_info[layer]["weight"]
-                counter += 1
+            weight = layer_info[layer]["weight"]
+            if weight != -1:
+                try:
+                    if weight >= _SUM:
+                        raise exceptions.Current_Weight_Greater_Than_Given_Weight(layer_info["name"], layer, weight, _SUM)
+                        weight %= _SUM
+                        if weight == 0:
+                            weight = random.randint(1, _SUM // len(layerlist))
+                        layer_info[layer]["weight"] = weight
+                    _sum += weight
+                    counter += 1
+                except Current_Weight_Greater_Than_Given_Weight as _ERROR:
+                    logging.error(traceback.format_exc())
+                    print(_ERROR)
     return _sum, counter
 
+def redistribute_weights_for_all_layers(_SUM, layer_info):
+    layer_list = layer_info["layer_list"]
+    remaining_counter = len(layer_list)
+    average_value = remaining_sum // remaining_counter
+    for layer in layer_list:
+        if remaining_counter > 1:
+            layer_info[layer]["weight"] = average_value
+            remaining_sum -= average_value
+            remaining_counter -= 1
+        else:
+            layer_info[layer]["weight"] = remaining_sum
+    # print(layer_info)
+
+
+def redistribute_weights_for_no_weight_layers(remaining_sum, remaining_counter, layer_info):
+    layer_list = layer_info["layer_list"]
+    average_value = remaining_sum // remaining_counter
+    for layer in layer_list:
+        if layer_info[layer]["weight"] == -1:
+            if remaining_counter > 1:
+                layer_info[layer]["weight"] = average_value
+                remaining_sum -= average_value
+                remaining_counter -= 1
+            else:
+                layer_info[layer]["weight"] = remaining_sum
+    # print(layer_info)
 
 def balance_layerweight_in_subdirs(layerinfo_json, layer_info):
     dir_list = layer_info["dir_list"]
