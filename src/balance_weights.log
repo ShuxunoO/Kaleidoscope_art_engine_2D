@@ -1,45 +1,15 @@
 ERROR:root:Traceback (most recent call last):
-  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 106, in count_weights_in_layer_list
-    raise exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(layer_info["name"], layer, weight, _SUM)
-exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR: The weight of Dune layer in Background is 1200 , which is greater than the given weight of 1000, going to set weight = 1200 % 1000
-
-ERROR:root:Traceback (most recent call last):
-  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 81, in balance_layerweight_in_dir
-    raise exceptions.Exit_Layers_Without_Weights_ERROR(layer_info["name"], _SUM)
-exceptions.Exit_Layers_Without_Weights_ERROR: There are unweighted layers in folder Background They will equally share the given weights of 1000
-
-ERROR:root:Traceback (most recent call last):
-  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 81, in balance_layerweight_in_dir
-    raise exceptions.Exit_Layers_Without_Weights_ERROR(layer_info["name"], _SUM)
-exceptions.Exit_Layers_Without_Weights_ERROR: There are unweighted layers in folder Holder They will equally share the given weights of 1000
-
-ERROR:root:Traceback (most recent call last):
-  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 106, in count_weights_in_layer_list
-    raise exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(layer_info["name"], layer, weight, _SUM)
-exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR: The weight of Dune layer in Background is 1200 , which is greater than the given weight of 1000, going to set weight = 1200 % 1000
-
-ERROR:root:Traceback (most recent call last):
-  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 81, in balance_layerweight_in_dir
-    raise exceptions.Exit_Layers_Without_Weights_ERROR(layer_info["name"], _SUM)
-exceptions.Exit_Layers_Without_Weights_ERROR: There are unweighted layers in folder Background They will equally share the given weights of 1000
-
-ERROR:root:Traceback (most recent call last):
-  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 81, in balance_layerweight_in_dir
-    raise exceptions.Exit_Layers_Without_Weights_ERROR(layer_info["name"], _SUM)
-exceptions.Exit_Layers_Without_Weights_ERROR: There are unweighted layers in folder Holder They will equally share the given weights of 1000
-
-ERROR:root:Traceback (most recent call last):
-  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 106, in count_weights_in_layer_list
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 114, in count_weights_in_layer_list
     raise exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(layer_info["name"], layer, weight, _SUM)
 exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR: The weight of Dune layer in Background is 1200 , which is greater than the given weight of 1000, going to set weight = -1
 
 ERROR:root:Traceback (most recent call last):
-  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 81, in balance_layerweight_in_dir
-    raise exceptions.Exit_Layers_Without_Weights_ERROR(layer_info["name"], _SUM)
-exceptions.Exit_Layers_Without_Weights_ERROR: There are unweighted layers in folder Background They will equally share the given weights of 1000
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 89, in balance_weight_in_dir
+    raise exceptions.Exit_Some_Layers_Without_Weights_ERROR(layer_info["name"], remaining_sum)
+exceptions.Exit_Some_Layers_Without_Weights_ERROR: There are unweighted layers in folder Background They will equally share the given weights of 250
 
 ERROR:root:Traceback (most recent call last):
-  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 81, in balance_layerweight_in_dir
-    raise exceptions.Exit_Layers_Without_Weights_ERROR(layer_info["name"], _SUM)
-exceptions.Exit_Layers_Without_Weights_ERROR: There are unweighted layers in folder Holder They will equally share the given weights of 1000
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 65, in balance_weight_in_dir
+    raise exceptions.Remaining_Sum_Less_Than_Remaining_Counter_ERROR(remaining_sum, layer_info["name"], remaining_counter)
+exceptions.Remaining_Sum_Less_Than_Remaining_Counter_ERROR: The remaining weight in Holder is 0, which is less than remaining counter 3. program has no idea to redistribute weights for the layers. Please allocate the weights of the layers reasonably!  System exit.
 

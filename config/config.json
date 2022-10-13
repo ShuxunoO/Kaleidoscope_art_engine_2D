@@ -1,5 +1,5 @@
 {
-    "namePrefix": "BanaCat", 
+    "namePrefix": "BanaCat",
     "description": "Description",
     "baseUri": "ipfs://xxx",
     "rarityDelimiter": "#",

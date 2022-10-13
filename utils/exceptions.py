@@ -20,11 +20,12 @@ class Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(Exception):
 class Remaining_Sum_Less_Than_Remaining_Counter_ERROR(Exception):
     def __init__(self, remaining_sum, dir_name, remaining_counter):
         self.remaining_sum = remaining_sum
+        self.dir_name = dir_name
         self.remaining_counter = remaining_counter
 
     def __str__(self):
-        ERROR_INFO = "The remaining sum in " + self.dir_name + " is "+ str(self.remaining_sum) + ", which is less than remaining counter " + self.remaining_counter + \
-        ". I have no idea to redistribute weights for the layers. System exit."
+        ERROR_INFO = "The remaining weight in " + self.dir_name + " is "+ str(self.remaining_sum) + ", which is less than remaining counter " + str(self.remaining_counter) + \
+        ". program has no idea to redistribute weights for the layers. Please allocate the weights of the layers reasonably!  System exit."
         return ERROR_INFO
 
 
@@ -40,7 +41,16 @@ class Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(Exception):
         ", going to redistribute weights for all layers"
         return ERROR_INFO
 
-class Exit_Layers_Without_Weights_ERROR(Exception):
+class All_Layers_Are_Not_Weighted_ERROR(Exception):
+    def __init__(self, dir_name):
+        self.dir_name = dir_name
+
+    def __str__(self):
+        ERROR_INFO = "All the layers in " + self.dir_name + " are not weighted, "+\
+            "so program is going to redistribute weights for all layers"
+        return ERROR_INFO
+
+class Exit_Some_Layers_Without_Weights_ERROR(Exception):
     def __init__(self, dir_name, given_weight):
         self.dir_name = dir_name
         self.given_weight = given_weight
