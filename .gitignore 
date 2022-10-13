@@ -1,3 +1,5 @@
-
-/layers/
-/data/
+/layers
+/data
+/src
+/.idea
+/__pycache__

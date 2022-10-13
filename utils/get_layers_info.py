@@ -42,7 +42,8 @@ def get_layersinfo(base_path, layer_info):
         "existSubdir": len(dir_list) > 0,
         "layer_list": [re.split("[#.]", layer)[0] for layer in layer_list],  # remove the suffix and weight to get purename
         "dir_list": dir_list,
-        "layer_total_number": get_fileNum(current_path)})
+        "layer_total_number": get_fileNum(current_path),
+        "sum_of_weights": "unknown"})
     if len(layer_list):
         get_layerinfo_in_currentdir(current_path, layer_list, layerinfo_dict)
     if len(dir_list):
@@ -71,8 +72,8 @@ def get_layerinfo_in_currentdir(file_path, layer_name, layerinfo_dict):
         }
         layerinfo_dict.update({name: layer_info})
 
-def get_layerinfo_in_subdir(dir_name, base_path, layerinfo_dict):
 
+def get_layerinfo_in_subdir(dir_name, base_path, layerinfo_dict):
     """
     It takes a base path and a directory name, and returns a dictionary, which contains the
     dirctory name as it's key and the layerinfo dictionary of it's value.
@@ -83,11 +84,13 @@ def get_layerinfo_in_subdir(dir_name, base_path, layerinfo_dict):
     """
     layer_list, dir_list = get_dirlist_and_filelist(base_path)
     for dir_item in dir_list:
-        sub_path = Path(base_path.joinpath (dir_item)).resolve()
+        sub_path = Path(base_path.joinpath(dir_item)).resolve()
         sublayer_list = os.listdir(sub_path)
         sublayer_info_dict = {}
-        sublayer_info_dict.update({"name":dir_name + "-" + dir_item})
-        sublayer_info_dict.update({"layer_list": [re.split("[#.]", layer)[0] for layer in os.listdir(sub_path)]})
+        sublayer_info_dict.update({"name": dir_name + "-" + dir_item,
+                                   "sum_of_weights": "unknown"})
+        sublayer_info_dict.update(
+            {"layer_list": [re.split("[#.]", layer)[0] for layer in os.listdir(sub_path)]})
         for layer in sublayer_list:
             layer_name = layer[:-4]  # remove the suffix
             name, weight = get_purename_and_weight(layer_name)
@@ -95,7 +98,7 @@ def get_layerinfo_in_subdir(dir_name, base_path, layerinfo_dict):
                 "path": str(sub_path.joinpath(layer)),
                 "weight": weight
             }})
-        layerinfo_dict.update({dir_item : sublayer_info_dict})
+        layerinfo_dict.update({dir_item: sublayer_info_dict})
 
 
 def get_purename_and_weight(layer_name):

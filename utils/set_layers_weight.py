@@ -36,14 +36,10 @@ def balance_layerweight(layerconfig_json, layerinfo_json):
         layer_name = layer["name"]
         layer_info = layerinfo_json[layer_name]
         print(layer_name)
-        if layer_info["existSubdir"] == False:  # 表明该图层不受任何限制
+        if layer_info["existSubdir"] == False:  # 表明该图层没有所属的信标图层
             balance_weight_in_dir(NFT_totalNumber, layer_info)
         else:
             balance_layerweight_in_subdirs(layerinfo_json, layer_info)
-            #TODO：1.根据 dir_list 去限制他图层那里去拿总权重
-            # 2. 统计一下 sum  和 counter的数值是不是正好，如果不是就用总权重去给当前子文件夹做均衡
-            print()
-        #每一层图层所有layer_list的权重之和必须相等
 
 
 def balance_weight_in_dir(_SUM, layer_info):
@@ -90,18 +86,25 @@ def balance_weight_in_dir(_SUM, layer_info):
         except  exceptions.Exit_Some_Layers_Without_Weights_ERROR as _ERROR4:
             logging.error(traceback.format_exc())
             print(_ERROR4)
-            redistribute_weights_for_some_noweight_layers(remaining_sum, remaining_counter, layer_info) # 这里要抛出个异常2
+            redistribute_weights_for_some_noweight_layers(remaining_sum, remaining_counter, layer_info)
+
+    _sum, counter = count_weights_in_layer_list(_SUM, layer_info)
+    layer_info["sum_of_weights"] = _sum
     return layer_info
 
 
+def count_weights_in_dir(_SUM, subdir_info):
+    dir_list = subdir_info["dir_list"]
+    _sum = 0
+    counter = 0
+    for dir_item in dir_list:
+        temp_sum, temp_counter = count_weights_in_layer_list(_SUM, subdir_info[dir_item])
+        _sum += temp_sum
+        counter += temp_counter
+    return _sum, counter
+
+
 def count_weights_in_layer_list(_SUM, layer_info):
-    """
-    It iterates over the layer_list and accumulates the sum of the weights of the layers that have been
-    assigned weights
-    
-    :param layer_info: a dictionary that contains the information of all layers in the model
-    :return: The sum and the number of layers of the weights of the layers that have been assigned weights
-    """
     layer_list = layer_info["layer_list"]
     counter = 0  # Accumulate the number of layers that have been assigned weights
     _sum = 0  # the sum of layers' weights that have been assigned weights
@@ -163,47 +166,10 @@ def redistribute_weights_for_some_noweight_layers(remaining_sum, remaining_count
 
 def balance_layerweight_in_subdirs(layerinfo_json, layer_info):
     dir_list = layer_info["dir_list"]
-    for dir_item in dir_list:
-        # 拿到分组信标层的名字
-        layer_beacon = layer_info["groupBy"]
-        # 拿到拿到分组层的名字权重
-        _SUM = layerinfo_json[layer_beacon][dir_item]["weight"]
-        print("layer_beacon weight: ", layer_beacon, dir_item, _SUM)
-        balance_weight_in_dir(_SUM, layer_info[dir_item])
+    # 如果自身作为信标图层，则按照 balance_weight_in_dir（）的方式进行均衡
 
+    # 如果有所属的信标图层，则先读取到信标图层对应文件夹的权重之和，然后根据这个权重进行重新分配
 
-# def balance_layerweight_in_subdir(_SUM, subdir_info):
-#     # 计算当前子文件夹中图层的权重之和以及赋权图层的数量
-#     _sum, counter = count_weights_in_subdir(subdir_info)
-#     print(_sum, counter)
-#     if _sum == _SUM and counter == len(layer_info[dir_item]):
-#         print(str(dir_item) + " layer: Sum of weights match, Pass")
-#         print("_" * 30 + "\n\n")
-#     else:
-#         print("subdir" + " Sum of weights does not match, reallocating……")
-#         print("_" * 30 + "\n\n")
-#         remaining_sum = _SUM - _sum
-#         remaining_counter = len(subdir_info["layer_list"]) - counter
-#         average_value = remaining_sum // remaining_counter
-#         layer_list = subdir_info["layer_list"]
-#         for layer in layer_list:
-#             if subdir_info[layer]["weight"] == -1:
-#                 if remaining_counter > 1:
-#                     subdir_info[layer]["weight"] = average_value
-#                     remaining_sum -= average_value
-#                     remaining_counter -= 1
-#                 else:
-#                     subdir_info[layer]["weight"] = remaining_sum
+    # 如果如果有所属的信标图层，但同时自己又含有一些信标图层不含有的分类，则按照常规方法进行均衡
 
-
-def count_weights_in_subdir(subdir_info):
-    layer_list = subdir_info["layer_list"]
-    counter = 0  # Accumulate the number of layers in subdirctors that have been assigned weights
-    _sum = 0  # the sum of layers' weights in subdirctors that have been assigned weights
-    for layer in layer_list:
-        weight = subdir_info[layer]["weight"]
-        if weight != -1:
-            _sum += weight
-            counter += 1
-    return _sum, counter
-
+    # 均衡之后要把新的权重之和放在本图层的json信息中
