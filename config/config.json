@@ -61,7 +61,7 @@
     "processCount": 10,
     "layerConfigurations": [
         {
-            "totalNumber": 1000,
+            "totalNumber": 5000,
             "conflictElements": {
                 "Base$Blue_Gear" : "Eggshell$Purple_Pink, Pattern$Purple_Block, Music_Effect$Green_Firefly, Music_Effect$Purple_Star",
                 "Pattern$Green_Block" : "Music_Effect$Purple_Star"

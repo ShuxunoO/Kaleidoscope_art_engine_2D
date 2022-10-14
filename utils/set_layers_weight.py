@@ -29,7 +29,6 @@ logging.basicConfig(filename= "../../src/balance_weights.log")
 
 """
 def balance_layerweight(layerconfig_json, layerinfo_json):
-
     NFT_totalNumber = layerconfig_json["totalNumber"]
     layers = layerconfig_json["layersOrder"]
     for layer in layers:
@@ -39,23 +38,33 @@ def balance_layerweight(layerconfig_json, layerinfo_json):
         if layer_info["existSubdir"] == False:  # 表明该图层没有所属的信标图层
             balance_weight_in_dir(NFT_totalNumber, layer_info)
         else:
-            balance_layerweight_in_subdirs(layerinfo_json, layer_info)
+            balance_layerweight_in_subdirs(layerinfo_json, NFT_totalNumber, layer_name)
 
 
 def balance_weight_in_dir(_SUM, layer_info):
     layer_list = layer_info["layer_list"]
+    layers_num = layer_info["layers_number"]
     print(layer_list)
     _sum, counter = count_weights_in_layer_list(_SUM, layer_info)
     print("Sum of weights: ", _sum)
     print("Number of weighted layers: ", counter)
-    if _sum == _SUM and counter == len(layer_list):  # 所有权重都已经设计好了
+    if _sum == _SUM and counter == len(layer_list):  # The sum of the weights is equal to the total number of NFTs
         print(str(layer_info["name"]) + " layer: Sum of weights match, Pass")
-        print("_" * 30 + "\n\n")
+        print("_" * 100 + "\n\n")
     else:
         print(str(layer_info["name"]) + " layer: Sum of weights does not match, reallocating……")
-        print("_" * 30 + "\n\n")
+        print("_" * 100 + "\n\n")
         remaining_sum = _SUM - _sum
         remaining_counter = len(layer_list) - counter
+
+        try:
+            if _sum != _SUM and counter < len(layer_list):
+                raise exceptions.Exit_Some_Layers_Without_Weights_ERROR(layer_info["name"], remaining_sum)
+        except  exceptions.Exit_Some_Layers_Without_Weights_ERROR as _ERROR4:
+            logging.error(traceback.format_exc())
+            print(_ERROR4)
+            redistribute_weights_for_noweight_layers(remaining_sum, remaining_counter, layer_info)
+
         try:
             if remaining_sum < remaining_counter:
                 raise exceptions.Remaining_Sum_Less_Than_Remaining_Counter_ERROR(remaining_sum, layer_info["name"], remaining_counter)
@@ -65,7 +74,7 @@ def balance_weight_in_dir(_SUM, layer_info):
             sys.exit(0)
 
         try:
-            if remaining_counter == 0:
+            if counter == len(layer_list):
                 raise exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(layer_info["name"], _sum, _SUM)
         except exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR as _ERROR2:
             logging.error(traceback.format_exc())
@@ -73,34 +82,27 @@ def balance_weight_in_dir(_SUM, layer_info):
             redistribute_weights_for_all_layers(_SUM, _sum, layer_info)
 
         try:
-            if remaining_counter == 10:
+            if counter == 0:
                 raise exceptions.All_Layers_Are_Not_Weighted_ERROR(layer_info["name"])
         except exceptions.All_Layers_Are_Not_Weighted_ERROR as _ERROR3:
             logging.error(traceback.format_exc())
             print(_ERROR3)
-            redistribute_weights_for_all_layers(_SUM, _sum, layer_info)
-
-        try:
-            if _sum != _SUM:
-                raise exceptions.Exit_Some_Layers_Without_Weights_ERROR(layer_info["name"], remaining_sum)
-        except  exceptions.Exit_Some_Layers_Without_Weights_ERROR as _ERROR4:
-            logging.error(traceback.format_exc())
-            print(_ERROR4)
-            redistribute_weights_for_some_noweight_layers(remaining_sum, remaining_counter, layer_info)
+            redistribute_weights_for_all_noweight_layers(_SUM, layer_info)
 
     _sum, counter = count_weights_in_layer_list(_SUM, layer_info)
     layer_info["sum_of_weights"] = _sum
     return layer_info
 
 
-def count_weights_in_dir(_SUM, subdir_info):
-    dir_list = subdir_info["dir_list"]
+def count_weights_in_dir(_SUM, layer_info):
+    dir_list = layer_info["dir_list"]
     _sum = 0
     counter = 0
     for dir_item in dir_list:
-        temp_sum, temp_counter = count_weights_in_layer_list(_SUM, subdir_info[dir_item])
+        temp_sum, temp_counter = count_weights_in_layer_list(_SUM, layer_info[dir_item])
         _sum += temp_sum
         counter += temp_counter
+        print(layer_info["name"], _sum, counter)
     return _sum, counter
 
 
@@ -151,7 +153,7 @@ def redistribute_weights_for_all_noweight_layers(_SUM, layer_info):
     print(layer_info)
 
 
-def redistribute_weights_for_some_noweight_layers(remaining_sum, remaining_counter, layer_info):
+def redistribute_weights_for_noweight_layers(remaining_sum, remaining_counter, layer_info):
     layer_list = layer_info["layer_list"]
     average_value = remaining_sum // remaining_counter
     for layer in layer_list:
@@ -164,8 +166,19 @@ def redistribute_weights_for_some_noweight_layers(remaining_sum, remaining_count
                 layer_info[layer]["weight"] = remaining_sum
     print(layer_info)
 
-def balance_layerweight_in_subdirs(layerinfo_json, layer_info):
-    dir_list = layer_info["dir_list"]
+def balance_layerweight_in_subdirs(layerinfo_json, _SUM, layer_name):
+    current_layer_info = layerinfo_json[layer_name]
+    _sum, counter = count_weights_in_dir(_SUM, current_layer_info)
+    remaining_sum = _SUM - _sum
+    remaining_counter = len(layer_list) - counter
+    print(_sum, counter)
+    # 先判断图层类型
+    if current_layer_info["isGroupSet"] == True and "groupBy" not in current_layer_info:
+        # 再判断是不是满足规则
+        if _sum == _SUM and counter == len(layer_list):  # The sum of the weights is equal to the total number of NFTs
+            print(str(layer_info["name"]) + " layer: Sum of weights match, Pass")
+            print("_" * 100 + "\n\n")
+
     # 如果自身作为信标图层，则按照 balance_weight_in_dir（）的方式进行均衡
 
     # 如果有所属的信标图层，则先读取到信标图层对应文件夹的权重之和，然后根据这个权重进行重新分配
@@ -173,3 +186,13 @@ def balance_layerweight_in_subdirs(layerinfo_json, layer_info):
     # 如果如果有所属的信标图层，但同时自己又含有一些信标图层不含有的分类，则按照常规方法进行均衡
 
     # 均衡之后要把新的权重之和放在本图层的json信息中
+
+
+def redistribute_beacon_layer():
+    print()
+
+def redistribute_grouped_sublayers():
+    print()
+
+def redistribute_beacon_grouped_sublayers():
+    print()

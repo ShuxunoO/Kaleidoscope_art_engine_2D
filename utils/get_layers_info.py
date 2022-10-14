@@ -11,7 +11,6 @@ def get_dirlist_and_filelist(file_path):
 
     """
     It takes a file path and returns a files list and a subfolders list in the path
-    
     :param file_path: the path to the folder containing the files you want to rename
     :return: A tuple of two lists.
     """
@@ -42,7 +41,7 @@ def get_layersinfo(base_path, layer_info):
         "existSubdir": len(dir_list) > 0,
         "layer_list": [re.split("[#.]", layer)[0] for layer in layer_list],  # remove the suffix and weight to get purename
         "dir_list": dir_list,
-        "layer_total_number": get_fileNum(current_path),
+        "layers_number": get_file_num(current_path),
         "sum_of_weights": "unknown"})
     if len(layer_list):
         get_layerinfo_in_currentdir(current_path, layer_list, layerinfo_dict)
@@ -88,7 +87,8 @@ def get_layerinfo_in_subdir(dir_name, base_path, layerinfo_dict):
         sublayer_list = os.listdir(sub_path)
         sublayer_info_dict = {}
         sublayer_info_dict.update({"name": dir_name + "-" + dir_item,
-                                   "sum_of_weights": "unknown"})
+                                   "sum_of_weights": "unknown",
+                                   "layers_number": len(os.listdir(sub_path))})
         sublayer_info_dict.update(
             {"layer_list": [re.split("[#.]", layer)[0] for layer in os.listdir(sub_path)]})
         for layer in sublayer_list:
@@ -120,7 +120,7 @@ def get_purename_and_weight(layer_name):
     return purename, weight
 
 
-def get_fileNum(file_path):
+def get_file_num(file_path):
     """
     It counts the number of files in a directory
     :return: The number of files in the directory.
