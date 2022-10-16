@@ -81,14 +81,20 @@ def balance_layer_weight_in_dir(_SUM, layer_info):
                     _SUM, remaining_counter, layer_info)
 
         if counter == layers_num:  # 图层均被赋值，但权重之和不满足指定值
-            try:
-                raise exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(
-                        layer_info["name"], _sum, _SUM)
-            except exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR as _ERROR:
-                logging.error(traceback.format_exc())
-                print(_ERROR)
-                redistribute_weights_for_all_layers(
-                    _SUM, counter, _sum, layer_info)
+            # try:
+            #     raise exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(
+            #             layer_info["name"], _sum, _SUM)
+            # except exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR as _ERROR:
+            #     logging.error(traceback.format_exc())
+            #     print(_ERROR)
+            kwargs = {"dir_name":layer_info["name"],
+                        "sum_weight":_sum,
+                        "given_weight":_SUM,
+                        "remaining_counter":remaining_counter,
+                        "_sum":_sum,
+                        "layer_info":layer_info
+                        }
+            balance_all_weighted_layers(**kwargs)
 
         if remaining_sum < remaining_counter:  # 没有很好的解决办法，程序停止
             try:
@@ -138,23 +144,27 @@ def count_weights_in_layer_list(_SUM, layer_info):
     return _sum, counter
 
 # 全有赋值，但总和不对
-def redistribute_weights_for_all_layers(_SUM, remaining_counter,  _sum, layer_info):
-    layer_list = layer_info["layer_list"]
-    remaining_sum = _SUM
-    print(layer_list)
-    for layer in layer_list:
-        print(layer)
-        if remaining_counter > 1:
-            new_weight = round(_SUM * layer_info[layer]["weight"] / _sum)
-            print(new_weight)
-            layer_info[layer]["weight"] = new_weight
-            remaining_sum -= new_weight
-            remaining_counter -= 1
-        else:
-            layer_info[layer]["weight"] = remaining_sum
-    print(layer_info)
-    print(remaining_sum, remaining_counter)
-    return remaining_counter
+def balance_all_weighted_layers(dir_name, sum_weight, given_weight, remaining_counter, _sum, layer_info):
+    @exceptions.raise_Sum_Of_Weights_Is_Not_Equal_To_Given_Weight_ERROR(dir_name, sum_weight, given_weight)
+    def redistribute_weights_for_all_layers(given_weight, remaining_counter,  _sum, layer_info):
+        layer_list = layer_info["layer_list"]
+        remaining_sum = given_weight
+        print(layer_list)
+        for layer in layer_list:
+            print(layer)
+            if remaining_counter > 1:
+                new_weight = round(given_weight * layer_info[layer]["weight"] / _sum)
+                print(new_weight)
+                layer_info[layer]["weight"] = new_weight
+                remaining_sum -= new_weight
+                remaining_counter -= 1
+            else:
+                layer_info[layer]["weight"] = remaining_sum
+        print(layer_info)
+        print(remaining_sum, remaining_counter)
+        return remaining_counter
+    return redistribute_weights_for_all_layers
+
 
 #一个赋值都没有
 def redistribute_weights_for_all_noweight_layers(remaining_sum, remaining_counter, layer_info):
