@@ -1,0 +1,105 @@
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 85, in balance_layer_weight_in_dir
+    raise exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(
+exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR: The sum of  layers' weights in Background is 950 , which is not equal to the given weight of 5000, going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 85, in balance_layer_weight_in_dir
+    raise exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(
+exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR: The sum of  layers' weights in Background is 950 , which is not equal to the given weight of 5000, going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 129, in count_weights_in_layer_list
+    raise exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(
+exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR: The weight of Mountains layer in Background is 5000 , which is greater than the given weight of 5000, going to set weight = -1
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 129, in count_weights_in_layer_list
+    raise exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(
+exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR: The weight of Grassland layer in Background is 5000 , which is greater than the given weight of 5000, going to set weight = -1
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 129, in count_weights_in_layer_list
+    raise exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(
+exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR: The weight of Wave layer in Background is 5000 , which is greater than the given weight of 5000, going to set weight = -1
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 129, in count_weights_in_layer_list
+    raise exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(
+exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR: The weight of Dune layer in Background is 5000 , which is greater than the given weight of 5000, going to set weight = -1
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 85, in balance_layer_weight_in_dir
+    raise exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(
+exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR: The sum of  layers' weights in Background is 950 , which is not equal to the given weight of 2000, going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 85, in balance_layer_weight_in_dir
+    raise exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(
+exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR: The sum of  layers' weights in Background is 950 , which is not equal to the given weight of 2000, going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 75, in balance_layer_weight_in_dir
+    raise exceptions.All_Layers_Are_Not_Weighted_ERROR(
+exceptions.All_Layers_Are_Not_Weighted_ERROR: All the layers in test1 are not weighted, so program is going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 86, in balance_layer_weight_in_dir
+    raise exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(
+exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR: The sum of  layers' weights in Background is 950 , which is not equal to the given weight of 2000, going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 76, in balance_layer_weight_in_dir
+    raise exceptions.All_Layers_Are_Not_Weighted_ERROR(
+exceptions.All_Layers_Are_Not_Weighted_ERROR: All the layers in test1 are not weighted, so program is going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 240, in redistribute_beacon_layer
+    raise exceptions.Exit_Some_Layers_Without_Weights_ERROR(
+exceptions.Exit_Some_Layers_Without_Weights_ERROR: There are unweighted layers in folder Holder They will equally share the given weights of 1400
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 86, in balance_layer_weight_in_dir
+    raise exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(
+exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR: The sum of  layers' weights in Background is 950 , which is not equal to the given weight of 2000, going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 76, in balance_layer_weight_in_dir
+    raise exceptions.All_Layers_Are_Not_Weighted_ERROR(
+exceptions.All_Layers_Are_Not_Weighted_ERROR: All the layers in test1 are not weighted, so program is going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 240, in redistribute_beacon_layer
+    raise exceptions.Exit_Some_Layers_Without_Weights_ERROR(
+exceptions.Exit_Some_Layers_Without_Weights_ERROR: There are unweighted layers in folder Holder They will equally share the given weights of 1400
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 86, in balance_layer_weight_in_dir
+    raise exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(
+exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR: The sum of  layers' weights in Background is 950 , which is not equal to the given weight of 2000, going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 76, in balance_layer_weight_in_dir
+    raise exceptions.All_Layers_Are_Not_Weighted_ERROR(
+exceptions.All_Layers_Are_Not_Weighted_ERROR: All the layers in test1 are not weighted, so program is going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 240, in redistribute_beacon_layer
+    raise exceptions.Exit_Some_Layers_Without_Weights_ERROR(
+exceptions.Exit_Some_Layers_Without_Weights_ERROR: There are unweighted layers in folder Holder They will equally share the given weights of 1400
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 86, in balance_layer_weight_in_dir
+    raise exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(
+exceptions.Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR: The sum of  layers' weights in Background is 950 , which is not equal to the given weight of 2000, going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 76, in balance_layer_weight_in_dir
+    raise exceptions.All_Layers_Are_Not_Weighted_ERROR(
+exceptions.All_Layers_Are_Not_Weighted_ERROR: All the layers in test1 are not weighted, so program is going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 240, in redistribute_beacon_layer
+    raise exceptions.Exit_Some_Layers_Without_Weights_ERROR(
+exceptions.Exit_Some_Layers_Without_Weights_ERROR: There are unweighted layers in folder Holder They will equally share the given weights of 1400
+

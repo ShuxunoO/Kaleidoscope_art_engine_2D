@@ -61,19 +61,24 @@
     "processCount": 10,
     "layerConfigurations": [
         {
-            "totalNumber": 5000,
+            "totalNumber": 2000,
             "conflictElements": {
-                "Base$Blue_Gear" : "Eggshell$Purple_Pink, Pattern$Purple_Block, Music_Effect$Green_Firefly, Music_Effect$Purple_Star",
-                "Pattern$Green_Block" : "Music_Effect$Purple_Star"
+                "Base$Blue_Gear": "Eggshell$Purple_Pink, Pattern$Purple_Block, Music_Effect$Green_Firefly, Music_Effect$Purple_Star",
+                "Pattern$Green_Block": "Music_Effect$Purple_Star"
             },
-            "specificCombination":{
-                "Blue_Rhythm":"Eggshell$Blue_Green"
+            "specificCombination": {
+                "Blue_Rhythm": "Eggshell$Blue_Green"
             },
             "do_Balance": true,
             "startId": 1,
             "layersOrder": [
                 {
-                    "name": "Background"
+                    "name": "Background",
+                    "isGroupSet": false
+                },
+                {
+                    "name": "test1",
+                    "isGroupSet": false
                 },
                 {
                     "name": "Holder",
@@ -81,36 +86,42 @@
                 },
                 {
                     "name": "Eggshell",
+                    "isGroupSet": false,
                     "groupBy": "Holder",
                     "hideInMetadata": false
                 },
                 {
                     "name": "Pattern",
-                        "groupBy": "Holder",
-                        "hideInMetadata": false
+                    "groupBy": "Holder",
+                    "isGroupSet": false,
+                    "hideInMetadata": false
                 },
                 {
                     "name": "Stroke",
-                        "groupBy": "Holder",
-                        "hideInMetadata": false
+                    "groupBy": "Holder",
+                    "isGroupSet": false,
+                    "hideInMetadata": false
                 },
                 {
                     "name": "Halo",
-                        "groupBy": "Holder",
-                        "bypassDNA": true,
-                        "hideInMetadata": false
+                    "groupBy": "Holder",
+                    "isGroupSet": false,
+                    "bypassDNA": true,
+                    "hideInMetadata": false
                 },
                 {
                     "name": "Music_Effect",
-                        "groupBy": "Holder",
-                        "bypassDNA": true,
-                        "hideInMetadata": false
+                    "isGroupSet": false,
+                    "groupBy": "Holder",
+                    "bypassDNA": true,
+                    "hideInMetadata": false
                 },
                 {
                     "name": "Base",
-                        "groupBy": "Holder",
-                        "bypassDNA": true,
-                        "hideInMetadata": false
+                    "isGroupSet": false,
+                    "groupBy": "Holder",
+                    "bypassDNA": true,
+                    "hideInMetadata": false
                 }
             ]
         }

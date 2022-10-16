@@ -18,17 +18,7 @@ class Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(Exception):
         ", going to set " + "weight" + " = -1"
         return ERROR_INFO
 
-<<<<<<< HEAD
-# def raise_Current_Weight_Greater_Than_Given_Weight(dir_name, layer_name, current_weight, given_weight):
-#     def decorator(_fun):
-#         def wrapper(*args, **kwargs):
-#             try:
 
-
-
-
-=======
->>>>>>> parent of 24ef3e9 (准备增加修饰器，存档一下)
 
 class Remaining_Sum_Less_Than_Remaining_Counter_ERROR(Exception):
     def __init__(self, remaining_sum, dir_name, remaining_counter):
@@ -54,18 +44,18 @@ class Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(Exception):
         ", going to redistribute weights for all layers"
         return ERROR_INFO
 
-def raise_Sum_Of_Weights_Is_Not_Equal_To_Given_Weight_ERROR(dir_name, sum_weight, given_weight):
-    def decorator(_fun):
-        def wrapper(*args, **kwargs):
-            try:
-                raise Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(
-                        dir_name, sum_weight, given_weight)
-            except Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR as _ERROR:
-                logging.error(traceback.format_exc())
-                print(_ERROR)
-            return _fun(*args, **kwargs)
-        return wrapper
-    return decorator
+# def raise_Sum_Of_Weights_Is_Not_Equal_To_Given_Weight_ERROR(dir_name, sum_weight, given_weight):
+#     def decorator(_fun):
+#         def wrapper(*args, **kwargs):
+#             try:
+#                 raise Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR(
+#                         dir_name, sum_weight, given_weight)
+#             except Sum_Of_Layer_Weights_Is_Not_Equal_To_Given_Weight_ERROR as _ERROR:
+#                 logging.error(traceback.format_exc())
+#                 print(_ERROR)
+#             return _fun(*args, **kwargs)
+#         return wrapper
+#     return decorator
 
 
 class All_Layers_Are_Not_Weighted_ERROR(Exception):

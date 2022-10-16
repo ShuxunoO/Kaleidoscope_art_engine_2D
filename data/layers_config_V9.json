@@ -2,13 +2,13 @@
     {
         "Background": {
             "name": "Background",
+            "isGroupSet": false,
             "existSubdir": false,
             "layer_list": [
-                "Mountains",
-                "Mountains",
                 "Wave",
-                "Dune",
-                "Grassland"
+                "Mountains",
+                "Grassland",
+                "Dune"
             ],
             "dir_list": [],
             "layers_number": 4,
@@ -17,51 +17,66 @@
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Wave#350.png",
                 "weight": 350
             },
-            "Dune": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#1200.png",
-                "weight": 1200
-            },
             "Mountains": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Mountains#100.png",
                 "weight": 100
+            },
+            "Grassland": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Grassland#300.png",
+                "weight": 300
+            },
+            "Dune": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#200.png",
+                "weight": 200
             }
         },
-        "test2": {
-            "name": "test2",
+        "test1": {
+            "name": "test1",
+            "isGroupSet": false,
             "existSubdir": false,
             "layer_list": [
-                "Blue Original",
-                "Bike Yellow",
                 "Purple",
-                "Brown",
+                "Navy Blue",
                 "Light Green",
-                "Pink"
+                "Bike Yellow",
+                "Shining Turquoise",
+                "Orange",
+                "Pink",
+                "Blue Original"
             ],
             "dir_list": [],
-            "layers_number": 6,
+            "layers_number": 8,
             "sum_of_weights": "unknown",
-            "Blue Original": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Blue Original.png",
-                "weight": -1
-            },
-            "Bike Yellow": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Bike Yellow.png",
-                "weight": -1
-            },
             "Purple": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Purple.png",
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Purple.png",
                 "weight": -1
             },
-            "Brown": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Brown.png",
+            "Navy Blue": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Navy Blue.png",
                 "weight": -1
             },
             "Light Green": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Light Green.png",
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Light Green.png",
+                "weight": -1
+            },
+            "Bike Yellow": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Bike Yellow.png",
+                "weight": -1
+            },
+            "Shining Turquoise": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Shining Turquoise.png",
+                "weight": -1
+            },
+            "Orange": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Orange.png",
                 "weight": -1
             },
             "Pink": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Pink.png",
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Pink.png",
+                "weight": -1
+            },
+            "Blue Original": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Blue Original.png",
                 "weight": -1
             }
         },
@@ -180,6 +195,7 @@
         },
         "Eggshell": {
             "name": "Eggshell",
+            "isGroupSet": false,
             "groupBy": "Holder",
             "hideInMetadata": false,
             "existSubdir": true,
@@ -385,6 +401,7 @@
         "Pattern": {
             "name": "Pattern",
             "groupBy": "Holder",
+            "isGroupSet": false,
             "hideInMetadata": false,
             "existSubdir": true,
             "layer_list": [],
@@ -799,6 +816,7 @@
         "Stroke": {
             "name": "Stroke",
             "groupBy": "Holder",
+            "isGroupSet": false,
             "hideInMetadata": false,
             "existSubdir": true,
             "layer_list": [],
@@ -903,6 +921,7 @@
         "Halo": {
             "name": "Halo",
             "groupBy": "Holder",
+            "isGroupSet": false,
             "bypassDNA": true,
             "hideInMetadata": false,
             "existSubdir": true,
@@ -992,6 +1011,7 @@
         },
         "Music_Effect": {
             "name": "Music_Effect",
+            "isGroupSet": false,
             "groupBy": "Holder",
             "bypassDNA": true,
             "hideInMetadata": false,
@@ -1167,6 +1187,7 @@
         },
         "Base": {
             "name": "Base",
+            "isGroupSet": false,
             "groupBy": "Holder",
             "bypassDNA": true,
             "hideInMetadata": false,
