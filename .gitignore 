@@ -3,3 +3,4 @@
 /src
 /.idea
 /__pycache__
+/tests

@@ -16,6 +16,9 @@ class Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(Exception):
         ", going to set " + "weight" + " = -1"
         return ERROR_INFO
 
+# def raise_Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(_func):
+#     def wrapper(**kwargs):
+#         print()
 
 class Remaining_Sum_Less_Than_Remaining_Counter_ERROR(Exception):
     def __init__(self, remaining_sum, dir_name, remaining_counter):

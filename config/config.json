@@ -42,7 +42,7 @@
     },
     "solanaMetadata": {
         "symbol": "LIPC",
-        "seller_fee_basis_points": 1000,
+        "seller_fee_basis_points": 2000,
         "external_url": "https://lipconq.com/",
         "creators": [
             {
@@ -61,11 +61,7 @@
     "processCount": 10,
     "layerConfigurations": [
         {
-            "totalNumber": 5000,
-            "conflictElements": {
-                "Base$Blue_Gear" : "Eggshell$Purple_Pink, Pattern$Purple_Block, Music_Effect$Green_Firefly, Music_Effect$Purple_Star",
-                "Pattern$Green_Block" : "Music_Effect$Purple_Star"
-            },
+            "totalNumber": 1000,
             "specificCombination":{
                 "Blue_Rhythm":"Eggshell$Blue_Green"
             },
@@ -74,6 +70,9 @@
             "layersOrder": [
                 {
                     "name": "Background"
+                },
+                {
+                    "name": "test2"
                 },
                 {
                     "name": "Holder",
