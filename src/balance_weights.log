@@ -1,5 +1,0 @@
-ERROR:root:Traceback (most recent call last):
-  File "C:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\tests\..\set_layers_weight.py", line 75, in balance_layer_weight_in_dir
-    raise exceptions.All_Layers_Are_Not_Weighted_ERROR(
-exceptions.All_Layers_Are_Not_Weighted_ERROR: All the layers in test2 are not weighted, so program is going to redistribute weights for all layers
-

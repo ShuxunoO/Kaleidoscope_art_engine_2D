@@ -5,66 +5,63 @@
             "existSubdir": false,
             "layer_list": [
                 "Mountains",
+                "Mountains",
                 "Wave",
-                "Grassland",
-                "Dune"
+                "Dune",
+                "Grassland"
             ],
             "dir_list": [],
             "layers_number": 4,
             "sum_of_weights": "unknown",
-            "Mountains": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Mountains#100.png",
-                "weight": 100
-            },
             "Wave": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Wave#350.png",
                 "weight": 350
             },
-            "Grassland": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Grassland#300.png",
-                "weight": 300
-            },
             "Dune": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#200.png",
-                "weight": 200
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#1200.png",
+                "weight": 1200
+            },
+            "Mountains": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Mountains#100.png",
+                "weight": 100
             }
         },
         "test2": {
             "name": "test2",
             "existSubdir": false,
             "layer_list": [
-                "Light Green",
                 "Blue Original",
-                "Brown",
-                "Pink",
+                "Bike Yellow",
                 "Purple",
-                "Bike Yellow"
+                "Brown",
+                "Light Green",
+                "Pink"
             ],
             "dir_list": [],
             "layers_number": 6,
             "sum_of_weights": "unknown",
-            "Light Green": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Light Green.png",
-                "weight": -1
-            },
             "Blue Original": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Blue Original.png",
                 "weight": -1
             },
-            "Brown": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Brown.png",
-                "weight": -1
-            },
-            "Pink": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Pink.png",
+            "Bike Yellow": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Bike Yellow.png",
                 "weight": -1
             },
             "Purple": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Purple.png",
                 "weight": -1
             },
-            "Bike Yellow": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Bike Yellow.png",
+            "Brown": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Brown.png",
+                "weight": -1
+            },
+            "Light Green": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Light Green.png",
+                "weight": -1
+            },
+            "Pink": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test2\\Pink.png",
                 "weight": -1
             }
         },
