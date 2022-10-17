@@ -17,11 +17,11 @@ def raise_ERROR_1(error_name):
         return wrapper
     return inner
 
-@raise_ERROR_1("错误1")
-def say_someting(name):
-    print("hello", name)
-    return "hello " + name
+def say(_error, name):
+    @raise_ERROR_1(_error)
+    def say_someting(name):
+        print("hello", name)
+        return "hello " + name
+    return say_someting(name)
 
-result = say_someting("shuxun")
-
-print(result)
+print(say("_error1", "shuxun"))

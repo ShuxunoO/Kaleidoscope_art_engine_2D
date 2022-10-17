@@ -1,14 +1,13 @@
+from file_operations import load_lsyers_config, save_json
+from CONST_ENV import ENV_PATH as PATH
+from pathlib import Path
 import os
 import sys
 import re
 sys.path.append("..")
-from pathlib import Path
-from CONST_ENV import ENV_PATH as PATH
-from file_operations import load_lsyers_config, save_json
 
 
 def get_dirlist_and_filelist(file_path):
-
     """
     It takes a file path and returns a files list and a subfolders list in the path
     :param file_path: the path to the folder containing the files you want to rename
@@ -39,19 +38,20 @@ def get_layersinfo(base_path, layer_info):
     layerinfo_dict.update(layer_info)
     layerinfo_dict.update({
         "existSubdir": len(dir_list) > 0,
-        "layer_list": [re.split("[#.]", layer)[0] for layer in layer_list],  # remove the suffix and weight to get purename
+        # remove the suffix and weight to get purename
+        "layer_list": [re.split("[#.]", layer)[0] for layer in layer_list],
         "dir_list": dir_list,
         "layers_number": get_file_num(current_path),
         "sum_of_weights": "unknown"})
     if len(layer_list):
         get_layerinfo_in_currentdir(current_path, layer_list, layerinfo_dict)
     if len(dir_list):
-        get_layerinfo_in_subdir(layer_info["name"], current_path, layerinfo_dict)
+        get_layerinfo_in_subdir(
+            layer_info["name"], current_path, layerinfo_dict)
     return {layer_info["name"]: layerinfo_dict}
 
 
 def get_layerinfo_in_currentdir(file_path, layer_name, layerinfo_dict):
-
     """
     This function takes a base path and a file name, and returns a dictionary with the layer name as
     the key and a dictionary of layer information as the value
@@ -87,8 +87,8 @@ def get_layerinfo_in_subdir(dir_name, base_path, layerinfo_dict):
         sublayer_list = os.listdir(sub_path)
         sublayer_info_dict = {}
         sublayer_info_dict.update({"name": dir_name + "-" + dir_item,
-                                   "sum_of_weights": "unknown",
-                                   "layers_number": len(os.listdir(sub_path))})
+                                   "layers_number": len(os.listdir(sub_path)),
+                                   "sum_of_weights": "unknown"})
         sublayer_info_dict.update(
             {"layer_list": [re.split("[#.]", layer)[0] for layer in os.listdir(sub_path)]})
         for layer in sublayer_list:
@@ -102,7 +102,6 @@ def get_layerinfo_in_subdir(dir_name, base_path, layerinfo_dict):
 
 
 def get_purename_and_weight(layer_name):
-
     """
     It takes a string of the form "layer_name#weight" and returns a tuple of the form (layer_name,
     weight).
