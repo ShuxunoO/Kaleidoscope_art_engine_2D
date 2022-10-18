@@ -99,6 +99,7 @@ def balance_layer_weight_in_dir(_SUM, layer_info):
                 print(_ERROR)
                 sys.exit(0)
     update_sum_of_weights(_SUM, layer_info, 0)
+    layer_info["is_balanced"] = True
     return layer_info
 
 
@@ -279,17 +280,19 @@ def redistribute_beacon_layer( _SUM, layer_info):
                     remaining_sum, remaining_counter, layer_info[dir_item])
                 update_sum_of_weights(_SUM, layer_info[dir_item], 0)
     update_sum_of_weights(_SUM, layer_info, 1)
+    layer_info["is_balanced"] = True
+
 
 
 def redistribute_subordinate_layer(layerinfo_json, layer_name):
-    current_layer_info = layerinfo_json[layer_name]
-    beacon = current_layer_info["groupBy"]
+    layer_info = layerinfo_json[layer_name]
+    beacon = layer_info["groupBy"]
     beacon_layer = layerinfo_json[beacon]
-    dir_list = current_layer_info["dir_list"]
+    dir_list = layer_info["dir_list"]
     for dir_item in dir_list:
         _SUM = beacon_layer[dir_item]["sum_of_weights"]  # 拿到信标层的权重之和
-        balance_layer_weight_in_dir(_SUM, current_layer_info[dir_item])
-
+        balance_layer_weight_in_dir(_SUM, layer_info[dir_item])
+    layer_info["is_balanced"] = True
 
 def redistribute_beacon_grouped_sublayers():
     print()

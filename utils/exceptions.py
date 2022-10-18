@@ -14,7 +14,7 @@ class Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(Exception):
 
     def __str__(self):
         ERROR_INFO = "The weight of " + self.layer_name + " layer in " + self.dir_name + " is "\
-        + str(self.current_weight) + " , which is greater than the given weight of " + str(self.given_weight) + \
+        + str(self.current_weight) + " , which is not less than the given weight of " + str(self.given_weight) + \
         ", going to set " + "weight" + " = -1"
         return ERROR_INFO
 

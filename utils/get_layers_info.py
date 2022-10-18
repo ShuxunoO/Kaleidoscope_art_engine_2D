@@ -42,7 +42,8 @@ def get_layersinfo(base_path, layer_info):
         "layer_list": [re.split("[#.]", layer)[0] for layer in layer_list],
         "dir_list": dir_list,
         "layers_number": get_file_num(current_path),
-        "sum_of_weights": "unknown"})
+        "sum_of_weights": "unknown",
+        "is_balanced": False})
     if len(layer_list):
         get_layerinfo_in_currentdir(current_path, layer_list, layerinfo_dict)
     if len(dir_list):
@@ -88,7 +89,8 @@ def get_layerinfo_in_subdir(dir_name, base_path, layerinfo_dict):
         sublayer_info_dict = {}
         sublayer_info_dict.update({"name": dir_name + "-" + dir_item,
                                    "layers_number": len(os.listdir(sub_path)),
-                                   "sum_of_weights": "unknown"})
+                                   "sum_of_weights": "unknown",
+                                   "is_balanced": False})
         sublayer_info_dict.update(
             {"layer_list": [re.split("[#.]", layer)[0] for layer in os.listdir(sub_path)]})
         for layer in sublayer_list:

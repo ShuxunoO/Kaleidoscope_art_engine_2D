@@ -5,29 +5,30 @@
             "isGroupSet": false,
             "existSubdir": false,
             "layer_list": [
+                "Dune",
                 "Grassland",
-                "Wave",
                 "Mountains",
-                "Dune"
+                "Wave"
             ],
             "dir_list": [],
             "layers_number": 4,
             "sum_of_weights": "unknown",
+            "is_balanced": false,
+            "Dune": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#200.png",
+                "weight": 200
+            },
             "Grassland": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Grassland#300.png",
                 "weight": 300
-            },
-            "Wave": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Wave#350.png",
-                "weight": 350
             },
             "Mountains": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Mountains#100.png",
                 "weight": 100
             },
-            "Dune": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#200.png",
-                "weight": 200
+            "Wave": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Wave#350.png",
+                "weight": 350
             }
         },
         "test1": {
@@ -36,39 +37,20 @@
             "existSubdir": false,
             "layer_list": [
                 "Light Green",
-                "Orange",
-                "Purple",
-                "Blue Original",
-                "Navy Blue",
-                "Shining Turquoise",
                 "Bike Yellow",
-                "Pink"
+                "Pink",
+                "Shining Turquoise",
+                "Navy Blue",
+                "Blue Original",
+                "Purple",
+                "Orange"
             ],
             "dir_list": [],
             "layers_number": 8,
             "sum_of_weights": "unknown",
+            "is_balanced": false,
             "Light Green": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Light Green.png",
-                "weight": -1
-            },
-            "Orange": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Orange.png",
-                "weight": -1
-            },
-            "Purple": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Purple.png",
-                "weight": -1
-            },
-            "Blue Original": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Blue Original.png",
-                "weight": -1
-            },
-            "Navy Blue": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Navy Blue.png",
-                "weight": -1
-            },
-            "Shining Turquoise": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Shining Turquoise.png",
                 "weight": -1
             },
             "Bike Yellow": {
@@ -77,6 +59,26 @@
             },
             "Pink": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Pink.png",
+                "weight": -1
+            },
+            "Shining Turquoise": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Shining Turquoise.png",
+                "weight": -1
+            },
+            "Navy Blue": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Navy Blue.png",
+                "weight": -1
+            },
+            "Blue Original": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Blue Original.png",
+                "weight": -1
+            },
+            "Purple": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Purple.png",
+                "weight": -1
+            },
+            "Orange": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Orange.png",
                 "weight": -1
             }
         },
@@ -95,10 +97,12 @@
             ],
             "layers_number": 11,
             "sum_of_weights": "unknown",
+            "is_balanced": false,
             "Blue": {
                 "name": "Holder-Blue",
                 "layers_number": 1,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Blue"
                 ],
@@ -111,6 +115,7 @@
                 "name": "Holder-Free",
                 "layers_number": 6,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Cat1",
                     "Cat2",
@@ -148,6 +153,7 @@
                 "name": "Holder-Green",
                 "layers_number": 1,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Green"
                 ],
@@ -160,6 +166,7 @@
                 "name": "Holder-Orange",
                 "layers_number": 1,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Orange"
                 ],
@@ -172,6 +179,7 @@
                 "name": "Holder-Purple",
                 "layers_number": 1,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Purple"
                 ],
@@ -184,6 +192,7 @@
                 "name": "Holder-White",
                 "layers_number": 1,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "White"
                 ],
@@ -210,10 +219,12 @@
             ],
             "layers_number": 29,
             "sum_of_weights": "unknown",
+            "is_balanced": false,
             "Blue": {
                 "name": "Eggshell-Blue",
                 "layers_number": 9,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Blue_Green",
                     "Blue_Purple",
@@ -266,6 +277,7 @@
                 "name": "Eggshell-Free",
                 "layers_number": 3,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Cat4",
                     "Cat5",
@@ -288,6 +300,7 @@
                 "name": "Eggshell-Green",
                 "layers_number": 3,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Green",
                     "Green_Blue",
@@ -310,6 +323,7 @@
                 "name": "Eggshell-Orange",
                 "layers_number": 6,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Light_Orange",
                     "Orange_Blue",
@@ -347,6 +361,7 @@
                 "name": "Eggshell-Purple",
                 "layers_number": 5,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Purple_Blue ",
                     "Purple_Littlepink",
@@ -379,6 +394,7 @@
                 "name": "Eggshell-White",
                 "layers_number": 3,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Dark_White",
                     "White_Milky",
@@ -415,10 +431,12 @@
             ],
             "layers_number": 71,
             "sum_of_weights": "unknown",
+            "is_balanced": false,
             "Blue": {
                 "name": "Pattern-Blue",
                 "layers_number": 13,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Blue_Block",
                     "Blue_Chaos",
@@ -491,6 +509,7 @@
                 "name": "Pattern-Free",
                 "layers_number": 6,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Cat1",
                     "Cat2",
@@ -528,6 +547,7 @@
                 "name": "Pattern-Green",
                 "layers_number": 13,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Greene$Green_Neurons",
                     "Green_Block",
@@ -600,6 +620,7 @@
                 "name": "Pattern-Orange",
                 "layers_number": 13,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Orange_Block",
                     "Orange_Chaos",
@@ -672,6 +693,7 @@
                 "name": "Pattern-Purple",
                 "layers_number": 13,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Purple_Block",
                     "Purple_Chaos",
@@ -744,6 +766,7 @@
                 "name": "Pattern-White",
                 "layers_number": 13,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "White_Block",
                     "White_Chaos",
@@ -830,10 +853,12 @@
             ],
             "layers_number": 9,
             "sum_of_weights": "unknown",
+            "is_balanced": false,
             "Blue": {
                 "name": "Stroke-Blue",
                 "layers_number": 1,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Blue"
                 ],
@@ -846,6 +871,7 @@
                 "name": "Stroke-Free",
                 "layers_number": 3,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Cat1",
                     "Cat3",
@@ -868,6 +894,7 @@
                 "name": "Stroke-Green",
                 "layers_number": 1,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Green"
                 ],
@@ -880,6 +907,7 @@
                 "name": "Stroke-Orange",
                 "layers_number": 2,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Orange",
                     "Red"
@@ -897,6 +925,7 @@
                 "name": "Stroke-Purple",
                 "layers_number": 1,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Purple"
                 ],
@@ -909,6 +938,7 @@
                 "name": "Stroke-White",
                 "layers_number": 1,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Black"
                 ],
@@ -936,10 +966,12 @@
             ],
             "layers_number": 6,
             "sum_of_weights": "unknown",
+            "is_balanced": false,
             "Blue": {
                 "name": "Halo-Blue",
                 "layers_number": 1,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Blue_Sky"
                 ],
@@ -952,6 +984,7 @@
                 "name": "Halo-Free",
                 "layers_number": 1,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Cat1"
                 ],
@@ -964,6 +997,7 @@
                 "name": "Halo-Green",
                 "layers_number": 1,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Green_Hope"
                 ],
@@ -976,6 +1010,7 @@
                 "name": "Halo-Orange",
                 "layers_number": 1,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Orange_Vitality"
                 ],
@@ -988,6 +1023,7 @@
                 "name": "Halo-Purple",
                 "layers_number": 1,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Purple_Electricity"
                 ],
@@ -1000,6 +1036,7 @@
                 "name": "Halo-White",
                 "layers_number": 1,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "White_Angel"
                 ],
@@ -1027,10 +1064,12 @@
             ],
             "layers_number": 23,
             "sum_of_weights": "unknown",
+            "is_balanced": false,
             "Blue": {
                 "name": "Music_Effect-Blue",
                 "layers_number": 4,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Blue_Firefly",
                     "Blue_Sonic",
@@ -1058,6 +1097,7 @@
                 "name": "Music_Effect-Free",
                 "layers_number": 3,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Cat5",
                     "Cat6",
@@ -1080,6 +1120,7 @@
                 "name": "Music_Effect-Green",
                 "layers_number": 4,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Green_Firefly",
                     "Green_Sonic",
@@ -1107,6 +1148,7 @@
                 "name": "Music_Effect-Orange",
                 "layers_number": 4,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Orange_Firefly",
                     "Orange_Sonic",
@@ -1134,6 +1176,7 @@
                 "name": "Music_Effect-Purple",
                 "layers_number": 4,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Purple_Firefly",
                     "Purple_Sonic",
@@ -1161,6 +1204,7 @@
                 "name": "Music_Effect-White",
                 "layers_number": 4,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "White_Firefly",
                     "White_Sonic",
@@ -1203,10 +1247,12 @@
             ],
             "layers_number": 24,
             "sum_of_weights": "unknown",
+            "is_balanced": false,
             "Blue": {
                 "name": "Base-Blue",
                 "layers_number": 4,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Blue_Gear",
                     "Blue_Rhythm",
@@ -1234,6 +1280,7 @@
                 "name": "Base-Free",
                 "layers_number": 4,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Cat1",
                     "Cat3",
@@ -1261,6 +1308,7 @@
                 "name": "Base-Green",
                 "layers_number": 4,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Green_Gear",
                     "Green_Rhythm",
@@ -1288,6 +1336,7 @@
                 "name": "Base-Orange",
                 "layers_number": 4,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Orange_Gear",
                     "Orange_Rhythm",
@@ -1315,6 +1364,7 @@
                 "name": "Base-Purple",
                 "layers_number": 4,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Purple_Gear",
                     "Purple_Rhythm",
@@ -1342,6 +1392,7 @@
                 "name": "Base-White",
                 "layers_number": 4,
                 "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "White_Gear",
                     "White_Rhythm",

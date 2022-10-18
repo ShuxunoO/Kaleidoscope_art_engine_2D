@@ -9,5 +9,5 @@ def test_func():
 
 
 progress = ProgressBar()
-for i in progress(range(1000)):
+for i in progress(range(100)):
     test_func()
