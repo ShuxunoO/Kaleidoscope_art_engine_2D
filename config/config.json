@@ -99,7 +99,7 @@
                 {
                     "name": "Stroke",
                     "groupBy": "Holder",
-                    "isBeaconLayer": false,
+                    "isBeaconLayer": true,
                     "hideInMetadata": false
                 },
                 {

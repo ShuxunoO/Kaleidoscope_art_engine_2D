@@ -5,30 +5,30 @@
             "isBeaconLayer": false,
             "existSubdir": false,
             "layer_list": [
-                "Dune",
                 "Mountains",
                 "Wave",
+                "Dune",
                 "Grassland"
             ],
             "dir_list": [],
             "layers_number": 4,
-            "sum_of_weights": 2000,
-            "is_balanced": true,
-            "Dune": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#200.png",
-                "weight": 421
-            },
+            "sum_of_weights": "unknown",
+            "is_balanced": false,
             "Mountains": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Mountains#100.png",
-                "weight": 211
+                "weight": 100
             },
             "Wave": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Wave#350.png",
-                "weight": 737
+                "weight": 350
+            },
+            "Dune": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#200.png",
+                "weight": 200
             },
             "Grassland": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Grassland#300.png",
-                "weight": 631
+                "weight": 300
             }
         },
         "test1": {
@@ -36,50 +36,50 @@
             "isBeaconLayer": false,
             "existSubdir": false,
             "layer_list": [
-                "Bike Yellow",
-                "Light Green",
-                "Navy Blue",
                 "Blue Original",
-                "Orange",
                 "Purple",
+                "Shining Turquoise",
+                "Bike Yellow",
+                "Navy Blue",
+                "Light Green",
                 "Pink",
-                "Shining Turquoise"
+                "Orange"
             ],
             "dir_list": [],
             "layers_number": 8,
-            "sum_of_weights": 2000,
-            "is_balanced": true,
-            "Bike Yellow": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Bike Yellow.png",
-                "weight": 250
-            },
-            "Light Green": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Light Green.png",
-                "weight": 250
-            },
-            "Navy Blue": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Navy Blue.png",
-                "weight": 250
-            },
+            "sum_of_weights": "unknown",
+            "is_balanced": false,
             "Blue Original": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Blue Original.png",
-                "weight": 250
-            },
-            "Orange": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Orange.png",
-                "weight": 250
+                "weight": -1
             },
             "Purple": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Purple.png",
-                "weight": 250
-            },
-            "Pink": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Pink.png",
-                "weight": 250
+                "weight": -1
             },
             "Shining Turquoise": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Shining Turquoise.png",
-                "weight": 250
+                "weight": -1
+            },
+            "Bike Yellow": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Bike Yellow.png",
+                "weight": -1
+            },
+            "Navy Blue": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Navy Blue.png",
+                "weight": -1
+            },
+            "Light Green": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Light Green.png",
+                "weight": -1
+            },
+            "Pink": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Pink.png",
+                "weight": -1
+            },
+            "Orange": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Orange.png",
+                "weight": -1
             }
         },
         "Holder": {
@@ -96,13 +96,13 @@
                 "White"
             ],
             "layers_number": 11,
-            "sum_of_weights": 2000,
-            "is_balanced": true,
+            "sum_of_weights": "unknown",
+            "is_balanced": false,
             "Blue": {
                 "name": "Holder-Blue",
                 "layers_number": 1,
-                "sum_of_weights": 200,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Blue"
                 ],
@@ -114,8 +114,8 @@
             "Free": {
                 "name": "Holder-Free",
                 "layers_number": 6,
-                "sum_of_weights": 899,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Cat1",
                     "Cat2",
@@ -138,22 +138,22 @@
                 },
                 "Cat4": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Free\\Cat4.png",
-                    "weight": 233
+                    "weight": -1
                 },
                 "Cat5": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Free\\Cat5.png",
-                    "weight": 233
+                    "weight": -1
                 },
                 "Cat6": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Free\\Cat6.png",
-                    "weight": 233
+                    "weight": -1
                 }
             },
             "Green": {
                 "name": "Holder-Green",
                 "layers_number": 1,
-                "sum_of_weights": 200,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Green"
                 ],
@@ -165,40 +165,40 @@
             "Orange": {
                 "name": "Holder-Orange",
                 "layers_number": 1,
-                "sum_of_weights": 233,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Orange"
                 ],
                 "Orange": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Orange\\Orange.png",
-                    "weight": 233
+                    "weight": -1
                 }
             },
             "Purple": {
                 "name": "Holder-Purple",
                 "layers_number": 1,
-                "sum_of_weights": 234,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Purple"
                 ],
                 "Purple": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\Purple\\Purple.png",
-                    "weight": 234
+                    "weight": -1
                 }
             },
             "White": {
                 "name": "Holder-White",
                 "layers_number": 1,
-                "sum_of_weights": 234,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "White"
                 ],
                 "White": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Holder\\White\\White.png",
-                    "weight": 234
+                    "weight": -1
                 }
             }
         },
@@ -223,8 +223,8 @@
             "Blue": {
                 "name": "Eggshell-Blue",
                 "layers_number": 9,
-                "sum_of_weights": 200,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Blue_Green",
                     "Blue_Purple",
@@ -238,46 +238,46 @@
                 ],
                 "Blue_Green": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Blue\\Blue_Green.png",
-                    "weight": 22
+                    "weight": -1
                 },
                 "Blue_Purple": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Blue\\Blue_Purple.png",
-                    "weight": 22
+                    "weight": -1
                 },
                 "Blue_Yellow": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Blue\\Blue_Yellow.png",
-                    "weight": 22
+                    "weight": -1
                 },
                 "Dark_Blue": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Blue\\Dark_Blue.png",
-                    "weight": 22
+                    "weight": -1
                 },
                 "Ice_Blue": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Blue\\Ice_Blue.png",
-                    "weight": 22
+                    "weight": -1
                 },
                 "Lightblue_Purple": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Blue\\Lightblue_Purple.png",
-                    "weight": 22
+                    "weight": -1
                 },
                 "Light_Blue": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Blue\\Light_Blue.png",
-                    "weight": 22
+                    "weight": -1
                 },
                 "Purple_Blue": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Blue\\Purple_Blue.png",
-                    "weight": 22
+                    "weight": -1
                 },
                 "White_Blue": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Blue\\White_Blue.png",
-                    "weight": 24
+                    "weight": -1
                 }
             },
             "Free": {
                 "name": "Eggshell-Free",
                 "layers_number": 3,
-                "sum_of_weights": 899,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Cat4",
                     "Cat5",
@@ -285,22 +285,22 @@
                 ],
                 "Cat4": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Free\\Cat4.png",
-                    "weight": 299
+                    "weight": -1
                 },
                 "Cat5": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Free\\Cat5.png",
-                    "weight": 299
+                    "weight": -1
                 },
                 "Cat6": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Free\\Cat6.png",
-                    "weight": 301
+                    "weight": -1
                 }
             },
             "Green": {
                 "name": "Eggshell-Green",
                 "layers_number": 3,
-                "sum_of_weights": 200,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Green",
                     "Green_Blue",
@@ -308,22 +308,22 @@
                 ],
                 "Green": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Green\\Green.png",
-                    "weight": 66
+                    "weight": -1
                 },
                 "Green_Blue": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Green\\Green_Blue.png",
-                    "weight": 66
+                    "weight": -1
                 },
                 "Green_Orange": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Green\\Green_Orange.png",
-                    "weight": 68
+                    "weight": -1
                 }
             },
             "Orange": {
                 "name": "Eggshell-Orange",
                 "layers_number": 6,
-                "sum_of_weights": 233,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Light_Orange",
                     "Orange_Blue",
@@ -334,34 +334,34 @@
                 ],
                 "Light_Orange": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Orange\\Light_Orange.png",
-                    "weight": 38
+                    "weight": -1
                 },
                 "Orange_Blue": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Orange\\Orange_Blue.png",
-                    "weight": 38
+                    "weight": -1
                 },
                 "Orange_Pink": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Orange\\Orange_Pink.png",
-                    "weight": 38
+                    "weight": -1
                 },
                 "Orange_White": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Orange\\Orange_White.png",
-                    "weight": 38
+                    "weight": -1
                 },
                 "Orange_Yellow": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Orange\\Orange_Yellow.png",
-                    "weight": 38
+                    "weight": -1
                 },
                 "Red_Orange": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Orange\\Red_Orange.png",
-                    "weight": 43
+                    "weight": -1
                 }
             },
             "Purple": {
                 "name": "Eggshell-Purple",
                 "layers_number": 5,
-                "sum_of_weights": 234,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Purple_Blue ",
                     "Purple_Littlepink",
@@ -371,30 +371,30 @@
                 ],
                 "Purple_Blue ": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Purple\\Purple_Blue .png",
-                    "weight": 46
+                    "weight": -1
                 },
                 "Purple_Littlepink": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Purple\\Purple_Littlepink.png",
-                    "weight": 46
+                    "weight": -1
                 },
                 "Purple_Orange": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Purple\\Purple_Orange.png",
-                    "weight": 46
+                    "weight": -1
                 },
                 "Purple_Pink": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Purple\\Purple_Pink.png",
-                    "weight": 46
+                    "weight": -1
                 },
                 "Purple_Yellow": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\Purple\\Purple_Yellow.png",
-                    "weight": 50
+                    "weight": -1
                 }
             },
             "White": {
                 "name": "Eggshell-White",
                 "layers_number": 3,
-                "sum_of_weights": 234,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Dark_White",
                     "White_Milky",
@@ -402,15 +402,15 @@
                 ],
                 "Dark_White": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\White\\Dark_White.png",
-                    "weight": 78
+                    "weight": -1
                 },
                 "White_Milky": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\White\\White_Milky.png",
-                    "weight": 78
+                    "weight": -1
                 },
                 "Yellow_White": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Eggshell\\White\\Yellow_White.png",
-                    "weight": 78
+                    "weight": -1
                 }
             }
         },
@@ -435,8 +435,8 @@
             "Blue": {
                 "name": "Pattern-Blue",
                 "layers_number": 13,
-                "sum_of_weights": 200,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Blue_Block",
                     "Blue_Chaos",
@@ -454,62 +454,62 @@
                 ],
                 "Blue_Block": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Blue\\Blue_Block.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Blue_Chaos": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Blue\\Blue_Chaos.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Blue_Constellation": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Blue\\Blue_Constellation.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Blue_Deepmind": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Blue\\Blue_Deepmind.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Blue_Honeycomb": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Blue\\Blue_Honeycomb.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Blue_Maze": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Blue\\Blue_Maze.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Blue_Mirror": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Blue\\Blue_Mirror.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Blue_Neurons": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Blue\\Blue_Neurons.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Blue_Pixel": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Blue\\Blue_Pixel.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Blue_Recursion": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Blue\\Blue_Recursion.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Blue_Starburst": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Blue\\Blue_Starburst.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Blue_Vortex": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Blue\\Blue_Vortex.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Blue_Wave": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Blue\\Blue_Wave.png",
-                    "weight": 20
+                    "weight": -1
                 }
             },
             "Free": {
                 "name": "Pattern-Free",
                 "layers_number": 6,
-                "sum_of_weights": 899,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Cat1",
                     "Cat2",
@@ -532,22 +532,22 @@
                 },
                 "Cat4": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Free\\Cat4.png",
-                    "weight": 233
+                    "weight": -1
                 },
                 "Cat5": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Free\\Cat5.png",
-                    "weight": 233
+                    "weight": -1
                 },
                 "Cat6": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Free\\Cat6.png",
-                    "weight": 233
+                    "weight": -1
                 }
             },
             "Green": {
                 "name": "Pattern-Green",
                 "layers_number": 13,
-                "sum_of_weights": 200,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Greene$Green_Neurons",
                     "Green_Block",
@@ -565,62 +565,62 @@
                 ],
                 "Greene$Green_Neurons": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Green\\Greene$Green_Neurons.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Green_Block": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Green\\Green_Block.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Green_Chaos": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Green\\Green_Chaos.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Green_Constellation": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Green\\Green_Constellation.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Green_Deepmind": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Green\\Green_Deepmind.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Green_Honeycomb": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Green\\Green_Honeycomb.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Green_Maze": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Green\\Green_Maze.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Green_Mirror": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Green\\Green_Mirror.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Green_Pixel": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Green\\Green_Pixel.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Green_Recursion": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Green\\Green_Recursion.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Green_Starburst": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Green\\Green_Starburst.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Green_Vortex": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Green\\Green_Vortex.png",
-                    "weight": 15
+                    "weight": -1
                 },
                 "Green_Wave": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Green\\Green_Wave.png",
-                    "weight": 20
+                    "weight": -1
                 }
             },
             "Orange": {
                 "name": "Pattern-Orange",
                 "layers_number": 13,
-                "sum_of_weights": 233,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Orange_Block",
                     "Orange_Chaos",
@@ -638,62 +638,62 @@
                 ],
                 "Orange_Block": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Orange\\Orange_Block.png",
-                    "weight": 17
+                    "weight": -1
                 },
                 "Orange_Chaos": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Orange\\Orange_Chaos.png",
-                    "weight": 17
+                    "weight": -1
                 },
                 "Orange_Constellation": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Orange\\Orange_Constellation.png",
-                    "weight": 17
+                    "weight": -1
                 },
                 "Orange_Honeycomb": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Orange\\Orange_Honeycomb.png",
-                    "weight": 17
+                    "weight": -1
                 },
                 "Orange_Maze": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Orange\\Orange_Maze.png",
-                    "weight": 17
+                    "weight": -1
                 },
                 "Orange_Mirror": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Orange\\Orange_Mirror.png",
-                    "weight": 17
+                    "weight": -1
                 },
                 "Orange_Neurons": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Orange\\Orange_Neurons.png",
-                    "weight": 17
+                    "weight": -1
                 },
                 "Orange_Pixel": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Orange\\Orange_Pixel.png",
-                    "weight": 17
+                    "weight": -1
                 },
                 "Orange_Recursion": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Orange\\Orange_Recursion.png",
-                    "weight": 17
+                    "weight": -1
                 },
                 "Orange_Starburst": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Orange\\Orange_Starburst.png",
-                    "weight": 17
+                    "weight": -1
                 },
                 "Orange_Vortex": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Orange\\Orange_Vortex.png",
-                    "weight": 17
+                    "weight": -1
                 },
                 "Orange_Wave": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Orange\\Orange_Wave.png",
-                    "weight": 17
+                    "weight": -1
                 },
                 "Orange__Deepmind": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Orange\\Orange__Deepmind.png",
-                    "weight": 29
+                    "weight": -1
                 }
             },
             "Purple": {
                 "name": "Pattern-Purple",
                 "layers_number": 13,
-                "sum_of_weights": 234,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Purple_Block",
                     "Purple_Chaos",
@@ -711,62 +711,62 @@
                 ],
                 "Purple_Block": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Purple\\Purple_Block.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "Purple_Chaos": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Purple\\Purple_Chaos.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "Purple_Constellation": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Purple\\Purple_Constellation.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "Purple_Deepmind": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Purple\\Purple_Deepmind.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "Purple_Honeycomb": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Purple\\Purple_Honeycomb.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "Purple_Maze": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Purple\\Purple_Maze.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "Purple_Mirror": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Purple\\Purple_Mirror.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "Purple_Neurons": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Purple\\Purple_Neurons.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "Purple_Pixel": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Purple\\Purple_Pixel.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "Purple_Recursion": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Purple\\Purple_Recursion.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "Purple_Starburst": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Purple\\Purple_Starburst.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "Purple_Vortex": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Purple\\Purple_Vortex.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "Purple_Wave": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\Purple\\Purple_Wave.png",
-                    "weight": 18
+                    "weight": -1
                 }
             },
             "White": {
                 "name": "Pattern-White",
                 "layers_number": 13,
-                "sum_of_weights": 234,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "White_Block",
                     "White_Chaos",
@@ -784,55 +784,55 @@
                 ],
                 "White_Block": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\White\\White_Block.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "White_Chaos": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\White\\White_Chaos.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "White_Constellation": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\White\\White_Constellation.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "White_Deepmind": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\White\\White_Deepmind.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "White_Honeycomb": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\White\\White_Honeycomb.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "White_Maze": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\White\\White_Maze.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "White_Mirror": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\White\\White_Mirror.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "White_Neurons": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\White\\White_Neurons.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "White_Pixel": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\White\\White_Pixel.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "White_Recursion": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\White\\White_Recursion.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "White_Starburst": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\White\\White_Starburst.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "White_Vortex": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\White\\White_Vortex.png",
-                    "weight": 18
+                    "weight": -1
                 },
                 "White_Wave": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Pattern\\White\\White_Wave.png",
-                    "weight": 18
+                    "weight": -1
                 }
             }
         },
@@ -857,8 +857,8 @@
             "Blue": {
                 "name": "Stroke-Blue",
                 "layers_number": 1,
-                "sum_of_weights": 0,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Blue"
                 ],
@@ -870,8 +870,8 @@
             "Free": {
                 "name": "Stroke-Free",
                 "layers_number": 3,
-                "sum_of_weights": 899,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Cat1",
                     "Cat3",
@@ -887,14 +887,14 @@
                 },
                 "Cat4": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Stroke\\Free\\Cat4.png",
-                    "weight": 759
+                    "weight": -1
                 }
             },
             "Green": {
                 "name": "Stroke-Green",
                 "layers_number": 1,
-                "sum_of_weights": 0,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Green"
                 ],
@@ -906,26 +906,26 @@
             "Orange": {
                 "name": "Stroke-Orange",
                 "layers_number": 2,
-                "sum_of_weights": 233,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Orange",
                     "Red"
                 ],
                 "Orange": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Stroke\\Orange\\Orange.png",
-                    "weight": 116
+                    "weight": -1
                 },
                 "Red": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Stroke\\Orange\\Red.png",
-                    "weight": 117
+                    "weight": -1
                 }
             },
             "Purple": {
                 "name": "Stroke-Purple",
                 "layers_number": 1,
-                "sum_of_weights": 0,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Purple"
                 ],
@@ -937,8 +937,8 @@
             "White": {
                 "name": "Stroke-White",
                 "layers_number": 1,
-                "sum_of_weights": 0,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Black"
                 ],
@@ -970,8 +970,8 @@
             "Blue": {
                 "name": "Halo-Blue",
                 "layers_number": 1,
-                "sum_of_weights": 0,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Blue_Sky"
                 ],
@@ -983,21 +983,21 @@
             "Free": {
                 "name": "Halo-Free",
                 "layers_number": 1,
-                "sum_of_weights": 0,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Cat1"
                 ],
                 "Cat1": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Halo\\Free\\Cat1#20.png",
-                    "weight": -1
+                    "weight": 20
                 }
             },
             "Green": {
                 "name": "Halo-Green",
                 "layers_number": 1,
-                "sum_of_weights": 0,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Green_Hope"
                 ],
@@ -1009,8 +1009,8 @@
             "Orange": {
                 "name": "Halo-Orange",
                 "layers_number": 1,
-                "sum_of_weights": 0,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Orange_Vitality"
                 ],
@@ -1022,8 +1022,8 @@
             "Purple": {
                 "name": "Halo-Purple",
                 "layers_number": 1,
-                "sum_of_weights": 0,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Purple_Electricity"
                 ],
@@ -1035,8 +1035,8 @@
             "White": {
                 "name": "Halo-White",
                 "layers_number": 1,
-                "sum_of_weights": 0,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "White_Angel"
                 ],
@@ -1068,8 +1068,8 @@
             "Blue": {
                 "name": "Music_Effect-Blue",
                 "layers_number": 4,
-                "sum_of_weights": 200,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Blue_Firefly",
                     "Blue_Sonic",
@@ -1078,26 +1078,26 @@
                 ],
                 "Blue_Firefly": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Blue\\Blue_Firefly.png",
-                    "weight": 50
+                    "weight": -1
                 },
                 "Blue_Sonic": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Blue\\Blue_Sonic.png",
-                    "weight": 50
+                    "weight": -1
                 },
                 "Blue_Star": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Blue\\Blue_Star.png",
-                    "weight": 50
+                    "weight": -1
                 },
                 "Blue_Stream": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Blue\\Blue_Stream.png",
-                    "weight": 50
+                    "weight": -1
                 }
             },
             "Free": {
                 "name": "Music_Effect-Free",
                 "layers_number": 3,
-                "sum_of_weights": 899,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Cat5",
                     "Cat6",
@@ -1105,22 +1105,22 @@
                 ],
                 "Cat5": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Free\\Cat5.png",
-                    "weight": 299
+                    "weight": -1
                 },
                 "Cat6": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Free\\Cat6.png",
-                    "weight": 299
+                    "weight": -1
                 },
                 "None": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Free\\None.png",
-                    "weight": 301
+                    "weight": -1
                 }
             },
             "Green": {
                 "name": "Music_Effect-Green",
                 "layers_number": 4,
-                "sum_of_weights": 200,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Green_Firefly",
                     "Green_Sonic",
@@ -1129,26 +1129,26 @@
                 ],
                 "Green_Firefly": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Green\\Green_Firefly.png",
-                    "weight": 50
+                    "weight": -1
                 },
                 "Green_Sonic": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Green\\Green_Sonic.png",
-                    "weight": 50
+                    "weight": -1
                 },
                 "Green_Star": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Green\\Green_Star.png",
-                    "weight": 50
+                    "weight": -1
                 },
                 "Green_Stream": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Green\\Green_Stream.png",
-                    "weight": 50
+                    "weight": -1
                 }
             },
             "Orange": {
                 "name": "Music_Effect-Orange",
                 "layers_number": 4,
-                "sum_of_weights": 233,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Orange_Firefly",
                     "Orange_Sonic",
@@ -1157,26 +1157,26 @@
                 ],
                 "Orange_Firefly": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Orange\\Orange_Firefly.png",
-                    "weight": 58
+                    "weight": -1
                 },
                 "Orange_Sonic": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Orange\\Orange_Sonic.png",
-                    "weight": 58
+                    "weight": -1
                 },
                 "Orange_Star": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Orange\\Orange_Star.png",
-                    "weight": 58
+                    "weight": -1
                 },
                 "Orange_Stream": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Orange\\Orange_Stream.png",
-                    "weight": 59
+                    "weight": -1
                 }
             },
             "Purple": {
                 "name": "Music_Effect-Purple",
                 "layers_number": 4,
-                "sum_of_weights": 234,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Purple_Firefly",
                     "Purple_Sonic",
@@ -1185,26 +1185,26 @@
                 ],
                 "Purple_Firefly": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Purple\\Purple_Firefly.png",
-                    "weight": 58
+                    "weight": -1
                 },
                 "Purple_Sonic": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Purple\\Purple_Sonic.png",
-                    "weight": 58
+                    "weight": -1
                 },
                 "Purple_Star": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Purple\\Purple_Star.png",
-                    "weight": 58
+                    "weight": -1
                 },
                 "Purple_Stream": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\Purple\\Purple_Stream.png",
-                    "weight": 60
+                    "weight": -1
                 }
             },
             "White": {
                 "name": "Music_Effect-White",
                 "layers_number": 4,
-                "sum_of_weights": 234,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "White_Firefly",
                     "White_Sonic",
@@ -1213,19 +1213,19 @@
                 ],
                 "White_Firefly": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\White\\White_Firefly.png",
-                    "weight": 58
+                    "weight": -1
                 },
                 "White_Sonic": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\White\\White_Sonic.png",
-                    "weight": 58
+                    "weight": -1
                 },
                 "White_Star": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\White\\White_Star.png",
-                    "weight": 58
+                    "weight": -1
                 },
                 "White_Stream": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Music_Effect\\White\\White_Stream.png",
-                    "weight": 60
+                    "weight": -1
                 }
             }
         },
@@ -1251,8 +1251,8 @@
             "Blue": {
                 "name": "Base-Blue",
                 "layers_number": 4,
-                "sum_of_weights": 200,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Blue_Gear",
                     "Blue_Rhythm",
@@ -1261,7 +1261,7 @@
                 ],
                 "Blue_Gear": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Blue\\Blue_Gear#300.png",
-                    "weight": 16
+                    "weight": 300
                 },
                 "Blue_Rhythm": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Blue\\Blue_Rhythm#150.png",
@@ -1269,18 +1269,18 @@
                 },
                 "Blue_Scale": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Blue\\Blue_Scale#540.png",
-                    "weight": 16
+                    "weight": 540
                 },
                 "Blue_Shield": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Blue\\Blue_Shield#200.png",
-                    "weight": 18
+                    "weight": 200
                 }
             },
             "Free": {
                 "name": "Base-Free",
                 "layers_number": 4,
-                "sum_of_weights": 899,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Cat1",
                     "Cat3",
@@ -1297,18 +1297,18 @@
                 },
                 "Cat5": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Free\\Cat5.png",
-                    "weight": 379
+                    "weight": -1
                 },
                 "Cat6": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Free\\Cat6.png",
-                    "weight": 380
+                    "weight": -1
                 }
             },
             "Green": {
                 "name": "Base-Green",
                 "layers_number": 4,
-                "sum_of_weights": 200,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Green_Gear",
                     "Green_Rhythm",
@@ -1317,26 +1317,26 @@
                 ],
                 "Green_Gear": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Green\\Green_Gear#1000.png",
-                    "weight": 50
+                    "weight": 1000
                 },
                 "Green_Rhythm": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Green\\Green_Rhythm#600.png",
-                    "weight": 50
+                    "weight": 600
                 },
                 "Green_Scale": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Green\\Green_Scale#230.png",
-                    "weight": 50
+                    "weight": 230
                 },
                 "Green_Shield": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Green\\Green_Shield#500.png",
-                    "weight": 50
+                    "weight": 500
                 }
             },
             "Orange": {
                 "name": "Base-Orange",
                 "layers_number": 4,
-                "sum_of_weights": 233,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Orange_Gear",
                     "Orange_Rhythm",
@@ -1345,26 +1345,26 @@
                 ],
                 "Orange_Gear": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Orange\\Orange_Gear#300.png",
-                    "weight": 58
+                    "weight": 300
                 },
                 "Orange_Rhythm": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Orange\\Orange_Rhythm#300.png",
-                    "weight": 58
+                    "weight": 300
                 },
                 "Orange_Scale": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Orange\\Orange_Scale#250.png",
-                    "weight": 58
+                    "weight": 250
                 },
                 "Orange_Shield": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Orange\\Orange_Shield#600.png",
-                    "weight": 59
+                    "weight": 600
                 }
             },
             "Purple": {
                 "name": "Base-Purple",
                 "layers_number": 4,
-                "sum_of_weights": 234,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "Purple_Gear",
                     "Purple_Rhythm",
@@ -1377,22 +1377,22 @@
                 },
                 "Purple_Rhythm": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Purple\\Purple_Rhythm#560.png",
-                    "weight": 44
+                    "weight": 560
                 },
                 "Purple_Scale": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Purple\\Purple_Scale#700.png",
-                    "weight": 44
+                    "weight": 700
                 },
                 "Purple_Shield": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\Purple\\Purple_Shield#800.png",
-                    "weight": 46
+                    "weight": 800
                 }
             },
             "White": {
                 "name": "Base-White",
                 "layers_number": 4,
-                "sum_of_weights": 234,
-                "is_balanced": true,
+                "sum_of_weights": "unknown",
+                "is_balanced": false,
                 "layer_list": [
                     "White_Gear",
                     "White_Rhythm",
@@ -1401,19 +1401,19 @@
                 ],
                 "White_Gear": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\White\\White_Gear.png",
-                    "weight": 58
+                    "weight": -1
                 },
                 "White_Rhythm": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\White\\White_Rhythm.png",
-                    "weight": 58
+                    "weight": -1
                 },
                 "White_Scale": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\White\\White_Scale.png",
-                    "weight": 58
+                    "weight": -1
                 },
                 "White_Shield": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Base\\White\\White_Shield.png",
-                    "weight": 60
+                    "weight": -1
                 }
             }
         }

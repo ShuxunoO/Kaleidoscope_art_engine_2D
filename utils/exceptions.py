@@ -3,7 +3,7 @@ import logging
 import sys
 sys.path.append("..")
 from CONST_ENV import ENV_PATH as PATH
-logging.basicConfig(filename="../../src/balance_weights.log")
+logging.basicConfig(filename="../src/balance_weights.log")
 
 class Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(Exception):
     def __init__(self, dir_name, layer_name, current_weight, given_weight):

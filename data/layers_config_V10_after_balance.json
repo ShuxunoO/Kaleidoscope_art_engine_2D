@@ -5,19 +5,15 @@
             "isBeaconLayer": false,
             "existSubdir": false,
             "layer_list": [
-                "Dune",
                 "Mountains",
                 "Wave",
+                "Dune",
                 "Grassland"
             ],
             "dir_list": [],
             "layers_number": 4,
             "sum_of_weights": 2000,
             "is_balanced": true,
-            "Dune": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#200.png",
-                "weight": 421
-            },
             "Mountains": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Mountains#100.png",
                 "weight": 211
@@ -25,6 +21,10 @@
             "Wave": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Wave#350.png",
                 "weight": 737
+            },
+            "Dune": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#200.png",
+                "weight": 421
             },
             "Grassland": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Grassland#300.png",
@@ -36,49 +36,49 @@
             "isBeaconLayer": false,
             "existSubdir": false,
             "layer_list": [
-                "Bike Yellow",
-                "Light Green",
-                "Navy Blue",
                 "Blue Original",
-                "Orange",
                 "Purple",
+                "Shining Turquoise",
+                "Bike Yellow",
+                "Navy Blue",
+                "Light Green",
                 "Pink",
-                "Shining Turquoise"
+                "Orange"
             ],
             "dir_list": [],
             "layers_number": 8,
             "sum_of_weights": 2000,
             "is_balanced": true,
-            "Bike Yellow": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Bike Yellow.png",
-                "weight": 250
-            },
-            "Light Green": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Light Green.png",
-                "weight": 250
-            },
-            "Navy Blue": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Navy Blue.png",
-                "weight": 250
-            },
             "Blue Original": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Blue Original.png",
-                "weight": 250
-            },
-            "Orange": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Orange.png",
                 "weight": 250
             },
             "Purple": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Purple.png",
                 "weight": 250
             },
+            "Shining Turquoise": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Shining Turquoise.png",
+                "weight": 250
+            },
+            "Bike Yellow": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Bike Yellow.png",
+                "weight": 250
+            },
+            "Navy Blue": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Navy Blue.png",
+                "weight": 250
+            },
+            "Light Green": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Light Green.png",
+                "weight": 250
+            },
             "Pink": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Pink.png",
                 "weight": 250
             },
-            "Shining Turquoise": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Shining Turquoise.png",
+            "Orange": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Orange.png",
                 "weight": 250
             }
         },
@@ -218,8 +218,8 @@
                 "White"
             ],
             "layers_number": 29,
-            "sum_of_weights": "unknown",
-            "is_balanced": false,
+            "sum_of_weights": 2000,
+            "is_balanced": true,
             "Blue": {
                 "name": "Eggshell-Blue",
                 "layers_number": 9,
@@ -430,8 +430,8 @@
                 "White"
             ],
             "layers_number": 71,
-            "sum_of_weights": "unknown",
-            "is_balanced": false,
+            "sum_of_weights": 2000,
+            "is_balanced": true,
             "Blue": {
                 "name": "Pattern-Blue",
                 "layers_number": 13,
@@ -852,19 +852,19 @@
                 "White"
             ],
             "layers_number": 9,
-            "sum_of_weights": "unknown",
-            "is_balanced": false,
+            "sum_of_weights": 2000,
+            "is_balanced": true,
             "Blue": {
                 "name": "Stroke-Blue",
                 "layers_number": 1,
-                "sum_of_weights": 0,
+                "sum_of_weights": 200,
                 "is_balanced": true,
                 "layer_list": [
                     "Blue"
                 ],
                 "Blue": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Stroke\\Blue\\Blue.png",
-                    "weight": -1
+                    "weight": 200
                 }
             },
             "Free": {
@@ -893,14 +893,14 @@
             "Green": {
                 "name": "Stroke-Green",
                 "layers_number": 1,
-                "sum_of_weights": 0,
+                "sum_of_weights": 200,
                 "is_balanced": true,
                 "layer_list": [
                     "Green"
                 ],
                 "Green": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Stroke\\Green\\Green.png",
-                    "weight": -1
+                    "weight": 200
                 }
             },
             "Orange": {
@@ -924,27 +924,27 @@
             "Purple": {
                 "name": "Stroke-Purple",
                 "layers_number": 1,
-                "sum_of_weights": 0,
+                "sum_of_weights": 234,
                 "is_balanced": true,
                 "layer_list": [
                     "Purple"
                 ],
                 "Purple": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Stroke\\Purple\\Purple.png",
-                    "weight": -1
+                    "weight": 234
                 }
             },
             "White": {
                 "name": "Stroke-White",
                 "layers_number": 1,
-                "sum_of_weights": 0,
+                "sum_of_weights": 234,
                 "is_balanced": true,
                 "layer_list": [
                     "Black"
                 ],
                 "Black": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Stroke\\White\\Black.png",
-                    "weight": -1
+                    "weight": 234
                 }
             }
         },
@@ -965,84 +965,84 @@
                 "White"
             ],
             "layers_number": 6,
-            "sum_of_weights": "unknown",
-            "is_balanced": false,
+            "sum_of_weights": 2000,
+            "is_balanced": true,
             "Blue": {
                 "name": "Halo-Blue",
                 "layers_number": 1,
-                "sum_of_weights": 0,
+                "sum_of_weights": 200,
                 "is_balanced": true,
                 "layer_list": [
                     "Blue_Sky"
                 ],
                 "Blue_Sky": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Halo\\Blue\\Blue_Sky.png",
-                    "weight": -1
+                    "weight": 200
                 }
             },
             "Free": {
                 "name": "Halo-Free",
                 "layers_number": 1,
-                "sum_of_weights": 0,
+                "sum_of_weights": 899,
                 "is_balanced": true,
                 "layer_list": [
                     "Cat1"
                 ],
                 "Cat1": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Halo\\Free\\Cat1#20.png",
-                    "weight": -1
+                    "weight": 899
                 }
             },
             "Green": {
                 "name": "Halo-Green",
                 "layers_number": 1,
-                "sum_of_weights": 0,
+                "sum_of_weights": 200,
                 "is_balanced": true,
                 "layer_list": [
                     "Green_Hope"
                 ],
                 "Green_Hope": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Halo\\Green\\Green_Hope.png",
-                    "weight": -1
+                    "weight": 200
                 }
             },
             "Orange": {
                 "name": "Halo-Orange",
                 "layers_number": 1,
-                "sum_of_weights": 0,
+                "sum_of_weights": 233,
                 "is_balanced": true,
                 "layer_list": [
                     "Orange_Vitality"
                 ],
                 "Orange_Vitality": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Halo\\Orange\\Orange_Vitality.png",
-                    "weight": -1
+                    "weight": 233
                 }
             },
             "Purple": {
                 "name": "Halo-Purple",
                 "layers_number": 1,
-                "sum_of_weights": 0,
+                "sum_of_weights": 234,
                 "is_balanced": true,
                 "layer_list": [
                     "Purple_Electricity"
                 ],
                 "Purple_Electricity": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Halo\\Purple\\Purple_Electricity.png",
-                    "weight": -1
+                    "weight": 234
                 }
             },
             "White": {
                 "name": "Halo-White",
                 "layers_number": 1,
-                "sum_of_weights": 0,
+                "sum_of_weights": 234,
                 "is_balanced": true,
                 "layer_list": [
                     "White_Angel"
                 ],
                 "White_Angel": {
                     "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Halo\\White\\White_Angel.png",
-                    "weight": -1
+                    "weight": 234
                 }
             }
         },
@@ -1063,8 +1063,8 @@
                 "White"
             ],
             "layers_number": 23,
-            "sum_of_weights": "unknown",
-            "is_balanced": false,
+            "sum_of_weights": 2000,
+            "is_balanced": true,
             "Blue": {
                 "name": "Music_Effect-Blue",
                 "layers_number": 4,
@@ -1246,8 +1246,8 @@
                 "White"
             ],
             "layers_number": 24,
-            "sum_of_weights": "unknown",
-            "is_balanced": false,
+            "sum_of_weights": 2000,
+            "is_balanced": true,
             "Blue": {
                 "name": "Base-Blue",
                 "layers_number": 4,

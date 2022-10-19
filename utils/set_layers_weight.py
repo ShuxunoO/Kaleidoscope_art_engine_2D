@@ -1,4 +1,3 @@
-from CONST_ENV import ENV_PATH as PATH
 import traceback
 import logging
 import sys
@@ -9,22 +8,34 @@ logging.basicConfig(filename="../../src/balance_weights.log")
 """
 """
 
+
 def balance_layerweight(layerconfig_json, layerinfo_json):
     _SUM = layerconfig_json["totalNumber"]
     layers_order = layerconfig_json["layersOrder"]
+    # 先优先均衡信标层的权重
+    for layer in layers_order:
+        layer_name = layer["name"]
+        layer_info = layerinfo_json[layer_name]
+        print(layer_name)
+        if layer_info["isBeaconLayer"] == True:
+            balance_layer_weight_in_subdirs(
+                layerinfo_json, _SUM, layer_name)
+
     for layer in layers_order:
         layer_name = layer["name"]
         layer_info = layerinfo_json[layer_name]
         print(layer_name)
         if layer_info["existSubdir"] == False:  # 表明该图层没有所属的信标图层
             layer_list = layer_info["layer_list"]
-            balance_layer_weight_in_layerlist(_SUM, layer_list, layer_info)
+            balance_layer_weight_in_layer_list(_SUM, layer_list, layer_info)
         else:
-            print("existSubdir")
-            balance_layer_weight_in_subdirs(
-                layerinfo_json, _SUM, layer_name)
+            # 只处理没有处理过的图层
+            if layer_info["is_balanced"] == False:
+                balance_layer_weight_in_subdirs(
+                    layerinfo_json, _SUM, layer_name)
 
-def balance_layer_weight_in_layerlist(_SUM, layer_list, layer_info):
+
+def balance_layer_weight_in_layer_list(_SUM, layer_list, layer_info):
     layers_num = layer_info["layers_number"]
     print(layer_list)
     _sum, counter = count_weights_in_layer_list(_SUM, layer_list, layer_info)
@@ -79,8 +90,7 @@ def balance_layer_weight_in_layerlist(_SUM, layer_list, layer_info):
                 logging.error(traceback.format_exc())
                 print(_ERROR)
                 sys.exit(0)
-    update_sum_of_weights(_SUM, layer_list, [], layer_info, _type = "root_dir")
-    layer_info["is_balanced"] = True
+    update_sum_of_weights(_SUM, layer_list, [], layer_info, 1)
 
 
 def balance_layer_weight_in_subdirs(layerinfo_json, _SUM, layer_name):
@@ -93,11 +103,8 @@ def balance_layer_weight_in_subdirs(layerinfo_json, _SUM, layer_name):
         # 信标层必须要在子层之前均衡
         dir_list = layer_info["dir_list"]
         redistribute_subordinate_layer(layerinfo_json, dir_list, layer_name)
-
-
-    # 如果有所属的信标图层，则先读取到信标图层对应文件夹的权重之和，然后根据这个权重进行重新分配
-
-    # 如果如果有所属的信标图层，但同时自己又含有一些信标图层不含有的分类，则按照常规方法进行均衡
+    else:
+        redistribute_beacon_subordinate_layer(layerinfo_json, _SUM, layer_name)
 
 
 def count_weights_in_dir_list(_SUM, dir_list, layer_info):
@@ -112,6 +119,7 @@ def count_weights_in_dir_list(_SUM, dir_list, layer_info):
         print(layer_info["name"], _sum, counter)
     return _sum, counter
 
+
 def count_weights_in_layer_list(_SUM, layer_list, layer_info):
     counter = 0  # Accumulate the number of layers that have been assigned weights
     _sum = 0  # the sum of layers' weights that have been assigned weights
@@ -120,7 +128,7 @@ def count_weights_in_layer_list(_SUM, layer_list, layer_info):
             weight = layer_info[layer]["weight"]
             if weight != -1:
                 try:
-                    if weight >= _SUM:
+                    if weight >= _SUM and len(layer_list) > 1:
                         raise exceptions.Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(
                             layer_info["name"], layer, weight, _SUM)
                     _sum += weight
@@ -132,24 +140,24 @@ def count_weights_in_layer_list(_SUM, layer_list, layer_info):
     return _sum, counter
 
 
-def update_sum_of_weights(_SUM, layer_list, dir_list, layer_info, _type):
-    if _type == "root_dir":
+def update_sum_of_weights(_SUM, layer_list, dir_list, layer_info, flag):
+    if flag == 1:  # 没有子文件夹
         _sum, _ = count_weights_in_layer_list(_SUM, layer_list, layer_info)
         print("sum_of_weights after balance", _sum)
         layer_info["sum_of_weights"] = _sum
-    else:  # 更新含有子文件夹的父文件夹权重
+        layer_info["is_balanced"] = True
+    if flag == 2:  # 更新含有子文件夹的父文件夹权重
         _sum, _ = count_weights_in_dir_list(_SUM, dir_list, layer_info)
         layer_info["sum_of_weights"] = _sum
+        layer_info["is_balanced"] = True
 
 
 # 全有赋值，但总和不对
 def redistribute_weights_for_all_layers(_SUM, remaining_counter, _sum, layer_list, layer_info):
     remaining_sum = _SUM
     for layer in layer_list:
-        print(layer)
         if remaining_counter > 1:
             new_weight = round(_SUM * layer_info[layer]["weight"] / _sum)
-            print(new_weight)
             layer_info[layer]["weight"] = new_weight
             remaining_sum -= new_weight
             remaining_counter -= 1
@@ -158,6 +166,8 @@ def redistribute_weights_for_all_layers(_SUM, remaining_counter, _sum, layer_lis
     return remaining_counter
 
 # 一个赋值都没有
+
+
 def redistribute_weights_for_all_noweight_layers(remaining_sum, remaining_counter, layer_list, layer_info):
     average_value = remaining_sum // remaining_counter
     for layer in layer_list:
@@ -167,10 +177,12 @@ def redistribute_weights_for_all_noweight_layers(remaining_sum, remaining_counte
             remaining_counter -= 1
         else:
             layer_info[layer]["weight"] = remaining_sum
-    # print(layer_info)
+            temp_checker = layer_info[layer]["weight"]
     return remaining_sum, remaining_counter
 
 # 个别没有赋值的情况
+
+
 def redistribute_weights_for_noweight_layers(remaining_sum, remaining_counter, layer_list, layer_info):
     average_value = remaining_sum // remaining_counter
     for layer in layer_list:
@@ -181,13 +193,14 @@ def redistribute_weights_for_noweight_layers(remaining_sum, remaining_counter, l
                 remaining_counter -= 1
             else:
                 layer_info[layer]["weight"] = remaining_sum
-    # print(layer_info)
     return remaining_sum, remaining_counter
 
 
-def redistribute_beacon_layer( _SUM, dir_list, layer_info):
-    print(dir_list)
-    layers_num = layer_info["layers_number"]
+def redistribute_beacon_layer(_SUM, dir_list, layer_info):
+    # 先计算出信标层的总个数
+    layers_num = 0
+    for dir_item in dir_list:
+        layers_num += layer_info[dir_item]["layers_number"]
     _sum, counter = count_weights_in_dir_list(_SUM, dir_list, layer_info)
     remaining_sum = _SUM - _sum
     remaining_counter = layers_num - counter
@@ -220,8 +233,8 @@ def redistribute_beacon_layer( _SUM, dir_list, layer_info):
                 sublayer_list = layer_info[dir_item]["layer_list"]
                 remaining_sum, remaining_counter = redistribute_weights_for_noweight_layers(
                     remaining_sum, remaining_counter, sublayer_list, layer_info[dir_item])
-                update_sum_of_weights(_SUM, sublayer_list,[], layer_info[dir_item], _type = "sub_dir")
-
+                update_sum_of_weights(
+                    _SUM, sublayer_list, [], layer_info[dir_item], 1)
 
         try:
             if counter == layers_num:  # 图层均被赋值，但权重之和不满足指定值
@@ -234,7 +247,8 @@ def redistribute_beacon_layer( _SUM, dir_list, layer_info):
                 sublayer_list = layer_info[dir_item]["layer_list"]
                 remaining_counter = redistribute_weights_for_all_layers(
                     remaining_sum, remaining_counter, _sum, layer_info[dir_item])
-                update_sum_of_weights(_SUM, sublayer_list, [], layer_info[dir_item], _type = "sub_dir")
+                update_sum_of_weights(
+                    _SUM, sublayer_list, [], layer_info[dir_item], 1)
 
         try:
             if counter == 0:  # 图层一个都没有被赋值
@@ -247,20 +261,47 @@ def redistribute_beacon_layer( _SUM, dir_list, layer_info):
                 sublayer_list = layer_info[dir_item]["layer_list"]
                 remaining_sum, remaining_counter = redistribute_weights_for_all_noweight_layers(
                     remaining_sum, remaining_counter, layer_info[dir_item])
-                update_sum_of_weights(_SUM, sublayer_list, [], layer_info[dir_item], _type = "sub_dir")
-    update_sum_of_weights(_SUM, [], dir_list, layer_info, _type = "root_dir")
-    layer_info["is_balanced"] = True
+                update_sum_of_weights(
+                    _SUM, sublayer_list, [], layer_info[dir_item], 1)
+    update_sum_of_weights(_SUM, [], dir_list, layer_info, 2)
 
 
+# 分配从属层的权重
 def redistribute_subordinate_layer(layerinfo_json, dir_list, layer_name):
     layer_info = layerinfo_json[layer_name]
     beacon = layer_info["groupBy"]
     beacon_layer = layerinfo_json[beacon]
     for dir_item in dir_list:
-        _SUM = beacon_layer[dir_item]["sum_of_weights"]  # 拿到信标层的权重之和
-        layer_list = layer_info[dir_item]["layer_list"]  # 拿到要均衡的子列表
-        balance_layer_weight_in_layerlist(_SUM, layer_list, layer_info[dir_item])
-    layer_info["is_balanced"] = True
+        beacon_sum = beacon_layer[dir_item]["sum_of_weights"]  # 拿到信标层的权重之和
+        sublayer_list = layer_info[dir_item]["layer_list"]  # 拿到要均衡的子列表
+        print(sublayer_list)
+        balance_layer_weight_in_layer_list(
+            beacon_sum, sublayer_list, layer_info[dir_item])
+        update_sum_of_weights(beacon_sum, sublayer_list,
+                              [], layer_info[dir_item], 1)
+    update_sum_of_weights(
+        beacon_layer["sum_of_weights"], [], dir_list, layer_info, 2)
 
-def redistribute_beacon_subordinate_layer():
-    print()
+
+def redistribute_beacon_subordinate_layer(layerinfo_json, _SUM, layer_name):
+    layer_info = layerinfo_json[layer_name]
+    dir_list = layer_info["dir_list"]
+    beacon = layer_info["groupBy"]
+    beacon_layer = layerinfo_json[beacon]
+    beacon_dir_list = beacon_layer["dir_list"]
+    # 两个列表取交集得到交集附属子文件夹列表
+    subordinate_dir_list = list(
+        set(dir_list).intersection(set(beacon_dir_list)))
+    print(subordinate_dir_list)
+    # 两个列表取差集得到新的信标文件夹列表
+    new_beacon_dir_list = list(set(dir_list).difference(set(beacon_dir_list)))
+    # 先分配附属子层的文件夹
+    print(new_beacon_dir_list)
+    redistribute_subordinate_layer(
+        layerinfo_json, subordinate_dir_list, layer_name)
+    _sum, _ = count_weights_in_dir_list(_SUM, subordinate_dir_list, layer_info)
+    remaining_sum = _SUM - _sum
+    print("remaining_sum: ", remaining_sum)
+    # 分配新的信标层权重
+    redistribute_beacon_layer(remaining_sum, new_beacon_dir_list, layer_info)
+    update_sum_of_weights(_SUM, [], dir_list, layer_info, 2)

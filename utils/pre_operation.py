@@ -1,11 +1,9 @@
 import sys
 from pathlib import Path
-sys.path.append("../..")
-from CONST_ENV import ENV_PATH as PATH
-sys.path.append('..')
 from set_layers_weight import balance_layerweight
 from file_operations import load_lsyers_config, save_json
-
+sys.path.append('..')
+from CONST_ENV import ENV_PATH as PATH
 
 CONFIG = load_lsyers_config(PATH.CONFIG_PATH)
 layer_config = CONFIG["layerConfigurations"]
@@ -17,6 +15,3 @@ for index in range(len(layer_config)):
     layerconfig_json = layer_config[index]
     layerinfo_json = layer_info[index]
     balance_layerweight(layerconfig_json, layerinfo_json)
-
-
-save_json(PATH.DATA_PATH, "layers_config_V11_after_balance", layer_info)
