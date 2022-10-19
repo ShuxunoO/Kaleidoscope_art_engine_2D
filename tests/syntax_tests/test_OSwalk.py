@@ -24,4 +24,4 @@ for root, dirs, files in os.walk(PATH.LAYER_PATH):
     })
 
 
-save_json(PATH.DATA_PATH, "osWalk2", a)
+# save_json(PATH.DATA_PATH, "osWalk2", a)

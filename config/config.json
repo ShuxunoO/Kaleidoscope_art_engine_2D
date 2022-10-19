@@ -74,51 +74,51 @@
             "layersOrder": [
                 {
                     "name": "Background",
-                    "isGroupSet": false
+                    "isBeaconLayer": false
                 },
                 {
                     "name": "test1",
-                    "isGroupSet": false
+                    "isBeaconLayer": false
                 },
                 {
                     "name": "Holder",
-                    "isGroupSet": true
+                    "isBeaconLayer": true
                 },
                 {
                     "name": "Eggshell",
-                    "isGroupSet": false,
+                    "isBeaconLayer": false,
                     "groupBy": "Holder",
                     "hideInMetadata": false
                 },
                 {
                     "name": "Pattern",
                     "groupBy": "Holder",
-                    "isGroupSet": false,
+                    "isBeaconLayer": false,
                     "hideInMetadata": false
                 },
                 {
                     "name": "Stroke",
                     "groupBy": "Holder",
-                    "isGroupSet": false,
+                    "isBeaconLayer": false,
                     "hideInMetadata": false
                 },
                 {
                     "name": "Halo",
                     "groupBy": "Holder",
-                    "isGroupSet": false,
+                    "isBeaconLayer": false,
                     "bypassDNA": true,
                     "hideInMetadata": false
                 },
                 {
                     "name": "Music_Effect",
-                    "isGroupSet": false,
+                    "isBeaconLayer": false,
                     "groupBy": "Holder",
                     "bypassDNA": true,
                     "hideInMetadata": false
                 },
                 {
                     "name": "Base",
-                    "isGroupSet": false,
+                    "isBeaconLayer": false,
                     "groupBy": "Holder",
                     "bypassDNA": true,
                     "hideInMetadata": false

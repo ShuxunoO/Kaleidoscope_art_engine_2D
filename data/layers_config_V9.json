@@ -2,13 +2,13 @@
     {
         "Background": {
             "name": "Background",
-            "isGroupSet": false,
+            "isBeaconLayer": false,
             "existSubdir": false,
             "layer_list": [
                 "Dune",
-                "Grassland",
                 "Mountains",
-                "Wave"
+                "Wave",
+                "Grassland"
             ],
             "dir_list": [],
             "layers_number": 4,
@@ -18,10 +18,6 @@
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#200.png",
                 "weight": 200
             },
-            "Grassland": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Grassland#300.png",
-                "weight": 300
-            },
             "Mountains": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Mountains#100.png",
                 "weight": 100
@@ -29,40 +25,36 @@
             "Wave": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Wave#350.png",
                 "weight": 350
+            },
+            "Grassland": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Grassland#300.png",
+                "weight": 300
             }
         },
         "test1": {
             "name": "test1",
-            "isGroupSet": false,
+            "isBeaconLayer": false,
             "existSubdir": false,
             "layer_list": [
-                "Light Green",
                 "Bike Yellow",
-                "Pink",
-                "Shining Turquoise",
+                "Light Green",
                 "Navy Blue",
                 "Blue Original",
+                "Orange",
                 "Purple",
-                "Orange"
+                "Pink",
+                "Shining Turquoise"
             ],
             "dir_list": [],
             "layers_number": 8,
             "sum_of_weights": "unknown",
             "is_balanced": false,
-            "Light Green": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Light Green.png",
-                "weight": -1
-            },
             "Bike Yellow": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Bike Yellow.png",
                 "weight": -1
             },
-            "Pink": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Pink.png",
-                "weight": -1
-            },
-            "Shining Turquoise": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Shining Turquoise.png",
+            "Light Green": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Light Green.png",
                 "weight": -1
             },
             "Navy Blue": {
@@ -73,18 +65,26 @@
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Blue Original.png",
                 "weight": -1
             },
+            "Orange": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Orange.png",
+                "weight": -1
+            },
             "Purple": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Purple.png",
                 "weight": -1
             },
-            "Orange": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Orange.png",
+            "Pink": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Pink.png",
+                "weight": -1
+            },
+            "Shining Turquoise": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Shining Turquoise.png",
                 "weight": -1
             }
         },
         "Holder": {
             "name": "Holder",
-            "isGroupSet": true,
+            "isBeaconLayer": true,
             "existSubdir": true,
             "layer_list": [],
             "dir_list": [
@@ -204,7 +204,7 @@
         },
         "Eggshell": {
             "name": "Eggshell",
-            "isGroupSet": false,
+            "isBeaconLayer": false,
             "groupBy": "Holder",
             "hideInMetadata": false,
             "existSubdir": true,
@@ -417,7 +417,7 @@
         "Pattern": {
             "name": "Pattern",
             "groupBy": "Holder",
-            "isGroupSet": false,
+            "isBeaconLayer": false,
             "hideInMetadata": false,
             "existSubdir": true,
             "layer_list": [],
@@ -839,7 +839,7 @@
         "Stroke": {
             "name": "Stroke",
             "groupBy": "Holder",
-            "isGroupSet": false,
+            "isBeaconLayer": false,
             "hideInMetadata": false,
             "existSubdir": true,
             "layer_list": [],
@@ -951,7 +951,7 @@
         "Halo": {
             "name": "Halo",
             "groupBy": "Holder",
-            "isGroupSet": false,
+            "isBeaconLayer": false,
             "bypassDNA": true,
             "hideInMetadata": false,
             "existSubdir": true,
@@ -1048,7 +1048,7 @@
         },
         "Music_Effect": {
             "name": "Music_Effect",
-            "isGroupSet": false,
+            "isBeaconLayer": false,
             "groupBy": "Holder",
             "bypassDNA": true,
             "hideInMetadata": false,
@@ -1231,7 +1231,7 @@
         },
         "Base": {
             "name": "Base",
-            "isGroupSet": false,
+            "isBeaconLayer": false,
             "groupBy": "Holder",
             "bypassDNA": true,
             "hideInMetadata": false,
