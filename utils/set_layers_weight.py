@@ -16,7 +16,6 @@ def balance_layerweight(layerconfig_json, layerinfo_json):
     for layer in layers_order:
         layer_name = layer["name"]
         layer_info = layerinfo_json[layer_name]
-        print(layer_name)
         if layer_info["isBeaconLayer"] == True:
             balance_layer_weight_in_subdirs(
                 layerinfo_json, _SUM, layer_name)
@@ -24,7 +23,6 @@ def balance_layerweight(layerconfig_json, layerinfo_json):
     for layer in layers_order:
         layer_name = layer["name"]
         layer_info = layerinfo_json[layer_name]
-        print(layer_name)
         if layer_info["existSubdir"] == False:  # 表明该图层没有所属的信标图层
             layer_list = layer_info["layer_list"]
             balance_layer_weight_in_layer_list(_SUM, layer_list, layer_info)
@@ -33,8 +31,9 @@ def balance_layerweight(layerconfig_json, layerinfo_json):
             if layer_info["is_balanced"] == False:
                 balance_layer_weight_in_subdirs(
                     layerinfo_json, _SUM, layer_name)
+    return layerinfo_json
 
-
+# 处理不受任何约束的图层
 def balance_layer_weight_in_layer_list(_SUM, layer_list, layer_info):
     layers_num = layer_info["layers_number"]
     print(layer_list)
@@ -92,7 +91,7 @@ def balance_layer_weight_in_layer_list(_SUM, layer_list, layer_info):
                 sys.exit(0)
     update_sum_of_weights(_SUM, layer_list, [], layer_info, 1)
 
-
+# 均衡 含有子文件夹的图层
 def balance_layer_weight_in_subdirs(layerinfo_json, _SUM, layer_name):
     layer_info = layerinfo_json[layer_name]
     # 先判断图层类型
@@ -106,7 +105,7 @@ def balance_layer_weight_in_subdirs(layerinfo_json, _SUM, layer_name):
     else:
         redistribute_beacon_subordinate_layer(layerinfo_json, _SUM, layer_name)
 
-
+# 记数文件夹列表中权重
 def count_weights_in_dir_list(_SUM, dir_list, layer_info):
     _sum = 0
     counter = 0
@@ -119,7 +118,7 @@ def count_weights_in_dir_list(_SUM, dir_list, layer_info):
         print(layer_info["name"], _sum, counter)
     return _sum, counter
 
-
+# 记数图层列表中的权重
 def count_weights_in_layer_list(_SUM, layer_list, layer_info):
     counter = 0  # Accumulate the number of layers that have been assigned weights
     _sum = 0  # the sum of layers' weights that have been assigned weights
@@ -139,7 +138,7 @@ def count_weights_in_layer_list(_SUM, layer_list, layer_info):
                     print(_ERROR)
     return _sum, counter
 
-
+# 更新图层的权重
 def update_sum_of_weights(_SUM, layer_list, dir_list, layer_info, flag):
     if flag == 1:  # 没有子文件夹
         _sum, _ = count_weights_in_layer_list(_SUM, layer_list, layer_info)

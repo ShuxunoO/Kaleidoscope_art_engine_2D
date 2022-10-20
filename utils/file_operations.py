@@ -30,8 +30,3 @@ def load_lsyers_config(config_path):
     """
     with open(config_path) as f:
         return json.load(f)
-
-# print(get_layersinfo(PATH.LAYER_PATH, "Eggshell"))
-# save_json(PATH.DATA_PATH, "temp", get_layersinfo(PATH.LAYER_PATH, "Background"))
-
-# print(get_layerinfo(Path.joinpath(PATH.LAYER_PATH, "Eggshell"), "Blue"))
