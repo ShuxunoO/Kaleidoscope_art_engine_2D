@@ -14,6 +14,9 @@ class ENV_PATH:
     LAYER_PATH = Path.joinpath(BASE_PATH,"layers")
     CONFIG_PATH = Path.joinpath(BASE_PATH, "config/config.json")
     DATA_PATH = make_dir(Path.joinpath(BASE_PATH, "data"))
+    BUILD_PATH = make_dir(Path.joinpath(BASE_PATH, "build"))
+    IMAGES_PATH = make_dir(Path.joinpath(BUILD_PATH, "images"))
+    JSON_PATH = make_dir(Path.joinpath(BUILD_PATH, "json"))
     LOG_PATH = Path.joinpath(BASE_PATH, "src/balance_weights.log")
 
 

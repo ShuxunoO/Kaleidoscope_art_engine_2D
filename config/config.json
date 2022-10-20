@@ -63,7 +63,7 @@
         {
             "totalNumber": 2000,
             "specificCombination": {
-                "Base&Blue_Rhythm": "Eggshell$Blue_Green,Music_Effect$Blue_Firefly"
+                "Base&Blue_Rhythm": "Eggshell&Blue_Green,Music_Effect$Blue_Firefly"
             },
             "do_Balance": true,
             "startId": 1,
