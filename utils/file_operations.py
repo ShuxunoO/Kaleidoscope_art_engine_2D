@@ -1,10 +1,11 @@
 import json
 import os
-from pathlib import Path
+import pickle
 import sys
+from pathlib import Path
+
 sys.path.append("..")
 from CONST_ENV import ENV_PATH as PATH
-
 
 
 def save_json(save_path, filename, data):
@@ -30,3 +31,14 @@ def load_lsyers_config(config_path):
     """
     with open(config_path) as f:
         return json.load(f)
+
+# 将数据对象存储为二进制文件
+def serialize_save(obj,path):
+    with open(path, 'wb') as f:
+        pickle.dump(obj, f)
+
+# 读取序列化文件
+def serialize_load(path):
+    with open(path, 'rb') as f:
+        obj = pickle.load(f)
+        return obj
