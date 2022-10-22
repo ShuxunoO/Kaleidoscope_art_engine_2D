@@ -23,7 +23,7 @@ def get_dirlist_and_filelist(file_path):
     return layer_list, dir_list
 
 
-def get_layersinfo(base_path, layer_info):
+def get_layers_info(base_path, layer_info):
     """
     It takes a file name and a base path, and returns a dictionary, which contains the
     file name as it's key and the layerinfo dictionary of it's value.
@@ -33,7 +33,7 @@ def get_layersinfo(base_path, layer_info):
     """
     current_path = Path.joinpath(base_path, layer_info["name"])
     layer_list, dir_list = get_dirlist_and_filelist(current_path)
-    print(layer_list, dir_list)
+    # print(layer_list, dir_list)
     layerinfo_dict = {}  # a dictionary to store the layers infomation in base path
     layerinfo_dict.update(layer_info)
     layerinfo_dict.update({
