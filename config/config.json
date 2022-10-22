@@ -61,12 +61,12 @@
     "processCount": 10,
     "layerConfigurations": [
         {
-            "totalNumber": 10000,
+            "totalNumber": 5000,
             "specificCombination": {
                 "Base&Blue_Rhythm": "Eggshell&Blue_Green,Music_Effect$Blue_Firefly"
             },
             "do_Balance": true,
-            "startId": 1,
+            "startID": 1,
             "layersOrder": [
                 {
                     "name": "Background",
@@ -117,6 +117,37 @@
                     "isBeaconLayer": false,
                     "groupBy": "Holder",
                     "bypassDNA": true,
+                    "hideInMetadata": false
+                }
+            ]
+        },
+        {
+            "totalNumber": 5000,
+            "specificCombination": {
+                "Base&Blue_Rhythm": "Eggshell&Blue_Green,Music_Effect$Blue_Firefly"
+            },
+            "do_Balance": true,
+            "startID": 5001,
+            "layersOrder": [
+                {
+                    "name": "Background",
+                    "isBeaconLayer": false
+                },
+                {
+                    "name": "Holder",
+                    "isBeaconLayer": true
+                },
+
+                {
+                    "name": "Pattern",
+                    "groupBy": "Holder",
+                    "isBeaconLayer": false,
+                    "hideInMetadata": false
+                },
+                {
+                    "name": "Stroke",
+                    "groupBy": "Holder",
+                    "isBeaconLayer": true,
                     "hideInMetadata": false
                 }
             ]

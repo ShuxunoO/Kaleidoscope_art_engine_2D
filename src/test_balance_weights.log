@@ -1,7 +1,0 @@
-ERROR:root:Traceback (most recent call last):
-  File "c:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\tests\test_exception_class.py", line 14, in <module>
-    _add(a)
-  File "c:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\tests\test_exception_class.py", line 9, in _add
-    raise Test.my_ERROR(a)
-test_Exception.my_ERROR: current value 1000is larger than _SUM
-
