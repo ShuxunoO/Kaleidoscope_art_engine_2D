@@ -19,7 +19,7 @@ def preprocess_layer_info(layer_configs):
     balance(layer_configs, layers_info_json)
     fop.save_json(PATH.DATA_PATH, "layers_info_after_balancing", layers_info_json)
     layers_info_list = build_layer_info_list(layers_info_json)
-    fop.save_json(PATH.DATA_PATH, "layer_info_list", layer_info_list)
+    fop.save_json(PATH.DATA_PATH, "layer_info_list", layers_info_list)
     return layers_info_json, layers_info_list
 
 

@@ -41,6 +41,8 @@ def get_layers_info(base_path, layer_info):
         # remove the suffix and weight to get purename
         "layer_list": [re.split("[#.]", layer)[0] for layer in layer_list],
         "dir_list": dir_list,
+        "beacon_dir_list":[],
+        "subordinate_dir_list":[],
         "layers_number": get_file_num(current_path),
         "sum_of_weights": "unknown",
         "is_balanced": False})
