@@ -1,6 +1,7 @@
 import sys
 from pathlib import Path
 import cv2
+from PIL import Image
 import file_operations as fop
 from get_layers_info import get_layers_info
 from set_layers_weight import balance_layer_weight
@@ -20,6 +21,8 @@ def preprocess_layer_info(layer_configs):
     fop.save_json(PATH.DATA_PATH, "layers_info_after_balancing", layers_info_json)
     layers_info_list = build_layer_info_list(layers_info_json)
     fop.save_json(PATH.DATA_PATH, "layer_info_list", layers_info_list)
+    # layers_info_list = build_layer_info_list(layers_info_json)
+    # fop.serialize_save(layers_info_list, str(Path.joinpath(PATH.DATA_PATH, "layer_info_list")))
     return layers_info_json, layers_info_list
 
 
@@ -56,6 +59,7 @@ def build_layer_info_list(layers_info_json):
     for index in range(len(layers_info_json)):
         layer_info = layers_info_json[index]
         layer_info_list.append(build_layer_info_dict(layer_info))
+        # layer_info_list.append(build_layer_info_with_imgobj(layer_info))
     return layer_info_list
 
 
@@ -81,7 +85,7 @@ def build_layer_info_dict(layer_info):
 
 
 # 构建一个图层信息字典对象
-def build_layer_info_binary_obj(layer_info):
+def build_layer_info_with_imgobj(layer_info):
     layer_info_data = {}
     for key,value in layer_info.items():
         if value["existSubdir"]:
@@ -91,7 +95,7 @@ def build_layer_info_binary_obj(layer_info):
                 sublayer_list = sublayer_info["layer_list"]
                 for layer in sublayer_list:
                     layer_info_item = {
-                        "img":cv2.imread(sublayer_info[layer]["path"], 0),
+                        "img":Image.open(sublayer_info[layer]["path"]),
                         "weight":sublayer_info[layer]["weight"]
                     }
                     layer_info_dict.update({layer:layer_info_item})
@@ -101,7 +105,7 @@ def build_layer_info_binary_obj(layer_info):
             layer_info_dict = {}
             for layer in layer_list:
                 layer_info_item = {
-                        "img":cv2.imread(value[layer]["path"], 0),
+                        "img":Image.open(value[layer]["path"]),
                         "weight":value[layer]["weight"]
                     }
                 layer_info_dict.update({layer:layer_info_item})

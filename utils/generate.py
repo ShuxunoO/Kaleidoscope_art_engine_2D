@@ -9,6 +9,7 @@ from CONST_ENV import ENV_PATH as PATH
 CONFIG = fop.load_lsyers_config(PATH.CONFIG_PATH)
 layer_configs = CONFIG["layerConfigurations"]
 
+
 layers_info_json, layers_info_list = preprocess_layer_info(layer_configs)
 
 
@@ -40,7 +41,7 @@ def build_imgs_attributes(layer_config, layer_info, dna_set, repetition_num):
 
     # 不重复的话更新数值
 
-# 从图层列表选一个特层出来
+# 从图层列表选一个图层出来
 def choose_layer_from_layer_list(layer_list):
     end = len(layer_list) - 1
     random_num = randint(0, end)
@@ -75,7 +76,6 @@ def blend(filepaths, output_filename=None):
 
     # Loop through layers 1 to n and stack them on top of another
     for filepath in filepaths[1:]:
-        if filepath.endswith('.png'):
             img = Image.open(os.path.join('assets', filepath))
             bg.paste(img, (0, 0), img)
 

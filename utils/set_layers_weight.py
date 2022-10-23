@@ -315,7 +315,7 @@ def redistribute_subordinate_layer(layerinfo_json, dir_list, layer_name):
     update_sum_of_weights(
         beacon_layer["sum_of_weights"], [], dir_list, layer_info, 2)
 
-
+# 分配既含有信标层又含有从属层的图层
 def redistribute_beacon_subordinate_layer(layerinfo_json, _SUM, layer_name):
     layer_info = layerinfo_json[layer_name]
     dir_list = layer_info["dir_list"]
@@ -330,4 +330,3 @@ def redistribute_beacon_subordinate_layer(layerinfo_json, _SUM, layer_name):
     redistribute_beacon_layer(remaining_sum, beacon_dir_list, layer_info)
     # 最后更新一遍数据
     update_sum_of_weights(_SUM, [], dir_list, layer_info, 2)
-

@@ -2,4 +2,5 @@
 /data
 /src
 /.idea
+/tests/syntax_tests
 /__pycache__
