@@ -9,8 +9,7 @@ dict_1 = {"shuxun": "unknown", "xidian":"hahaha"}
 # for key, value in dict_1.items():
 #     print(key, value)
 
-list1 = dict_1.values()
-print(list1)
-
-list1 = list(dict_1.values())
-print(list1)
+attribute = 1
+dict_2 = {}
+dict_2.update({str(attribute):attribute})
+print(dict_2)
