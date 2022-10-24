@@ -25,7 +25,7 @@ def setup_images(layer_configs, layers_info_json):
 
 
 def build_imgs_attributes(layer_config, layer_info, dna_set, repetition_num):
-    attributes = []
+    attributes = {}
     totalNumber = layer_config["totalNumber"]
     token_ID = layer_config["startID"]
     counter = 0
@@ -34,12 +34,18 @@ def build_imgs_attributes(layer_config, layer_info, dna_set, repetition_num):
     # 构建一个属性列表
     while counter < totalNumber and repetition_num < REPETITION_NUM_LIMIT:
         for layer in layers:
-            if layer["isBeaconLayer"] == False:
-                name = layer["name"]
-                index, layername = choose_layer_from_layer_list(layer_info[name]["layer_list"])
+            if layer["isBeaconLayer"] == False:  # 不受任何约束的图层，完全随机
+                beacon = None
+                groupBy = None
+                trait_type = layer["name"]
+                index, value = choose_layer_from_layer_list(layer_info[name]["layer_list"])
+                
     # 判断是否重复
 
     # 不重复的话更新数值
+
+def build_metainfo_of_one_layer():
+    pass
 
 # 从图层列表选一个图层出来
 def choose_layer_from_layer_list(layer_list):
