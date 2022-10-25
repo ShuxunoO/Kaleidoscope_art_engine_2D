@@ -1,16 +1,19 @@
-from CONST_ENV import ENV_PATH as PATH
+import random
 import sys
 from pathlib import Path
-from random import randint
-from PIL import Image
-from pre_operation import preprocess_layer_info
-import file_operations as fop
 sys.path.append('..')
+from CONST_ENV import ENV_PATH as PATH
+from PIL import Image
+
+import file_operations as fop
+from pre_operation import preprocess_layer_info
+
+
 CONFIG = fop.load_lsyers_config(PATH.CONFIG_PATH)
 layer_configs = CONFIG["layerConfigurations"]
 
 
-layers_info_json, layers_info_list = preprocess_layer_info(layer_configs)
+layers_info_json = preprocess_layer_info(layer_configs)
 
 
 def setup_images(layer_configs, layers_info_json):
@@ -24,18 +27,26 @@ def setup_images(layer_configs, layers_info_json):
         build_imgs_attributes(layer_config, layer_info,
                               dna_set, repetition_num)
 
-
 def build_imgs_attributes(layer_config, layer_info, dna_set, repetition_num):
 
-    totalNumber = layer_config["totalNumber"]
+    # totalNumber = layer_config["totalNumber"]
+    totalNumber = 10
     token_ID = layer_config["startID"]
     counter = 0
     REPETITION_NUM_LIMIT = 20000
-    layers = layer_config_item["layersOrder"]
+    layers = layer_config["layersOrder"]
     # 构建一个属性列表
     while counter < totalNumber and repetition_num < REPETITION_NUM_LIMIT:
-        build_metainfo_for_each_img(layers, layer_info)
+        temp_attributes = build_metainfo_for_each_img(layers, layer_info)
+        print(temp_attributes)
+        counter += 1
+        # 去掉冗余信息
+        temp_pure_attributes = get_pure_metainfo(temp_attributes)
+        print(temp_pure_attributes)
 
+
+
+    get_pure_metainfo(temp_attributes)
     # 判断是否重复
 
     # 不重复的话更新数值
@@ -44,60 +55,88 @@ def build_imgs_attributes(layer_config, layer_info, dna_set, repetition_num):
 def build_metainfo_for_each_img(layers, layer_info):
     attributes = {}
     for layer in layers:
-        attributes.update({layer["name"]:  build_metainfo_of_each_layer(layer, layer_info)})
+        attributes.update(
+            {layer["name"]:  build_metainfo_for_each_layer(layer, layer_info, attributes)})
     return attributes
 
-def build_metainfo_of_each_layer(layer, layer_info):
+def build_metainfo_for_each_layer(layer, layer_info, attributes):
     layer_name = layer["name"]
     current_layer_info = layer_info[layer_name]
-    if current_layer_info["existSubdir"] == False:  # 不受任何约束的图层，完全随机
-        dir_index = None
-        beacon = None
-        groupBy = None
-        layer_index, value = choose_one_item_from_list(
-            current_layer_info["layer_list"])
-        if index == None:
-            # 抛出异常
-            pass
-        else:
-            return {"trait_type": layer_name,
-                    "groupBy": groupBy,
-                    "dir_index": dir_index,
-                    "beacon": beacon,
-                    "layer_index": layer_index,
-                    "value": value}
-
-    elif current_layer_info["isBeaconLayer"] == True and "groupBy" not in current_layer_info: # 纯信标层
-        dir_index, beacon = choose_one_item_from_list(
-            current_layer_info["dir_list"])
-        groupBy = None
-        layer_index, value = choose_one_item_from_list(
-            current_layer_info[beacon]["layer_list"])
-        if index == None:
-            # 抛出异常
-            pass
-        else:
-            return {"trait_type": layer_name,
-                    "groupBy": groupBy,
-                    "dir_index": dir_index,
-                    "beacon": beacon,
-                    "layer_index": layer_index,
-                    "value": value}
-    else:   # 既是信标层又是从属子层
-        return 
-
-
-        # 从图层列表选一个图层出来
-
-
-def choose_one_item_from_list(layer_list):
-    if len(layer_list) == 0:
-        return None, None
+    # 不受任何约束的图层，完全随机
+    if current_layer_info["existSubdir"] == False:
+        return set_metainfo_for_free_layer(current_layer_info)
+    # 纯信标层
+    elif current_layer_info["isBeaconLayer"] == True and "groupBy" not in current_layer_info:
+        return set_metainfo_for_beacon_layer(current_layer_info)
+    # 纯从属子层
+    elif current_layer_info["isBeaconLayer"] == False and "groupBy" in current_layer_info:
+        return set_metainfo_for_subordinate_layer(current_layer_info, attributes)
+    # 既是信标层又是从属子层
     else:
-        end = len(layer_list) - 1
-        random_num = randint(0, end)
-        return random_num, layer_list[random_num]
+        return set_beacon_subordinate_layer(current_layer_info, attributes)
 
+# 返回自由层的图层信息
+def set_metainfo_for_free_layer(layer_info):
+    beacon = None
+    groupBy = None
+    try:
+        value = random.choice(layer_info["layer_list"])
+        return {"trait_type": layer_info["name"],
+                "groupBy": groupBy,
+                "beacon": beacon,
+                "value": value}
+    except:
+        print("Layer List in Folder {} Is Empty, System exit.".format(
+            layer_info["name"]))
+        sys.exit(0)
+
+# 返回信标层的图层信息
+def set_metainfo_for_beacon_layer(layer_info):
+    try:
+        beacon = random.choice(layer_info["beacon_dir_list"])  # 信标是本图层指导其附属子层合成的指示器
+        groupBy = None
+        try:
+            value = random.choice(layer_info[beacon]["layer_list"])
+            return {"trait_type": layer_info["name"],
+                    "groupBy": groupBy,
+                    "beacon": beacon,
+                    "value": value}
+        except:
+            print("Layer List In Folder {} of {} Is Empty, System exit.".format(beacon, layer_info["name"]))
+            sys.exit(0)
+    except:
+        print("Folder List in {} Is Empty, System exit.".format(layer_info["name"]))
+        sys.exit(0)
+
+# 返回从属层的图层信息
+def set_metainfo_for_subordinate_layer(layer_info, attributes):
+    beacon = None
+    groupBy = layer_info["groupBy"]
+    indicator = attributes[groupBy]["beacon"]
+    try:
+        value = random.choice(layer_info[indicator]["layer_list"])
+        return {"trait_type": layer_info["name"],
+                "groupBy": groupBy,
+                "beacon": beacon,
+                "value": value}
+    except:
+        print("Layer List In Folder {} of {} Is Empty, System exit.".format(indicator, layer_info["name"]))
+        sys.exit(0)
+
+def set_beacon_subordinate_layer(layer_info, attributes):
+    # 判断信标层的信标在不在自己的从属子层文件夹中，如果在按照常规常规从属层处理
+    groupBy = layer_info["groupBy"]
+    indicator = attributes[groupBy]["beacon"]
+    if indicator in layer_info["subordinate_dir_list"]:
+        return set_metainfo_for_subordinate_layer(layer_info, attributes)
+    else:
+        return set_metainfo_for_beacon_layer(layer_info)
+
+def get_pure_metainfo(img_attributes):
+    for value in img_attributes.values():
+        del value["groupBy"]
+        del value["beacon"]
+    return list(img_attributes.values())
 
 def update_layer_info(attribute_dict):
     # 更新
@@ -126,7 +165,9 @@ def prepare_image_elements(img_attributes_list, layers_info_list):
 
 # 正式混合
 
-# 
+#
+
+
 def blend(img_obj_list):
 
     # Treat the first layer as the background
@@ -146,3 +187,7 @@ def blend(img_obj_list):
             os.makedirs(os.path.join('output', 'single_images'))
         bg.save(os.path.join('output', 'single_images',
                 str(int(time.time())) + '.png'))
+
+
+
+setup_images(layer_configs, layers_info_json)

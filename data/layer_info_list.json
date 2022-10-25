@@ -5,6 +5,10 @@
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Grassland#300.png",
                 "weight": 1579
             },
+            "Mountains": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Mountains#100.png",
+                "weight": 526
+            },
             "Dune": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Dune#200.png",
                 "weight": 1053
@@ -12,13 +16,17 @@
             "Wave": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Wave#350.png",
                 "weight": 1842
-            },
-            "Mountains": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\Background\\Mountains#100.png",
-                "weight": 526
             }
         },
         "test1": {
+            "Shining Turquoise": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Shining Turquoise.png",
+                "weight": 625
+            },
+            "Light Green": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Light Green.png",
+                "weight": 625
+            },
             "Blue Original": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Blue Original.png",
                 "weight": 625
@@ -27,8 +35,8 @@
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Bike Yellow.png",
                 "weight": 625
             },
-            "Light Green": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Light Green.png",
+            "Orange": {
+                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Orange.png",
                 "weight": 625
             },
             "Navy Blue": {
@@ -37,14 +45,6 @@
             },
             "Purple": {
                 "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Purple.png",
-                "weight": 625
-            },
-            "Shining Turquoise": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Shining Turquoise.png",
-                "weight": 625
-            },
-            "Orange": {
-                "path": "C:\\Users\\Lenovo\\Desktop\\Web3_Projects\\Kaleidoscope_art_engine_2D\\layers\\test1\\Orange.png",
                 "weight": 625
             },
             "Pink": {

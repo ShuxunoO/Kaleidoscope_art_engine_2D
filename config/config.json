@@ -73,10 +73,6 @@
                     "isBeaconLayer": false
                 },
                 {
-                    "name": "test1",
-                    "isBeaconLayer": false
-                },
-                {
                     "name": "Holder",
                     "isBeaconLayer": true
                 },

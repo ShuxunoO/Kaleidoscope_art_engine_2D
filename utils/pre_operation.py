@@ -19,11 +19,11 @@ def preprocess_layer_info(layer_configs):
     fop.save_json(PATH.DATA_PATH, "layers_info", layers_info_json)
     balance(layer_configs, layers_info_json)
     fop.save_json(PATH.DATA_PATH, "layers_info_after_balancing", layers_info_json)
-    layers_info_list = build_layer_info_list(layers_info_json)
-    fop.save_json(PATH.DATA_PATH, "layer_info_list", layers_info_list)
+    # layers_info_list = build_layer_info_list(layers_info_json)
+    # fop.save_json(PATH.DATA_PATH, "layer_info_list", layers_info_list)
     # layers_info_list = build_layer_info_list(layers_info_json)
     # fop.serialize_save(layers_info_list, str(Path.joinpath(PATH.DATA_PATH, "layer_info_list")))
-    return layers_info_json, layers_info_list
+    return layers_info_json
 
 
 def read_layers_info(layer_configs):

@@ -4,10 +4,6 @@ import pickle
 import sys
 from pathlib import Path
 
-sys.path.append("..")
-from CONST_ENV import ENV_PATH as PATH
-
-
 def save_json(save_path, filename, data):
     """
     Saves the data to a file with the given filename in the given path

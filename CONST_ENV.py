@@ -10,6 +10,7 @@ class ENV_PATH:
             Path.mkdir(file_path)
         return file_path
 
+    # BASE_PATH = Path(os.path.abspath(__file__))
     BASE_PATH = Path(__file__).parent
     LAYER_PATH = Path.joinpath(BASE_PATH,"layers")
     CONFIG_PATH = Path.joinpath(BASE_PATH, "config/config.json")

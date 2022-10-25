@@ -19,7 +19,6 @@ class Current_Layer_Weight_Greater_Than_Given_Weight_ERROR(Exception):
         return ERROR_INFO
 
 
-
 class Remaining_Sum_Less_Than_Remaining_Counter_ERROR(Exception):
     def __init__(self, remaining_sum, dir_name, remaining_counter):
         self.remaining_sum = remaining_sum
@@ -76,4 +75,3 @@ class Exit_Some_Layers_Without_Weights_ERROR(Exception):
         ERROR_INFO = "There are unweighted layers in folder " + self.dir_name + \
         " They will equally share the given weights of " +  str(self.given_weight)
         return ERROR_INFO
-

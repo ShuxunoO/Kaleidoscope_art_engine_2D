@@ -9,7 +9,6 @@ dict_1 = {"shuxun": "unknown", "xidian":"hahaha"}
 # for key, value in dict_1.items():
 #     print(key, value)
 
-attribute = 1
-dict_2 = {}
-dict_2.update({str(attribute):attribute})
-print(dict_2)
+print(list(dict_1.values()))
+del dict_1["xidian"]
+print(dict_1)
