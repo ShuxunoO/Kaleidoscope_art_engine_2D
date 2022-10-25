@@ -1,5 +1,6 @@
 import random
 import sys
+import hashlib
 from pathlib import Path
 sys.path.append('..')
 from CONST_ENV import ENV_PATH as PATH
@@ -28,28 +29,37 @@ def setup_images(layer_configs, layers_info_json):
                               dna_set, repetition_num)
 
 def build_imgs_attributes(layer_config, layer_info, dna_set, repetition_num):
-
     # totalNumber = layer_config["totalNumber"]
-    totalNumber = 10
+    totalNumber = 1
     token_ID = layer_config["startID"]
     counter = 0
     REPETITION_NUM_LIMIT = 20000
     layers = layer_config["layersOrder"]
     # 构建一个属性列表
     while counter < totalNumber and repetition_num < REPETITION_NUM_LIMIT:
-        temp_attributes = build_metainfo_for_each_img(layers, layer_info)
-        print(temp_attributes)
-        counter += 1
+        attribute_dict = build_metainfo_for_each_img(layers, layer_info)
+        print(attribute_dict)
         # 去掉冗余信息
-        temp_pure_attributes = get_pure_metainfo(temp_attributes)
-        print(temp_pure_attributes)
+        attribute_list = get_pure_metainfo(attribute_dict)
+        print(attribute_list)
+        # # 判断是否重复
+        # dna = hashlib.sha1(str(temp_pure_attributes).encode('utf-8')).hexdigest()
+        # if dna in dna_set:
+        #     repetition_num += 1
+        #     continue
+        # else:
+        #     # 不重复的话更新数值（返回一个图层对象的列表）
+        #     update_layer_info(layer_info, attribute_dict)
+        #     # 混合图像
+
+        #     # 组装metada
+
+        #     # 把dna 添加到 dna_set
+        #     dna_set.add(dna)
+        #     counter += 1
+        #     pass
 
 
-
-    get_pure_metainfo(temp_attributes)
-    # 判断是否重复
-
-    # 不重复的话更新数值
 
 
 def build_metainfo_for_each_img(layers, layer_info):
@@ -110,9 +120,8 @@ def set_metainfo_for_beacon_layer(layer_info):
 
 # 返回从属层的图层信息
 def set_metainfo_for_subordinate_layer(layer_info, attributes):
-    beacon = None
     groupBy = layer_info["groupBy"]
-    indicator = attributes[groupBy]["beacon"]
+    beacon = attributes[groupBy]["beacon"]
     try:
         value = random.choice(layer_info[indicator]["layer_list"])
         return {"trait_type": layer_info["name"],
@@ -120,7 +129,7 @@ def set_metainfo_for_subordinate_layer(layer_info, attributes):
                 "beacon": beacon,
                 "value": value}
     except:
-        print("Layer List In Folder {} of {} Is Empty, System exit.".format(indicator, layer_info["name"]))
+        print("Layer List In Folder {} of {} Is Empty, System exit.".format(beacon, layer_info["name"]))
         sys.exit(0)
 
 def set_beacon_subordinate_layer(layer_info, attributes):
@@ -138,18 +147,25 @@ def get_pure_metainfo(img_attributes):
         del value["beacon"]
     return list(img_attributes.values())
 
-def update_layer_info(attribute_dict):
+
+def update_layer_info(layer_info, attribute_dict):
+    for key, value in attribute_dict.items():
+        current_layer_info = layer_info[key]
+        if value["groupBy"] == None and value["beacon"] == None:  # 自由图层
+            layer_name = value["value"]
+            layer = current_layer_info[layer_name]
+            layer["weight"] -= 1
+            if layer["weight"] <= 0:
+                # 权值为0的元素要从图层列表中删掉
+                layer_info["layer_list"].remove(layer_name)
     # 更新
+
     return attribute_list, img_obj_list
 # 创建源数据
-
-
 def generate_metadata(layer_configs, attribute_list):
     pass
 
 # 准备图像的各个元素
-
-
 def prepare_image_elements(img_attributes_list, layers_info_list):
     layer_obj_list = []
     for layer in img_attributes_list:
@@ -164,9 +180,6 @@ def prepare_image_elements(img_attributes_list, layers_info_list):
     return layer_obj_list
 
 # 正式混合
-
-#
-
 
 def blend(img_obj_list):
 
