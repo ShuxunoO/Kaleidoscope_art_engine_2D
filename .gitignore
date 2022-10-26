@@ -4,3 +4,4 @@
 /.idea
 /tests/syntax_tests
 /__pycache__
+/build

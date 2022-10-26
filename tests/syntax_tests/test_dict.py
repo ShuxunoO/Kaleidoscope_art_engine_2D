@@ -1,3 +1,5 @@
+import copy
+
 dict_1 = {
     "Background": {
         "trait_type": "Background",
@@ -57,7 +59,9 @@ dict_1 = {
 
 # for key, value in dict_1.items():
 #     print(key, value)
-for value in dict_1.values():
+dict_2 = copy.deepcopy(dict_1)
+
+for value in dict_2.values():
     del value["groupBy"]
     del value["beacon"]
 
