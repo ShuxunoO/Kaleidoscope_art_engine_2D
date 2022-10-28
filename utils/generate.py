@@ -4,6 +4,7 @@ import hashlib
 import copy
 from PIL import Image
 from pathlib import Path
+import file_operations as fop
 sys.path.append('..')
 from CONST_ENV import ENV_PATH as PATH
 from PIL import Image
@@ -30,8 +31,8 @@ def setup_images(layer_configs, layers_info_json):
                                 dna_set, repetition_num)
 
 def build_imgs_attributes(layer_config, layer_info, dna_set, repetition_num):
-    # totalNumber = layer_config["totalNumber"]
-    totalNumber = 10
+    totalNumber = layer_config["totalNumber"]
+    # totalNumber = 8000
     token_ID = layer_config["startID"]
     counter = 0
     REPETITION_NUM_LIMIT = 20000
@@ -39,14 +40,15 @@ def build_imgs_attributes(layer_config, layer_info, dna_set, repetition_num):
     # 构建一个属性列表
     while counter < totalNumber and repetition_num < REPETITION_NUM_LIMIT:
         attribute_dict = build_metainfo_for_each_img(layers, layer_info)
-        print("attribute_dict:", attribute_dict)
+        # print("attribute_dict:", attribute_dict)
         # 去掉冗余信息
-        # attribute_list = get_pure_metainfo(attribute_dict)
+        attribute_list = get_pure_metainfo(copy.deepcopy(attribute_dict))
         # print(attribute_list)
         # # 判断是否重复
-        dna = hashlib.sha1(str(attribute_dict).encode('utf-8')).hexdigest()
+        dna = hashlib.sha1(str(attribute_list).encode('utf-8')).hexdigest()
         if dna in dna_set:
             repetition_num += 1
+            print("\n\n…………………………………………………………………………………………重复………………………………………………………………………………………………………………………………\n\n")
             continue
         else:
             # 不重复的话更新数值（返回一个图层对象的列表）
@@ -58,8 +60,12 @@ def build_imgs_attributes(layer_config, layer_info, dna_set, repetition_num):
             # 组装metada
 
             # 把dna 添加到 dna_set
+            print(dna)
             dna_set.add(dna)
             counter += 1
+    print(len(dna_set))
+    fop.save_file(PATH.DATA_PATH, "dna_set", str(dna_set))
+    fop.save_json(PATH.DATA_PATH, "layers_info_after_generating", layer_info)
 
 
 def build_metainfo_for_each_img(layers, layer_info):
@@ -166,7 +172,6 @@ def get_pure_metainfo(img_attributes):
 
 
 def update_layer_info(layer_info, attribute_dict):
-    print("attribute_dict:", attribute_dict)
     layer_obj_list = []
     for key, value in attribute_dict.items():
         current_layer_info = layer_info[key]

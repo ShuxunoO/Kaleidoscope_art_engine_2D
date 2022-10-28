@@ -61,13 +61,14 @@
     "processCount": 10,
     "layerConfigurations": [
         {
-            "totalNumber": 5000,
+            "totalNumber": 10000,
             "specificCombination": {
                 "Base&Blue_Rhythm": "Eggshell&Blue_Green,Music_Effect$Blue_Firefly"
             },
             "do_Balance": true,
             "startID": 1,
-            "layersOrder": [
+            "layersOrder": 
+            [
                 {
                     "name": "Background",
                     "isBeaconLayer": false

@@ -38,3 +38,11 @@ def serialize_load(path):
     with open(path, 'rb') as f:
         obj = pickle.load(f)
         return obj
+
+
+# 正常写文件
+def save_file(file_path, file_name, data):
+    file_path = Path.joinpath(file_path, file_name + ".json")
+    with open(file_path, 'w') as f:
+        f.write(data)
+
