@@ -1,5 +1,5 @@
-/layers
-/data
+layers/
+data/
 /src
 /.idea
 /tests/syntax_tests

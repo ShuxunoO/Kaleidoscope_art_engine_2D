@@ -61,60 +61,37 @@
     "processCount": 10,
     "layerConfigurations": [
         {
-            "totalNumber": 10000,
+            "totalNumber": 1978,
             "specificCombination": {
                 "Base&Blue_Rhythm": "Eggshell&Blue_Green,Music_Effect$Blue_Firefly"
             },
             "do_Balance": true,
             "startID": 1,
-            "layersOrder": 
+            "layersOrder":
             [
                 {
-                    "name": "Background",
+                    "name": "background",
                     "isBeaconLayer": false
                 },
                 {
-                    "name": "Holder",
-                    "isBeaconLayer": true
+                    "name": "rocket",
+                    "isBeaconLayer": false
                 },
                 {
-                    "name": "Eggshell",
-                    "isBeaconLayer": false,
-                    "groupBy": "Holder",
-                    "hideInMetadata": false
+                    "name": "building",
+                    "isBeaconLayer": false
                 },
                 {
-                    "name": "Pattern",
-                    "groupBy": "Holder",
-                    "isBeaconLayer": false,
-                    "hideInMetadata": false
+                    "name": "plant",
+                    "isBeaconLayer": false
                 },
                 {
-                    "name": "Stroke",
-                    "groupBy": "Holder",
-                    "isBeaconLayer": true,
-                    "hideInMetadata": false
+                    "name": "frame",
+                    "isBeaconLayer": false
                 },
                 {
-                    "name": "Halo",
-                    "groupBy": "Holder",
-                    "isBeaconLayer": false,
-                    "bypassDNA": true,
-                    "hideInMetadata": false
-                },
-                {
-                    "name": "Music_Effect",
-                    "isBeaconLayer": false,
-                    "groupBy": "Holder",
-                    "bypassDNA": true,
-                    "hideInMetadata": false
-                },
-                {
-                    "name": "Base",
-                    "isBeaconLayer": false,
-                    "groupBy": "Holder",
-                    "bypassDNA": true,
-                    "hideInMetadata": false
+                    "name": "texture",
+                    "isBeaconLayer": false
                 }
             ]
         }

@@ -252,7 +252,7 @@ def prepare_image_elements(img_attributes_list, layers_info_list):
 # 正式混合
 
 def blend(layer_obj_list, token_ID):
-    print(layer_obj_list)
+    # print(layer_obj_list)
     background = Image.open(layer_obj_list[0]).convert("RGBA")
     for layer in layer_obj_list[1:]:
         img = Image.open(layer).convert("RGBA")
