@@ -1,0 +1,5 @@
+{
+    "workbench.list.openMode": "singleClick",
+    "files.autoSave": "onFocusChange",
+    "workbench.editor.enablePreview": true
+}

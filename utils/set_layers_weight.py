@@ -15,7 +15,7 @@ def balance_layer_weight(layerconfig_json, layerinfo_json):
     # 先将子文件夹分类成信标层和从属子层
     divide_dirs_into_beacon_and_subordinate(layerconfig_json, layerinfo_json)
     _SUM = layerconfig_json["totalNumber"]
-    _SUM = int(_SUM * 1.5)
+    # _SUM = int(_SUM * 1.5)
     layers_order = layerconfig_json["layersOrder"]
     # 先优先均衡信标层的权重
     for layer in layers_order:

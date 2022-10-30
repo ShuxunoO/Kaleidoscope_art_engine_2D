@@ -4,6 +4,7 @@ import hashlib
 import copy
 from PIL import Image
 from pathlib import Path
+from datetime import datetime
 import file_operations as fop
 sys.path.append('..')
 from CONST_ENV import ENV_PATH as PATH
@@ -11,7 +12,6 @@ from PIL import Image
 
 import file_operations as fop
 from pre_operation import preprocess_layer_info
-
 
 CONFIG = fop.load_lsyers_config(PATH.CONFIG_PATH)
 layer_configs = CONFIG["layerConfigurations"]
@@ -35,7 +35,7 @@ def build_imgs_attributes(layer_config, layer_info, dna_set, repetition_num):
     # totalNumber = 8000
     token_ID = layer_config["startID"]
     counter = 0
-    REPETITION_NUM_LIMIT = 20000
+    REPETITION_NUM_LIMIT = 100000
     layers = layer_config["layersOrder"]
     # 构建一个属性列表
     while counter < totalNumber and repetition_num < REPETITION_NUM_LIMIT:
@@ -54,14 +54,13 @@ def build_imgs_attributes(layer_config, layer_info, dna_set, repetition_num):
             # 不重复的话更新数值（返回一个图层对象的列表）
             layer_obj_list = update_layer_info(layer_info, attribute_dict)
             # 混合图像
-            blend(layer_obj_list, token_ID)
-            token_ID += 1
-
+            # blend(layer_obj_list, token_ID)
             # 组装metada
-
+            generate_metadata(CONFIG, attribute_list, dna, token_ID)
             # 把dna 添加到 dna_set
-            print(dna)
+            print("DNA: ", dna)
             dna_set.add(dna)
+            token_ID += 1
             counter += 1
     print(len(dna_set))
     fop.save_file(PATH.DATA_PATH, "dna_set", str(dna_set))
@@ -227,13 +226,22 @@ def update_layer_info(layer_info, attribute_dict):
                     else:
                         current_layer_info["subordinate_dir_list"].remove(beacon)
     return layer_obj_list
-
-
-
     return attribute_list, img_obj_list
+
 # 创建源数据
-def generate_metadata(layer_configs, attribute_list):
-    pass
+def generate_metadata(configs, attribute_list, dna, token_ID):
+    metadata = {}
+    metadata.update({"name": configs["namePrefix"] + " #" + str(token_ID),
+    "description": configs["description"],
+    "image":configs["baseUri"] + "/" + str(token_ID) + ".png",
+    "dna": dna,
+    "tokenID": token_ID,
+    "date":str(datetime.now()),
+    "attributes":attribute_list,
+    "poweredBy": "Kaleidoscope art engine 2D"})
+    # print(metadata)
+    fop.save_json(PATH.JSON_PATH, str(token_ID), metadata)
+
 
 # 准备图像的各个元素
 def prepare_image_elements(img_attributes_list, layers_info_list):
@@ -249,15 +257,12 @@ def prepare_image_elements(img_attributes_list, layers_info_list):
             print("Img not exit")
     return layer_obj_list
 
-# 正式混合
-
+# 混合
 def blend(layer_obj_list, token_ID):
-    # print(layer_obj_list)
     background = Image.open(layer_obj_list[0]).convert("RGBA")
     for layer in layer_obj_list[1:]:
         img = Image.open(layer).convert("RGBA")
         background.paste(img, (0, 0), img)
-    # background.show()
     path = PATH.IMAGES_PATH.joinpath(str(token_ID) + '.png')
     background.save(path)
 

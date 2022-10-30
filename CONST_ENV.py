@@ -19,12 +19,3 @@ class ENV_PATH:
     IMAGES_PATH = make_dir(Path.joinpath(BUILD_PATH, "images"))
     JSON_PATH = make_dir(Path.joinpath(BUILD_PATH, "json"))
     LOG_PATH = Path.joinpath(BASE_PATH, "src/balance_weights.log")
-
-class CONSTANT:
-    REPETITION_NUM_LIMIT = 20000
-
-
-class AUTHOR_INFO:
-    AUTHOR = "ShuxunoO"
-    BLENDER = "Kaleidoscope_art_engine_2D"
-

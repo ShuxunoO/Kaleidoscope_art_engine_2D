@@ -2,10 +2,6 @@
     "namePrefix": "BanaCat",
     "description": "Description",
     "baseUri": "ipfs://xxx",
-    "rarityDelimiter": "#",
-    "colorSetDelimiter": "$",
-    "limitDelimiter": "^",
-    "dnaDelimiter": "-",
     "format": {
         "width": 1024,
         "height": 1024,
@@ -61,7 +57,7 @@
     "processCount": 10,
     "layerConfigurations": [
         {
-            "totalNumber": 1978,
+            "totalNumber": 2000,
             "specificCombination": {
                 "Base&Blue_Rhythm": "Eggshell&Blue_Green,Music_Effect$Blue_Firefly"
             },
