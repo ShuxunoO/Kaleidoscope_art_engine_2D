@@ -1,12 +1,7 @@
-from pathlib import Path
-
+import sys
 from CONST_ENV import ENV_PATH as PATH
+from utils.update_info import update_metadata
+import utils.file_operations as fop
 
-
-
-
-# from pathlib import Path
-# base_path = Path.cwd().joinpath("layers")
-# list1 = [str(path) for path in base_path.iterdir() if base_path.is_dir()]
-
-# print(list1)
+CONFIG = fop.load_lsyers_config(PATH.CONFIG_PATH)
+update_metadata(PATH.JSON_PATH, CONFIG)
