@@ -13,19 +13,19 @@ def save_json(save_path, filename, data):
     :param data: The data to be saved
     """
     file_path = Path.joinpath(save_path, filename + ".json")
-    with open(file_path, 'w') as file:
-        json.dump(data, file, indent=4)
+    with open(file_path, 'w', encoding='UTF-8') as file:
+        json.dump(data, file, ensure_ascii=False, indent=4)
 
 
 # load json file
-def load_lsyers_config(config_path):
+def load_json(config_path):
     """
     It loads a JSON file and returns the contents as a Python dictionary
     
     :param config_path: The path to the config file
     :return: A dictionary
     """
-    with open(config_path) as f:
+    with open(config_path, encoding='UTF-8') as f:
         return json.load(f)
 
 # 将数据对象存储为二进制文件

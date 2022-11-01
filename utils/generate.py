@@ -13,7 +13,7 @@ from PIL import Image
 import file_operations as fop
 from pre_operation import preprocess_layer_info
 
-CONFIG = fop.load_lsyers_config(PATH.CONFIG_PATH)
+CONFIG = fop.load_json(PATH.CONFIG_PATH)
 layer_configs = CONFIG["layerConfigurations"]
 
 
@@ -54,7 +54,7 @@ def build_imgs_attributes(layer_config, layer_info, dna_set, repetition_num):
             # 不重复的话更新数值（返回一个图层对象的列表）
             layer_obj_list = update_layer_info(layer_info, attribute_dict)
             # 混合图像
-            # blend(layer_obj_list, token_ID)
+            blend(layer_obj_list, token_ID)
             # 组装metada
             generate_metadata(CONFIG, attribute_list, dna, token_ID)
             # 把dna 添加到 dna_set

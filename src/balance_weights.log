@@ -28061,3 +28061,33 @@ ERROR:root:Traceback (most recent call last):
     raise exceptions.All_Layers_Are_Not_Weighted_ERROR(
 exceptions.All_Layers_Are_Not_Weighted_ERROR: All the layers in texture are not weighted, so program is going to redistribute weights for all layers
 
+ERROR:root:Traceback (most recent call last):
+  File "c:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\set_layers_weight.py", line 87, in balance_layer_weight_in_layer_list
+    raise exceptions.Exit_Some_Layers_Without_Weights_ERROR(
+exceptions.Exit_Some_Layers_Without_Weights_ERROR: There are unweighted layers in folder background They will equally share the given weights of 1900
+
+ERROR:root:Traceback (most recent call last):
+  File "c:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\set_layers_weight.py", line 97, in balance_layer_weight_in_layer_list
+    raise exceptions.All_Layers_Are_Not_Weighted_ERROR(
+exceptions.All_Layers_Are_Not_Weighted_ERROR: All the layers in rocket are not weighted, so program is going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "c:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\set_layers_weight.py", line 97, in balance_layer_weight_in_layer_list
+    raise exceptions.All_Layers_Are_Not_Weighted_ERROR(
+exceptions.All_Layers_Are_Not_Weighted_ERROR: All the layers in building are not weighted, so program is going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "c:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\set_layers_weight.py", line 97, in balance_layer_weight_in_layer_list
+    raise exceptions.All_Layers_Are_Not_Weighted_ERROR(
+exceptions.All_Layers_Are_Not_Weighted_ERROR: All the layers in plant are not weighted, so program is going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "c:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\set_layers_weight.py", line 97, in balance_layer_weight_in_layer_list
+    raise exceptions.All_Layers_Are_Not_Weighted_ERROR(
+exceptions.All_Layers_Are_Not_Weighted_ERROR: All the layers in frame are not weighted, so program is going to redistribute weights for all layers
+
+ERROR:root:Traceback (most recent call last):
+  File "c:\Users\Lenovo\Desktop\Web3_Projects\Kaleidoscope_art_engine_2D\utils\set_layers_weight.py", line 97, in balance_layer_weight_in_layer_list
+    raise exceptions.All_Layers_Are_Not_Weighted_ERROR(
+exceptions.All_Layers_Are_Not_Weighted_ERROR: All the layers in texture are not weighted, so program is going to redistribute weights for all layers
+

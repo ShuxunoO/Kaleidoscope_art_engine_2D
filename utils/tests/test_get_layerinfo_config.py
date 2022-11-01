@@ -3,9 +3,10 @@ sys.path.append("../..")
 from CONST_ENV import ENV_PATH as PATH
 sys.path.append("..")
 from get_layers_info import get_layersinfo, get_dirlist_and_filelist
-from file_operations import load_lsyers_config, save_json
+import file_operations as fop
 
-CONFIG = load_lsyers_config(PATH.CONFIG_PATH)
+
+CONFIG = fop.load_json(PATH.CONFIG_PATH)
 # print(CONFIG["layerConfigurations"])
 layer_configurations = CONFIG["layerConfigurations"]
 
@@ -30,7 +31,7 @@ def setup_layers_config(layer_configurations):
             layer_info_subdict.update(get_layersinfo(PATH.LAYER_PATH, layer))
         layers_info.append(layer_info_subdict)
 
-    save_json(PATH.DATA_PATH, "layers_config_V11", layers_info)
+    fop.save_json(PATH.DATA_PATH, "layers_config_V11", layers_info)
 
 
 setup_layers_config(layer_configurations)
