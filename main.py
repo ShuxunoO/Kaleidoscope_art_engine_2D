@@ -1,7 +1,8 @@
 import sys
 from CONST_ENV import ENV_PATH as PATH
-from utils.update_info import update_metadata
+import utils.update_info as update
 import utils.file_operations as fop
 
 CONFIG = fop.load_json(PATH.CONFIG_PATH)
-update_metadata(PATH.JSON_PATH, CONFIG)
+update.update_metadata(CONFIG)
+# update.shuffle(1, 10)

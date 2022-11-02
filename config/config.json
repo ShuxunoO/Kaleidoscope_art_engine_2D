@@ -1,7 +1,7 @@
 {
-    "namePrefix": "BanaCat",
-    "description": "哈哈哈",
-    "baseUri": "ipfs://16551651sgsgf",
+    "namePrefix": "UCAS_NFT",
+    "description": "A set of NFTs created for University of Chinese Academy of Sciences",
+    "baseUri": "ipfs://bafybeiajf64jw5emlgc3iyipjc2n5yawtgentfais7rpn7zubppy3yf3lq",
     "format": {
         "width": 1024,
         "height": 1024,
@@ -57,7 +57,7 @@
     "processCount": 10,
     "layerConfigurations": [
         {
-            "totalNumber": 2000,
+            "totalNumber": 1978,
             "specificCombination": {
                 "Base&Blue_Rhythm": "Eggshell&Blue_Green,Music_Effect$Blue_Firefly"
             },

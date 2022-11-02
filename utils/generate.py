@@ -48,7 +48,7 @@ def build_imgs_attributes(layer_config, layer_info, dna_set, repetition_num):
         dna = hashlib.sha1(str(attribute_list).encode('utf-8')).hexdigest()
         if dna in dna_set:
             repetition_num += 1
-            print("\n\n…………………………………………………………………………………………重复………………………………………………………………………………………………………………………………\n\n")
+            print("\n…………………………………………………………………………………………重复………………………………………………………………………………………………………………………………\n")
             continue
         else:
             # 不重复的话更新数值（返回一个图层对象的列表）
@@ -58,7 +58,7 @@ def build_imgs_attributes(layer_config, layer_info, dna_set, repetition_num):
             # 组装metada
             generate_metadata(CONFIG, attribute_list, dna, token_ID)
             # 把dna 添加到 dna_set
-            print("DNA: ", dna)
+            print("token_ID: {}    DNA: {} ".format(token_ID,dna) )
             dna_set.add(dna)
             token_ID += 1
             counter += 1
