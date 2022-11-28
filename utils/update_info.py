@@ -42,26 +42,25 @@ def shuffle(start, end):
     file_list_shuffled = list(range(start, end+1))
     random.shuffle(file_list_shuffled)
     length = end - start + 1
-
-    print(file_list)
-    print(file_list_shuffled)
+    print("original file list",file_list)
+    print("shuffle file list",file_list_shuffled)
     # 给图片起一个临时名字
     temp_img_name_list = batch_assignment_temporary_name(start, end, img_path, suffix =".png")
     # 给json文件起一个临时名字
     temp_json_name_list = batch_assignment_temporary_name(start, end, json_path, suffix =".json")
     # 修改json文件中的内容
+    print("temp_img_name_list",temp_img_name_list)
+    print("temp_json_name_list",temp_json_name_list)
     modify_json_file(temp_json_name_list, file_list_shuffled, json_path)
 
     for index in tqdm(range(length), desc='Shuffling',unit= "piece", postfix={'value': length}):
         new_ID = file_list_shuffled[index]
         new_img_name = str(new_ID) + ".png"
         new_json_name = str(new_ID) + ".json"
-
         # 更改图片文件名字
         os.rename(img_path.joinpath(temp_img_name_list[index]),img_path.joinpath(new_img_name))
         # 更改json文件名字
         os.rename(json_path.joinpath(temp_json_name_list[index]),json_path.joinpath(new_json_name))
-
 
 # 给要洗牌的图片和json文件起一个临时的名字，格式为：原始名称 + _.suffix
 def batch_assignment_temporary_name(start, end, file_path, suffix):

@@ -57,7 +57,7 @@
     "processCount": 10,
     "layerConfigurations": [
         {
-            "totalNumber": 1978,
+            "totalNumber": 10,
             "specificCombination": {
                 "Base&Blue_Rhythm": "Eggshell&Blue_Green,Music_Effect$Blue_Firefly"
             },
